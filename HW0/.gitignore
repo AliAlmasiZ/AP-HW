@@ -1,0 +1,104 @@
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor-specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Compiled files
+*.o
+*.out
+*.class
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# Node.js
+node_modules/
+package-lock.json
+npm-debug.log
+yarn.lock
+pnpm-lock.yaml
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.env
+
+# Java
+*.jar
+*.war
+*.ear
+*.class
+*.iml
+*.project
+*.classpath
+target/
+bin/
+
+# Go
+*.exe
+*.test
+*.out
+vendor/
+
+# C/C++
+*.dSYM/
+*.obj
+*.pdb
+*.ilk
+*.lib
+*.exp
+
+# Rust
+/target/
+Cargo.lock
+
+# Databases
+*.sqlite
+*.db
+*.db-wal
+*.db-shm
+
+# IDE-specific
+*.sublime-workspace
+*.sublime-project
+
+# JetBrains
+*.iml
+.idea/
+*.ipr
+*.iws
+out/
+
+# MacOS
+.DS_Store
+
+# Linux
+*~
+.nfs*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Misc
+*.bak
+*.swp
+*.swo
+*.orig
+
+# Git
+#.gitignore
+!.gitignore  
