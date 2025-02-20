@@ -46,7 +46,7 @@ public class HW0_Q2 {
             sbDown.append(table[row + i][col]);
         }
         for (int i = 0; i < targetChar.length; i++) {
-            if (row - targetChar.length < 0) break;
+            if (row - targetChar.length + 1 < 0) break;
             sbUp.append(table[row - i][col]);
         }
         return target.contentEquals(sbUp) || target.contentEquals(sbDown);
@@ -63,11 +63,9 @@ public class HW0_Q2 {
         }
 
         for (int i = 0; i < targetChar.length; i++) {
-            if (col - targetChar.length < 0) break;
+            if (col - targetChar.length + 1 < 0) break;
             sbLeft.append(table[row][col - i]);
         }
-        print(sbLeft.toString());
-        print(Arrays.toString(table[row]));
         return target.contentEquals(sbRight) || target.contentEquals(sbLeft);
     }
     private static void print(String s) {
