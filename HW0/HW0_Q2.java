@@ -1,78 +1,49 @@
 import java.util.*;
-
+/* STDID : 403100043*/
 public class HW0_Q2 {
+    static List<Vertex> vertices = new ArrayList<>();
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        sc.nextLine();
-        char[][] table = new char[n][n];
-        for (int i = 0; i < n; i++) {
-//            print(i);
-            String word = sc.nextLine();
-//            print(word);
-            table[i] = word.toCharArray();
+        int N = sc.nextInt();
+        for (int i = 0; i < N; i++) {
+            vertices.add(new Vertex());
         }
-        int m = sc.nextInt();
-        sc.nextLine();
-        for (int i = 0; i < m; i++) {
-            String word = sc.nextLine();
-            if(isMatch(word, table)) System.out.println("FOUND");
-            else System.out.println("NOT FOUND");
+        int M = sc.nextInt();
+        for (int i = 0; i < M; i++) {
+            int v1, v2;
+            v1 = sc.nextInt();
+            v2 = sc.nextInt();
+            vertices.get(v1).neighbors.add(vertices.get(v2));
+            vertices.get(v2).neighbors.add(vertices.get(v1));
         }
+        if (colorGraph(N)) {
+            System.out.println("Yes");
+        }
+        else {
+            System.out.println("No");
+        }
+
     }
 
-    private static boolean isMatch(String target, char[][] table) {
-        for (int i = 0; i < table.length * table.length; i++) {
-            int row = i / table.length;
-            int col = i % table.length;
-            if (target.charAt(0) == table[row][col]) {
-                if (isMatchHorizontally(target, table, row, col)|| isMatchVertically(target, table, row, col)) {
-                    return true;
+    private static boolean colorGraph(int N) {
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < vertices.get(i).neighbors.size(); j++) {
+                if(vertices.get(i).color == vertices.get(i).neighbors.get(j).color && vertices.get(i).color != -1) return false;
+                if (vertices.get(i).color != 1) {
+                    vertices.get(i).neighbors.get(j).color = 1;
+                    vertices.get(i).color = 0;
+                } else if (vertices.get(i).color == 1) {
+                    vertices.get(i).neighbors.get(j).color = 0;
                 }
             }
         }
-        return false;
-    }
-    private static boolean isMatchAll(String target, char[][] table, int row, int col) {
-        return isMatchHorizontally(target, table, row, col) || isMatchVertically(target, table, row, col);
-    }
-    private static boolean isMatchVertically(String target, char[][] table, int row, int col) {
-        char[] targetChar = target.toCharArray();
-        StringBuilder sbUp = new StringBuilder();
-        StringBuilder sbDown = new StringBuilder();
-        /* col checker */
-        for (int i = 0; i < targetChar.length; i++) {
-            if (row + targetChar.length - 1 >= table.length) break;
-            sbDown.append(table[row + i][col]);
-        }
-        for (int i = 0; i < targetChar.length; i++) {
-            if (row - targetChar.length + 1 < 0) break;
-            sbUp.append(table[row - i][col]);
-        }
-        return target.contentEquals(sbUp) || target.contentEquals(sbDown);
+        return true;
     }
 
-    private static boolean isMatchHorizontally(String target, char[][] table, int row, int col) {
-        char[] targetChar = target.toCharArray();
-        StringBuilder sbLeft = new StringBuilder();
-        StringBuilder sbRight = new StringBuilder();
-        /* row checker */
-        for (int i = 0; i < targetChar.length; i++) {
-            if (col + targetChar.length - 1 >= table.length) break;
-            sbRight.append(table[row][col + i]);
-        }
-
-        for (int i = 0; i < targetChar.length; i++) {
-            if (col - targetChar.length + 1 < 0) break;
-            sbLeft.append(table[row][col - i]);
-        }
-        return target.contentEquals(sbRight) || target.contentEquals(sbLeft);
+    private static class Vertex {
+        List<Vertex> neighbors = new ArrayList<Vertex>();
+        int color = -1;
     }
-    private static void print(String s) {
-        System.out.println("-" + s + "-");
-    }
-    private static void print(int s) {
-        System.out.println("-" + s + "-");
-    }
-
 }
+

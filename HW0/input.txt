@@ -1,0 +1,29 @@
+17
+[2025-02-12 18:34:00] [INFO] System reboot required due to critical failure
+[2025-02-11 21:00:00] [WARNING] High memory usage detected: 95% of available RAM consumed
+[2025-02-13 05:55:00] [DEBUG] Service restarted due to unexpected termination signal SIGTERM
+[2025-02-12 04:51:00] [INFO] Memory allocation failure during intensive computation
+[2025-02-11 14:24:00] [INFO] Unauthorized access attempt detected from IP 203.0.113.42
+[2025-02-12 01:02:00] [WARNING] Disk write error encountered while saving critical logs to /var/log/errors.log
+[2025-02-13 04:38:00] [INFO] User session expired after prolonged inactivity
+[2025-02-11 01:44:00] [DEBUG] Process started successfully with PID 3579
+[2025-02-10 20:28:00] [DEBUG] Memory allocation failure during intensive computation
+[2025-02-12 08:34:00] [INFO] Unauthorized access attempt detected from IP 203.0.113.42
+[2025-02-11 07:56:00] [INFO] Disk write error encountered while saving critical logs to /var/log/errors.log
+[2025-02-11 12:49:00] [ERROR] User logged in successfully from IP 192.168.1.10
+[2025-02-12 02:41:00] [ERROR] Disk write error encountered while saving critical logs to /var/log/errors.log
+[2025-02-13 07:41:00] [WARNING] Process started successfully with PID 3579
+[2025-02-12 10:49:00] [WARNING] Service restarted due to unexpected termination signal SIGTERM
+[2025-02-11 15:27:00] [WARNING] System reboot required due to critical failure
+[2025-02-11 08:46:00] [INFO] User logged in successfully from IP 192.168.1.10
+COUNT_LEVEL INFO
+LEVEL DEBUG
+CONTAINS Process
+CONTAINS System
+ERROR_TIMESTAMPS --reverse
+LEVEL ERROR
+TOP_K_LEVEL 2 WARNING
+ERROR_TIMESTAMPS
+TOP_K_LEVEL 2 WARNING --reverse
+FREQUENCY_ANALYSIS --top 3
+COUNT_LEVEL ERROR
