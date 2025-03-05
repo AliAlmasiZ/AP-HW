@@ -5,6 +5,7 @@ import java.util.regex.Pattern;
 /* STDID : 403100043 */
 
 public class HW0_Q5 {
+    /* list of logs */
     static List<Log> logList = new ArrayList<>();
 
     public static void main(String[] args) {
@@ -57,16 +58,17 @@ public class HW0_Q5 {
 
                 }
                 default -> {
+                    System.out.println("ERROR");
+                    System.out.println();
                 }
-//                while (false) {
-//                    System.out.println("ERROR");
-//                    System.out.println();
             }
 
         }
     }
 
     private static Log makeLog(String message) {
+        /* exports log data from a line of input into a Log class object */
+
         Log log = new Log();
         log.all = message;
         String pattern = "\\[(\\d{4})-(\\d{2})-(\\d{2}) (\\d{2}):(\\d{2}):(\\d{2})] \\[(\\w+)] (.+)";
@@ -86,6 +88,7 @@ public class HW0_Q5 {
     }
 
     private static void handleLevel(String type) {
+
         for (Log log : logList) {
             if (log.type.equals(type)) {
                 System.out.println(log.all);
@@ -110,6 +113,7 @@ public class HW0_Q5 {
                 }
             }
         } else {
+
             for (Log log : logList) {
                 if (log.type.equals("ERROR")) {
                     System.out.format("%04d-%02d-%02d %02d:%02d:%02d\n", log.year, log.month, log.day, log.hour, log.minute, log.second);
@@ -120,9 +124,8 @@ public class HW0_Q5 {
 
     private static void handleContains(String keyWord) {
         for (Log log : logList) {
-            String temp = log.content;
-//            temp = temp.toLowerCase();
-            if (temp.contains(keyWord)) {
+            String content = log.content;
+            if (content.contains(keyWord)) {
                 System.out.println(log.all);
             }
         }
@@ -139,14 +142,13 @@ public class HW0_Q5 {
     private static void handleFrequencyAnalysis(int n) {
         Map<String, Integer> map = new HashMap<>();
         for (Log log : logList) {
-//            log.content = log.content.toLowerCase();
+            /* make a hashmap of all words and their occurrence */
             for (String word : log.content.split("\\s+")) {
                 word = word.toLowerCase();
                 map.put(word, map.getOrDefault(word, 0) + 1);
             }
         }
         List<Map.Entry<String, Integer>> list = new ArrayList<>(map.entrySet());
-//        list.sort((a, b) -> b.getValue().compareTo(a.getValue()));
         list.sort(HW0_Q5::frequencyCompare);
         for (int i = 0; i < n; i++) {
             System.out.format("%s: %d\n", list.get(i).getKey(), list.get(i).getValue());
@@ -194,7 +196,7 @@ public class HW0_Q5 {
         String content;
         String all;
 
-        public static int compareDate(Log log1, Log log2) {
+        public static int compareDate(Log log1, Log log2) { // if date in log1 > date in log2 return 1 and else
             if (log1.year > log2.year) return 1;
             if (log1.year < log2.year) return -1;
             if (log1.month > log2.month) return 1;
@@ -211,13 +213,16 @@ public class HW0_Q5 {
 
 
     private static boolean isBetweenDateRange(Log log, String date1, String date2) {
+        /* checks if log date is between date1 and date2 (or be equal with one) */
+
         String pattern = "(\\d{4})-(\\d{2})-(\\d{2})";
         Pattern regex = Pattern.compile(pattern);
         Matcher matcher1 = regex.matcher(date1);
         Matcher matcher2 = regex.matcher(date2);
-//        System.out.println(date1 + "-" + date2);
+
         int year1 = 0, month1 = 0, day1 = 0;
         int year2 = 0, month2 = 0, day2 = 0;
+
         if (matcher1.matches() && matcher2.matches()) {
             year1 = Integer.parseInt(matcher1.group(1));
             month1 = Integer.parseInt(matcher1.group(2));
@@ -227,7 +232,6 @@ public class HW0_Q5 {
             day2 = Integer.parseInt(matcher2.group(3));
         }
 
-//        if (matcher1.matches() && matcher2.matches()) {
         if (isBetween(log.year % 100, year1, year2)) {
             return true;
         } else if (log.year % 100 == year1 || log.year == year2) {
@@ -238,12 +242,9 @@ public class HW0_Q5 {
             }
         }
         return false;
-//        }
-//        System.exit(400);
-
-//        return true;
     }
 
+    /* checks if x is between a and b (and not equal to them) */
     private static boolean isBetween(int x, int a, int b) {
         return Math.min(a, b) < x && x < Math.max(a, b);
     }

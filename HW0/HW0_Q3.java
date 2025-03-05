@@ -12,8 +12,10 @@ public class HW0_Q3 {
         sc.nextLine();
         char[][] table = new char[n][n];
         for (int i = 0; i < n; i++) {
+            /* put inputs in a table of characters */
             String word = sc.nextLine();
             table[i] = word.toCharArray();
+
         }
         int m = sc.nextInt();
         sc.nextLine();
@@ -43,13 +45,14 @@ public class HW0_Q3 {
         if (index >= target.length()) return true;
         char[] targetChar = target.toCharArray();
         for (int direction = 0; direction < 8; direction++) {
+            /* for all 8 directions recursively checks if there is same character at index and that neighbor or not*/
             if (row + dy[direction] < 0 ||
                     row + dy[direction] >= table.length ||
                     col + dx[direction] < 0 ||
                     col + dx[direction] >= table.length) continue;
 
             if (targetChar[index] == table[row + dy[direction]][col + dx[direction]]) {
-                tableCopy[row + dy[direction]][col + dx[direction]] = '\0';
+                tableCopy[row + dy[direction]][col + dx[direction]] = '\0'; // to dont count a letter twice
                 if (finder(target, tableCopy, row + dy[direction], col + dx[direction], index + 1)) {
                     return true;
                 }

@@ -3,7 +3,7 @@ import java.util.*;
 
 /* STDID : 403100043 */
 
-public class HW0_Q4 {
+public class Q4v4 {
     static boolean[][] isVisited;
 
     public static void main(String[] args) {

@@ -25,15 +25,19 @@ public class HW0_Q2 {
         }
 
     }
-
+    /* checks if we can color graph with two colors with no same color on an edge */
     private static boolean colorGraph(int N) {
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < vertices.get(i).neighbors.size(); j++) {
-                if(vertices.get(i).color == vertices.get(i).neighbors.get(j).color && vertices.get(i).color != -1) return false;
+                if(vertices.get(i).color == vertices.get(i).neighbors.get(j).color && vertices.get(i).color != -1)
+                    return false;
+
                 if (vertices.get(i).color != 1) {
+                    /* if vertex doesn't have color or color 0 makes neighbors color 1 */
                     vertices.get(i).neighbors.get(j).color = 1;
                     vertices.get(i).color = 0;
                 } else if (vertices.get(i).color == 1) {
+                    /* if vertex color is 1 makes neighbors color 0 */
                     vertices.get(i).neighbors.get(j).color = 0;
                 }
             }
@@ -42,6 +46,7 @@ public class HW0_Q2 {
     }
 
     private static class Vertex {
+        /* a vertex of graph */
         List<Vertex> neighbors = new ArrayList<Vertex>();
         int color = -1;
     }
