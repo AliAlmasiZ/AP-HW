@@ -6,6 +6,32 @@ Explanation:
 - this regexes need some functions, put those functions in here.
  */
 
-public enum ProfileMenuCommands {
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
+public enum ProfileMenuCommands implements Command{
+    SHOW_USER_INFO("^show user info$"),
+    CHANGE_CURRENCY("change-currency\\s+-n\\s+(?<new-currency>GTC|SUD|QTR)"),
+    CHANGE_USERNAME("change-username\\s+-n\\s+(?<new-username>\\S+)"),
+    USERNAME("^[a-zA-Z][\\w.-]{3,9}$"),
+    CHANGE_PASSWORD("change-password\\s+-o\\s+(?<old-password>\\S+)\\s+-n\\s+(?<new-password>)"),
+    PASSWORD("^(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*])(?=.*\\d)[A-Za-z\\d!@#$%\\^&*]{6,12}$"),
+
+    BACK("back");
+
+    String pattern;
+
+    ProfileMenuCommands(String pattern) {
+        this.pattern = pattern;
+    }
+
+    @Override
+    public Matcher getMatcher(String input) {
+        Matcher matcher = Pattern.compile(this.pattern).matcher(input);
+        if(matcher.matches()) {
+            return matcher;
+        } else {
+            return null;
+        }
+    }
 }

@@ -7,11 +7,26 @@ Explanation:
  */
 
 
+import controllers.LoginMenuController;
+import models.enums.LoginMenuCommands;
+
 import java.util.Scanner;
 
-public class LoginMenu implements AppMenu{
+public class LoginMenu implements AppMenu {
+    private final LoginMenuController loginMenuController = new LoginMenuController();
+
     @Override
     public void check(Scanner scanner) {
+        String input = scanner.nextLine().trim();
 
+        if (input.startsWith("login")) {
+            System.out.println(loginMenuController.loginUser(input));
+        } else if (input.startsWith("forget")) {
+            System.out.println(loginMenuController.forgetPassword(input));
+        } else if (LoginMenuCommands.GOTO_SIGNUP_MENU.getMatcher(input) != null) {
+            System.out.println(loginMenuController.goToSignupMenu());
+        } else {
+            System.out.println("invalid command!");
+        }
     }
 }

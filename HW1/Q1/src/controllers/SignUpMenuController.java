@@ -12,14 +12,11 @@ import models.User;
 import models.enums.Menu;
 import models.enums.SignUpMenuCommands;
 
-import java.util.SimpleTimeZone;
 import java.util.regex.Matcher;
 
 public class SignUpMenuController {
     public Result registerUser(String input) {
-        input = input.trim();
         Matcher matcher = SignUpMenuCommands.REGISTER.getMatcher(input);
-        if (matcher != null) {
             String username = matcher.group("username");
             String password = matcher.group("password");
             String email = matcher.group("email");
@@ -37,12 +34,16 @@ public class SignUpMenuController {
                 return new Result(false, "name format is invalid!");
             } else {
                 App.addUser(new User(username, password, email, name));
-                App.setActiveMenu(Menu.LoginMenu);
+
+                App.setActiveMenu(Menu.LOGIN_MENU);
                 return new Result(true, "user registered successfully.you are now in login menu!");
             }
-        } else {
-            return new Result(false, "invalid command!");
         }
+    }
+
+    public Result goToLoginMenu() {
+        App.setActiveMenu(Menu.LOGIN_MENU);
+        return new Result(true, "you are now in login menu!");
     }
 
 }

@@ -10,10 +10,11 @@ Explanation:
 - a good way to handle this is to use enums to define them and use them in your code.
  */
 public enum Menu {
-    ProfileMenu(new ProfileMenu()),
-    ExitMenu(new ExitMenu()),
-    LoginMenu(new LoginMenu()),
-    SignUpMenu(new SignUpMenu());
+    PROFILE_MENU(new ProfileMenu()),
+    EXIT_MENU(new ExitMenu()),
+    LOGIN_MENU(new LoginMenu()),
+    SIGN_UP_MENU(new SignUpMenu()),
+    DASHBOARD(new Dashboard());
 
     private final AppMenu menu ;
 

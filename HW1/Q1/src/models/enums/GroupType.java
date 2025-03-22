@@ -7,4 +7,11 @@ Explanation:
 - put those types here and use them in your code.
  */
 public enum GroupType {
+    HOME,
+    TRIP,
+    ZAN_O_BACHE,
+    OTHER;
+
+
+
 }

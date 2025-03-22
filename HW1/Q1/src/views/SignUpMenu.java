@@ -9,6 +9,7 @@ Explanation:
 
 import controllers.SignUpMenuController;
 import models.Result;
+import models.enums.SignUpMenuCommands;
 
 import java.util.Scanner;
 
@@ -16,7 +17,11 @@ public class SignUpMenu implements AppMenu {
     private final SignUpMenuController signUpMenuController = new SignUpMenuController();
     @Override
     public void check(Scanner scanner) {
-        String input = scanner.nextLine();
-        System.out.println(signUpMenuController.registerUser(input));
+        String input = scanner.nextLine().trim();
+        if(SignUpMenuCommands.GOTO_LOGIN_MENU.getMatcher(input) != null) {
+            System.out.println(signUpMenuController.goToLoginMenu());
+        } else {
+            System.out.println(signUpMenuController.registerUser(input));
+        }
     }
 }

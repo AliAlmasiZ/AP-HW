@@ -1,8 +1,6 @@
 package models;
 
 import models.enums.Menu;
-import views.AppMenu;
-import views.SignUpMenu;
 
 import java.util.ArrayList;
 
@@ -15,31 +13,41 @@ Explanation:
  */
 public class App {
     private static ArrayList<User> users = new ArrayList<User>();
-    private static Menu activeMenu = Menu.SignUpMenu;
+    private static ArrayList<Group> groups = new ArrayList<Group>();
+    private static Menu activeMenu = Menu.SIGN_UP_MENU;
+    private static User activeUser = null;
 
-    public boolean isValidUsername(String username) {
-        for(User user : App.users) {
-            if(user.getUsername().equals(username)) return false;
-        }
-        return true;
-    }
 
     public static Menu getActiveMenu() {
         return activeMenu;
+    }
+    public static Integer getGroupsCount() {
+        return groups.size();
+    }
+    public static User getActiveUser() {
+        return activeUser;
     }
 
     public static void setActiveMenu(Menu activeMenu) {
         App.activeMenu = activeMenu;
     }
 
+    public static void setActiveUser(User activeUser) {
+        App.activeUser = activeUser;
+    }
+
     public static void addUser(User user) {
         users.add(user);
     }
 
+    public static void addGroup(Group group) {
+        groups.add(group);
+    }
     public static User findUserByUsername(String username) {
         for (User user : users) {
             if(user.getUsername().equals(username)) return user;
         }
         return null;
     }
+
 }

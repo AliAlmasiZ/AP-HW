@@ -16,6 +16,6 @@ public class AppView {
         Scanner scanner = new Scanner(System.in);
         do {
             App.getActiveMenu().checkCommand(scanner);
-        } while (!App.getActiveMenu().equals(Menu.ExitMenu));
+        } while (!App.getActiveMenu().equals(Menu.EXIT_MENU));
     }
 }

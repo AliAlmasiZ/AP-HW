@@ -9,7 +9,7 @@ Explanation:
 - put those regexes here and use them in your code.
 - this regexes need some functions, put those functions in here.
  */
-public enum SignUpMenuCommands {
+public enum SignUpMenuCommands implements Command{
 //    REGISTER_USER("^\\s*register\\s+-u\\s+(?<username>\\b[A-Za-z][A-Za-z\\d\\-_.]{3,9})\\s+" +
 //            "-p\\s+(?<password>(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*])(?=.*\\d)[A-Za-z\\d!@#$%\\^&*]{6,12})\\s+" +
 //            "-e\\s+(?<email>\\b[A-Za-z][A-Za-z\\d\\-_.]{3,9}@[a-z][a-z.\\-]{1,5}[a-z].(org|com|net|edu))\\s+" +
@@ -20,19 +20,20 @@ public enum SignUpMenuCommands {
     USERNAME("^[a-zA-Z][\\w.-]{3,9}$"),
     PASSWORD("^(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*])(?=.*\\d)[A-Za-z\\d!@#$%\\^&*]{6,12}$"),
     EMAIL("^[A-Za-z][\\w.-]{3,9}@[a-z](?![a-z]*[-.][a-z]*[-.][a-z]*[a-z]\\.)[a-z.\\-]{1,5}[a-z]\\.(org|com|net|edu)$"),
-    NAME("^[a-zA-Z][a-zA-Z\\-]*[a-zA-Z]$");
+    NAME("^[a-zA-Z][a-zA-Z\\-]*[a-zA-Z]$"),
+    GOTO_LOGIN_MENU("^go to login menu$");
 
 
-    private final String regex;
+    private final String pattern;
 
-    SignUpMenuCommands(String regex) {
-        this.regex = regex;
+    SignUpMenuCommands(String pattern) {
+        this.pattern = pattern;
     }
 
 
-
+    @Override
     public Matcher getMatcher(String input) {
-        Matcher matcher = Pattern.compile(this.regex).matcher(input);
+        Matcher matcher = Pattern.compile(this.pattern).matcher(input);
         if(matcher.matches()) {
             return matcher;
         } else {

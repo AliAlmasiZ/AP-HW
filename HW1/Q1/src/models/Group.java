@@ -6,5 +6,44 @@ Explanation:
 - put those information here and use them in your code.
  */
 
+import models.enums.GroupType;
+
+import java.util.ArrayList;
+
 public class Group {
+    private GroupType type;
+    private String name;
+    private Integer ID;
+    private User creator;
+    private ArrayList<User> members;
+
+
+    public Group(GroupType type, String name, User creator) {
+        this.type = type;
+        this.name = name;
+        this.creator = creator;
+
+        this.ID = App.getGroupsCount() + 1;
+        this.members = new ArrayList<User>();
+    }
+
+    public GroupType getType() {
+        return type;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Integer getID() {
+        return ID;
+    }
+
+    public User getCreator() {
+        return creator;
+    }
+
+    public ArrayList<User> getMembers() {
+        return members;
+    }
 }
