@@ -1,6 +1,26 @@
-# OS-specific files
+# Maven build artifacts
+target/
+**/target/
+build/
+**/build/
+
+
+# OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
 
 # Editor-specific files
 .idea/
@@ -16,11 +36,6 @@ Thumbs.db
 *.dll
 *.so
 *.dylib
-
-# Logs and temp files
-*.log
-*.tmp
-*.bak
 
 # Node.js
 node_modules/
@@ -39,6 +54,7 @@ venv/
 *.jar
 *.war
 *.ear
+*.nar
 *.class
 *.iml
 *.project
