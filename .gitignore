@@ -101,4 +101,15 @@ Desktop.ini
 
 # Git
 #.gitignore
-!.gitignore  
+!.gitignore 
+
+
+# tests
+
+test*
+test/
+
+
+#zipfiles
+*.zip
+!src.zip

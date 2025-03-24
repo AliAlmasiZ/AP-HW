@@ -11,11 +11,12 @@ Explanation:
  */
 public enum LoginMenuCommands implements Command{
 
-    LOGIN_USER("^login\\s+-u\\s+(?<username>\\S+)\\s+-p\\s+(?<password>\\S+)$"),
-    FORGET_PASSWORD("^forget-password\\s+-u\\s+(?<username>\\S+)\\s+-e\\s+(?<email>\\S+)$"),
-    GOTO_SIGNUP_MENU("^go to signup menu$");
+    LOGIN_USER("^login\\s+-u\\s+(?<username>.+?)\\s+-p\\s+(?<password>.+?)$"),
+    FORGET_PASSWORD("^forget-password\\s+-u\\s+(?<username>.+?)\\s+-e\\s+(?<email>.+?)$"),
+    GOTO_SIGNUP_MENU("^go to signup menu$"),
+    EXIT("^exit$");
 
-    String pattern;
+    private final String pattern;
 
     LoginMenuCommands(String pattern) {
         this.pattern = pattern;

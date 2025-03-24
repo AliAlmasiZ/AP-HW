@@ -13,5 +13,40 @@ public enum GroupType {
     OTHER;
 
 
+    @Override
+    public String toString() {
+        switch (this) {
+            case HOME -> {
+                return "Home";
+            }
+            case TRIP -> {
+                return "Trip";
+            }
+            case ZAN_O_BACHE -> {
+                return "Zan-o-Bache";
+            }
+            case OTHER -> {
+                return "Other";
+            }
+        }
+        return null;
+    }
 
+    public static GroupType stringToGroupType(String type) {
+        switch (type) {
+            case "Home" -> {
+                return GroupType.HOME;
+            }
+            case "Trip" -> {
+                return GroupType.TRIP;
+            }
+            case "Zan-o-Bache" -> {
+                return GroupType.ZAN_O_BACHE;
+            }
+            case "Other" -> {
+                return GroupType.OTHER;
+            }
+        }
+        return null;
+    }
 }

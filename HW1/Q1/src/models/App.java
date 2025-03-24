@@ -2,6 +2,7 @@ package models;
 
 import models.enums.Menu;
 
+import java.lang.annotation.Retention;
 import java.util.ArrayList;
 
 /*
@@ -24,6 +25,19 @@ public class App {
     public static Integer getGroupsCount() {
         return groups.size();
     }
+
+    public static Group getGroupByID(Integer groupID) {
+        if(App.getGroupsCount() < groupID || groupID < 1) return null;
+        return groups.get(groupID - 1);
+    }
+
+    public static User getUserByUsername(String username) {
+        for (User user : users) {
+            if(user.getUsername().equals(username)) return user;
+        }
+        return null;
+    }
+
     public static User getActiveUser() {
         return activeUser;
     }
@@ -43,11 +57,7 @@ public class App {
     public static void addGroup(Group group) {
         groups.add(group);
     }
-    public static User findUserByUsername(String username) {
-        for (User user : users) {
-            if(user.getUsername().equals(username)) return user;
-        }
-        return null;
-    }
+
+
 
 }

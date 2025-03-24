@@ -20,8 +20,12 @@ public class SignUpMenu implements AppMenu {
         String input = scanner.nextLine().trim();
         if(SignUpMenuCommands.GOTO_LOGIN_MENU.getMatcher(input) != null) {
             System.out.println(signUpMenuController.goToLoginMenu());
-        } else {
+        } else if(SignUpMenuCommands.REGISTER.getMatcher(input) != null){
             System.out.println(signUpMenuController.registerUser(input));
+        } else if(SignUpMenuCommands.EXIT.getMatcher(input) != null) {
+            signUpMenuController.exit();
+        }else {
+            System.out.println("invalid command!");
         }
     }
 }

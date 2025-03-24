@@ -1,10 +1,4 @@
 package controllers;
-/*
-Explanation:
-- This is a controller class for the sign-up menu Controller.
-- This class will be used to implement functions that do sign up menu operations.
-- notice that this class should not have any input and output and just use it to implement functionalities.
- */
 
 import models.App;
 import models.Result;
@@ -17,6 +11,7 @@ import java.util.regex.Matcher;
 public class SignUpMenuController {
     public Result registerUser(String input) {
         Matcher matcher = SignUpMenuCommands.REGISTER.getMatcher(input);
+        if(matcher != null){
             String username = matcher.group("username");
             String password = matcher.group("password");
             String email = matcher.group("email");
@@ -24,7 +19,7 @@ public class SignUpMenuController {
 
             if (SignUpMenuCommands.USERNAME.getMatcher(username) == null) {
                 return new Result(false, "username format is invalid!");
-            } else if (App.findUserByUsername(username) != null) {
+            } else if (App.getUserByUsername(username) != null) {
                 return new Result(false, "this username is already taken!");
             } else if (SignUpMenuCommands.PASSWORD.getMatcher(password) == null) {
                 return new Result(false, "password format is invalid!");
@@ -38,12 +33,14 @@ public class SignUpMenuController {
                 App.setActiveMenu(Menu.LOGIN_MENU);
                 return new Result(true, "user registered successfully.you are now in login menu!");
             }
-        }
+        } else return new Result(false, "invalid command!");
     }
-
     public Result goToLoginMenu() {
         App.setActiveMenu(Menu.LOGIN_MENU);
         return new Result(true, "you are now in login menu!");
     }
 
+    public void exit() {
+        App.setActiveMenu(Menu.EXIT_MENU);
+    }
 }

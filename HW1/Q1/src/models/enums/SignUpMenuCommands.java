@@ -15,13 +15,14 @@ public enum SignUpMenuCommands implements Command{
 //            "-e\\s+(?<email>\\b[A-Za-z][A-Za-z\\d\\-_.]{3,9}@[a-z][a-z.\\-]{1,5}[a-z].(org|com|net|edu))\\s+" +
 //            "-n\\s+(?<name>[a-zA-Z][a-zA-Z\\-]*[a-zA-Z])\\s*"),
 
-    REGISTER("^register\\s+-u\\s+(?<username>\\S+)\\s+-p\\s+(?<password>\\S+)\\s+" +
-            "-e\\s+(?<email>\\S+)\\s+-n\\s+(?<name>\\S+)$"),
+    REGISTER("^register\\s+-u\\s+(?<username>.+?)\\s+-p\\s+(?<password>.+?)\\s+" +
+            "-e\\s+(?<email>.+?)\\s+-n\\s+(?<name>.+?)$"),
     USERNAME("^[a-zA-Z][\\w.-]{3,9}$"),
     PASSWORD("^(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*])(?=.*\\d)[A-Za-z\\d!@#$%\\^&*]{6,12}$"),
     EMAIL("^[A-Za-z][\\w.-]{3,9}@[a-z](?![a-z]*[-.][a-z]*[-.][a-z]*[a-z]\\.)[a-z.\\-]{1,5}[a-z]\\.(org|com|net|edu)$"),
-    NAME("^[a-zA-Z][a-zA-Z\\-]*[a-zA-Z]$"),
-    GOTO_LOGIN_MENU("^go to login menu$");
+    NAME("^([a-zA-Z][a-zA-Z\\-]*[a-zA-Z]|[a-zA-Z])$"),
+    GOTO_LOGIN_MENU("^go to login menu$"),
+    EXIT("exit");
 
 
     private final String pattern;

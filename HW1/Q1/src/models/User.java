@@ -8,13 +8,27 @@ Explanation:
  */
 
 import java.util.ArrayList;
+import models.enums.Currency;
 
 public class User {
 
-    private final String username;
-    private final String password;
+    private String username;
+    private String password;
     private final String email;
     private final String name;
+    private Currency currency;
+    private final ArrayList<Group> userGroups = new ArrayList<Group>();
+
+
+    public User(String username, String password, String email, String name) {
+        this.username = username;
+        this.password = password;
+        this.email = email;
+        this.name = name;
+        this.currency = Currency.GTC;
+
+        App.addUser(this);
+    }
 
     public String getUsername() {
         return username;
@@ -32,14 +46,33 @@ public class User {
         return name;
     }
 
-    public User(String username, String password, String email, String name) {
-        this.username = username;
-        this.password = password;
-        this.email = email;
-        this.name = name;
-
-        App.addUser(this);
+    public Currency getCurrency() {
+        return currency;
     }
 
 
+    public ArrayList<Group> getUserGroups() {
+        return userGroups;
+    }
+
+    public void setCurrency(Currency currency) {
+        this.currency = currency;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void addGroup(Group group) {
+        this.userGroups.add(group);
+    }
+
+
+//    public boolean equals(User user) {
+//        return this.username.equals(user.getUsername());
+//    }
 }

@@ -6,20 +6,23 @@ Explanation:
 - put those information here and use them in your code.
  */
 
+import models.enums.Currency;
 import models.enums.GroupType;
 
 import java.util.ArrayList;
 
 public class Group {
+
     private GroupType type;
     private String name;
     private Integer ID;
-    private User creator;
-    private ArrayList<User> members;
+    private final User creator;
+    private final ArrayList<User> members;
+    private final ArrayList<Expense> allExpense = new ArrayList<Expense>();
 
 
-    public Group(GroupType type, String name, User creator) {
-        this.type = type;
+    public Group(String type, String name, User creator) {
+        this.type = GroupType.stringToGroupType(type);
         this.name = name;
         this.creator = creator;
 
@@ -46,4 +49,20 @@ public class Group {
     public ArrayList<User> getMembers() {
         return members;
     }
+
+    public void addMember(User user) {
+        this.members.add(user);
+    }
+
+    public Expense getExpense(User payer, User payee) {
+        for (Expense expense : allExpense) {
+            if(expense.getPayer().equals(payer) && expense.getPayee().equals(payee)) {
+                return expense;
+            }
+        }
+        Expense expense = new Expense(payer, payee, 0);
+        allExpense.add(expense);
+        return expense;
+    }
+
 }

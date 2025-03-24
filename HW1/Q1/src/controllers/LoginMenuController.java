@@ -12,14 +12,13 @@ import models.User;
 import models.enums.LoginMenuCommands;
 import models.enums.Menu;
 
-import java.util.Scanner;
 import java.util.regex.Matcher;
 
 public class LoginMenuController {
     public Result loginUser(String input) {
         Matcher matcher = LoginMenuCommands.LOGIN_USER.getMatcher(input);
         if (matcher != null) {
-            User user = App.findUserByUsername(matcher.group("username"));
+            User user = App.getUserByUsername(matcher.group("username"));
             if (user == null) {
                 return new Result(false, "username doesn't exist!");
             }
@@ -36,7 +35,7 @@ public class LoginMenuController {
     public Result forgetPassword(String input) {
         Matcher matcher = LoginMenuCommands.FORGET_PASSWORD.getMatcher(input);
         if (matcher != null) {
-            User user = App.findUserByUsername(matcher.group("username"));
+            User user = App.getUserByUsername(matcher.group("username"));
             if (user == null) {
                 return new Result(false, "username doesn't exist!");
             }
@@ -51,5 +50,9 @@ public class LoginMenuController {
     public Result goToSignupMenu() {
         App.setActiveMenu(Menu.SIGN_UP_MENU);
         return new Result(true, "you are now in signup menu!");
+    }
+
+    public void exit() {
+        App.setActiveMenu(Menu.EXIT_MENU);
     }
 }
