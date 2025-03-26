@@ -16,9 +16,8 @@ public enum ProfileMenuCommands implements Command{
     USERNAME("^[a-zA-Z][\\w.-]{3,9}$"),
     CHANGE_PASSWORD("^change-password\\s+-o\\s+(?<oldPassword>\\S+)\\s+-n\\s+(?<newPassword>.+?)$"),
     PASSWORD("^(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*])(?=.*\\d)[A-Za-z\\d!@#$%\\^&*]{6,12}$"),
-
     BACK("^back$"),
-    EXIT("^exit$");;
+    EXIT("^exit$");
 
     private final String pattern;
 

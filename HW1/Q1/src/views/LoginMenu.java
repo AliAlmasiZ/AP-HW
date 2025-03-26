@@ -19,9 +19,9 @@ public class LoginMenu implements AppMenu {
     public void check(Scanner scanner) {
         String input = scanner.nextLine().trim();
 
-        if (input.startsWith("login")) {
+        if (LoginMenuCommands.LOGIN_USER.getMatcher(input) != null) {
             System.out.println(loginMenuController.loginUser(input));
-        } else if (input.startsWith("forget")) {
+        } else if (LoginMenuCommands.FORGET_PASSWORD.getMatcher(input) != null) {
             System.out.println(loginMenuController.forgetPassword(input));
         } else if (LoginMenuCommands.GOTO_SIGNUP_MENU.getMatcher(input) != null) {
             System.out.println(loginMenuController.goToSignupMenu());
