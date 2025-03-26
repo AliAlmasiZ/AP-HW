@@ -25,18 +25,37 @@ public class UserMenu extends MainMenu implements AppMenu{
             ));
         } else if((matcher = UserMenuCommands.EDIT_EMAIL.getMatcher(input)) != null) {
             System.out.println(controller.editEmail(matcher.group("email"), matcher.group("password")));
-        } else if((matcher = UserMenuCommands.EDIT_EMAIL.getMatcher(input)) != null) {
+        } else if((matcher = UserMenuCommands.EDIT_PASSWORD.getMatcher(input)) != null) {
             System.out.println(controller.editPassword(matcher.group("newPass"), matcher.group("oldPass")));
         } else if((matcher = UserMenuCommands.SHOW_MY_INFO.getMatcher(input)) != null) {
             System.out.println(controller.showMyInfo());
-        } else if((matcher = UserMenuCommands.EDIT_EMAIL.getMatcher(input)) != null) {
-            System.out.println();
-        } else if((matcher = UserMenuCommands.EDIT_EMAIL.getMatcher(input)) != null) {
-            System.out.println();
-        } else if((matcher = UserMenuCommands.EDIT_EMAIL.getMatcher(input)) != null) {
-            System.out.println();
+        } else if((matcher = UserMenuCommands.ADD_ADDRESS.getMatcher(input)) != null) {
+            System.out.println(controller.addAddress(
+                    matcher.group("country"),
+                    matcher.group("city"),
+                    matcher.group("street"),
+                    matcher.group("postal")
+            ));
+        } else if((matcher = UserMenuCommands.DELETE_ADDRESS.getMatcher(input)) != null) {
+            System.out.println(controller.deleteAddress(matcher.group("id")));
+        } else if((matcher = UserMenuCommands.LIST_ADDRESS.getMatcher(input)) != null) {
+            System.out.println(controller.listMyAddresses());
+        } else if((matcher = UserMenuCommands.ADD_CREDIT_CARD.getMatcher(input)) != null) {
+            System.out.println(
+                    controller.addCreditCard(
+                    matcher.group("cardNumber"),
+                    matcher.group("expirationDate"),
+                    matcher.group("cvv"),
+                    matcher.group("initialValue")
+            ));
+        } else if((matcher = UserMenuCommands.LIST_ADDRESS.getMatcher(input)) != null) {
+            System.out.println(controller.listMyAddresses());
+        } else if((matcher = UserMenuCommands.LIST_ADDRESS.getMatcher(input)) != null) {
+            System.out.println(controller.listMyAddresses());
         } else {
             System.out.println("invalid command");
         }
     }
+
+
 }

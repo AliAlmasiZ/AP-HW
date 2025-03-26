@@ -23,13 +23,17 @@ public enum UserMenuCommands implements Commands {
             "^add\\s+address\\s+-country\\s+(?<country>.+?)\\s+" +
             "-city\\s+(?<city>.+?)\\s+-street\\s+(?<street>.+?)\\s+-postal\\s+(?<postal>>+?)$"
     ),
-    DELETE_ADDRESS("^delete\\s+address\\s+-id\\s+(?<id>.+?)$"),
+    POSTAL("\\d{10}"),
+    DELETE_ADDRESS("^delete\\s+address\\s+-id\\s+(?<id>-?\\d+)$"),//non-integer gets invalid command!
     LIST_ADDRESS("^list\\s+my\\s+addresses$"),
     ADD_CREDIT_CARD(
             "^add\\s+a\\s+credit\\s+card\\s+-number\\s+(?<cardNumber>.+?)\\s+-ed\\s+(?<expirationDate>.+?)\\s+" +
-                    "-cvv\\s+(?<cvv>.+?)\\s+-initialValue\\s+(?<initialValue>.+?)$"
+                    "-cvv\\s+(?<cvv>.+?)\\s+-initialValue\\s+(?<initialValue>-?\\d+.?\\d*)$"
 
     ),
+    CARD_NUMBER("\\d{16}"),
+    CVV("\\d{3,4}"),
+    EXPIRATION_DATE("(?<month>\\d{2})/(?<year>\\d{2})"),
     CHARGE_CREDIT_CARD("^Charge\\s+credit\\s+card\\s+-a\\s+(?<amount>.+?)\\s+-id\\s+(?<id>.+?)$"),
     CHECK_CREDIT_CARD_BALANCE("^Check\\s+credit\\s+card\\s+balance\\s+-id\\s+(?<id>.+?)$"),
     SHOW_PRODUCTS_IN_CART("^show\\s+products\\s+in\\s+cart$"),
