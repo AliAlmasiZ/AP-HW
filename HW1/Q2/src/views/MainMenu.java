@@ -12,12 +12,12 @@ public class MainMenu implements AppMenu {
     @Override
     public void checker(Scanner scanner) {
         String input = scanner.nextLine().trim();
-
-        if(MainMenuCommands.GO_BACK.getMatcher(input) != null) {
+        Matcher matcher;
+        if((matcher = MainMenuCommands.GO_BACK.getMatcher(input)) != null) {
             System.out.println(controller.goBack());
-        } else if(MainMenuCommands.GO_TO.getMatcher(input) != null) {
+        } else if((matcher = MainMenuCommands.GO_TO.getMatcher(input)) != null) {
             System.out.println(controller.goTo(input));
-        } else if(MainMenuCommands.EXIT.getMatcher(input) != null) {
+        } else if((matcher = MainMenuCommands.EXIT.getMatcher(input)) != null) {
             controller.exit();
         } else {
             System.out.println("invalid command");

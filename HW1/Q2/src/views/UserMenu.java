@@ -48,6 +48,10 @@ public class UserMenu extends MainMenu implements AppMenu{
                     matcher.group("cvv"),
                     matcher.group("initialValue")
             ));
+        } else if((matcher = UserMenuCommands.CHARGE_CREDIT_CARD.getMatcher(input)) != null) {
+            System.out.println(controller.chargeCreditCard(matcher.group("amount"), matcher.group("id")));
+        } else if((matcher = UserMenuCommands.CHECK_CREDIT_CARD_BALANCE.getMatcher(input)) != null) {
+            System.out.println(controller.checkCreditCardBalance(matcher.group("id")));
         } else if((matcher = UserMenuCommands.LIST_ADDRESS.getMatcher(input)) != null) {
             System.out.println(controller.listMyAddresses());
         } else if((matcher = UserMenuCommands.LIST_ADDRESS.getMatcher(input)) != null) {

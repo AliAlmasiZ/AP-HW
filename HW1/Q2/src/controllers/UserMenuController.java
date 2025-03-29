@@ -68,7 +68,7 @@ public class UserMenuController {
 
         if (UserMenuCommands.POSTAL.getMatcher(postal) == null)
             return new Result(false, "Invalid postal code. It should be a 10-digit number.");
-        if (user.addresses)
+        if (containsAddressPostal(user, postal))
             return new Result(false, "This postal code is already associated with an existing address.");
         Address address = new Address(country, city, street, postal, user.getAndAddAddressId());
         user.addresses.add(address);
@@ -76,7 +76,7 @@ public class UserMenuController {
     }
 
     public Result deleteAddress(String ID) {
-        int index = getIndexById(Long.parseLong(ID));
+        int index = getAddressIndexById(Long.parseLong(ID));
         if (index == -1) return new Result(false, "No address found.");
         ((User) App.getLoggedInAccount()).addresses.remove(index);
         return new Result(true, "Address with id " + ID + " deleted successfully.");
@@ -122,15 +122,51 @@ public class UserMenuController {
                 Integer.parseInt(expirationDate.substring(0,2)),
                 Integer.parseInt(expirationDate.substring(3,5))
         );
+        if(containsCardNumber(user, cardNumber))
+            return new Result(false, "This card is already saved in your account.");
         CreditCard card = new CreditCard(cardNumber, date, cvv, value, user.getAndAddCardId());
-        if(user.cards.contains(card))
+        user.cards.add(card);
+        return new Result(true, "Credit card with Id " + card.getID() + " has been added successfully.");
     }
 
-    private int getIndexById(long ID) {
+    public Result chargeCreditCard(String amount, String ID) {
+        double value = Double.parseDouble(amount);
+        if(value <= 0) return new Result(false, "The amount must be greater than zero.");
+        int index = getCardIndexById(Long.parseLong(ID));
+        if(index < 0) return new Result(false, "No credit card found.");
+        CreditCard card = ((User) App.getLoggedInAccount()).cards.get(index);
+        card.addValue(value);
+        return new Result(
+                true,
+                "$" + amount + " has been added to the credit card " + card.getID() +
+                        ". New balance: $" + card.getValue() + "."
+        );
+    }
+
+    public Result checkCreditCardBalance(String ID) {
+        int index = getCardIndexById(Long.parseLong(ID));
+        if(index < 0) return new Result(false, "No credit card found.");
+        double value = ((User) App.getLoggedInAccount()).cards.get(index).getValue();
+        return new Result(true, "Current balance : $" + value);
+    }
+
+
+
+    private int getAddressIndexById(long ID) {
         User user = (User) App.getLoggedInAccount();
         int res = 0;
         for (Address address : user.addresses) {
             if (address.getID() == ID) return res;
+            res++;
+        }
+        return -1;
+    }
+
+    private int getCardIndexById(long ID) {
+        User user = (User) App.getLoggedInAccount();
+        int res = 0;
+        for (CreditCard card : user.cards) {
+            if(card.getID() == ID) return res;
             res++;
         }
         return -1;
@@ -149,5 +185,6 @@ public class UserMenuController {
         }
         return false;
     }
+
 
 }

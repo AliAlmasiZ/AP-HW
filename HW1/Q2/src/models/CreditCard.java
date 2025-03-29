@@ -1,6 +1,7 @@
 package models;
 
 public class CreditCard {
+    private static long count = 0;
     private final String cardNumber;
     private final Date expirationDate;
     private final String cvv;
@@ -42,5 +43,9 @@ public class CreditCard {
 
     public long getID() {
         return ID;
+    }
+
+    public void addValue(double value) {
+        this.value += value;
     }
 }

@@ -4,15 +4,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public enum ProductMenuCommands implements Commands{
-    /* common commands */
-    GO_TO("^go\\s+to\\s+-m\\s+(?<nameOfTheMenu>.+)$"),
-    GO_BACK("^go back$"),
-    EXIT("^exit$"),
     /* ProductMenu Commands */
-    SHOW_PRODUCTS("^show\\s+products\\s+-sortBy\\s+(?<sortBy>.+?)$"),
+    SHOW_PRODUCTS("^show\\s+products\\s+-sortBy\\s+(?<sortBy>rate|higher price to lower|lower price to higher|number of sold)$"),
     SHOW_INFORMATION("^show\\s+information\\s+of\\s+-id\\s+(?<productId>.+?)"),
-    RATE_PRODUCT("Rate\\s+product\\s+-r\\s+(?<number>.+?)(\\s+-m \"(?<message>.+?)\")?\\s+-id\\s+(?<id>.+?)$"),
-
+    RATE_PRODUCT("Rate\\s+product\\s+-r\\s+(?<number>.+?)(\\s+-m \"(?<message>.+?)\")?\\s+-id\\s+(?<id>-?\\d+)$"),
 
     ;
 
