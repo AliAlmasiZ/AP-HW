@@ -4,8 +4,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class User extends Account{
+    private ShoppingCart activeCart;
+    public final HashMap<Long, Order> idToOrder = new HashMap<>();
     private long addressId = 0;
     private long cardId = 0;
+    private long orderID = 100;
     private String firstName;
     private String lastName;
     public final ArrayList<Address> addresses = new ArrayList<>();
@@ -16,6 +19,7 @@ public class User extends Account{
         super(email, password);
         this.firstName = firstName;
         this.lastName = lastName;
+        this.activeCart = new ShoppingCart();
     }
 
     public String getFirstName() {
@@ -24,6 +28,10 @@ public class User extends Account{
 
     public String getLastName() {
         return lastName;
+    }
+
+    public String getFullName() {
+        return firstName + " " + lastName;
     }
 
     public void setFirstName(String firstName) {
@@ -43,5 +51,24 @@ public class User extends Account{
         this.cardId++;
         return this.cardId;
     }
+
+    public ShoppingCart getActiveCart() {
+        return activeCart;
+    }
+
+    public long checkout() {
+        Order order = activeCart;
+        orderID++;
+        order.setID(orderID);
+        idToOrder.put(orderID, order);
+        for (Product product : order.productsToQuantity.keySet()) {
+            Store store = product.getSeller();
+            store.addRevenue(order.productsToQuantity.get(product) * order.productsToPrice.get(product));
+            product.addSolds(order.productsToQuantity.get(product));
+        }
+        activeCart = new ShoppingCart();
+        return orderID;
+    }
+
 
 }

@@ -4,10 +4,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public enum UserMenuCommands implements Commands {
-    /* common commands */
-    GO_TO("^go\\s+to\\s+-m\\s+(?<nameOfTheMenu>.+)$"),
-    GO_BACK("^go back$"),
-    EXIT("^exit$"),
     /* UserMenu commands */
     LIST_MY_ORDERS("^list\\s+my\\s+orders$"),
     SHOW_ORDER_DETAILS("^show\\s+order\\s+details\\s+-id\\s+(?<orderId>-?\\d+?)$"), //non-integer gets invalid command;
@@ -15,13 +11,13 @@ public enum UserMenuCommands implements Commands {
     NAME("[A-Z][a-z]+"), //length check in controller
     EDIT_EMAIL("edit\\s+email\\s+-e\\s+(?<email>.+?)\\s+-p\\s+(?<password>.+?)"),
     EMAIL("^(?!\\S*[.]\\S*[.]\\S*@)[a-zA-Z\\d.]+@[a-z]+\\.com$"),
-    EDIT_PASSWORD("^edit\\s+password\\s+-np\\s+(?<newPass>.+?)s+-op\\s+(?<oldPass>.+?)$"),
+    EDIT_PASSWORD("^edit\\s+password\\s+-np\\s+(?<newPass>.+?)\\s+-op\\s+(?<oldPass>.+?)$"),
     PASSWORD("(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[A-Za-z\\d]+"),
 
     SHOW_MY_INFO("^show\\s+my\\s+info$"),
     ADD_ADDRESS(
             "^add\\s+address\\s+-country\\s+(?<country>.+?)\\s+" +
-            "-city\\s+(?<city>.+?)\\s+-street\\s+(?<street>.+?)\\s+-postal\\s+(?<postal>>+?)$"
+            "-city\\s+(?<city>.+?)\\s+-street\\s+(?<street>.+?)\\s+-postal\\s+(?<postal>.+?)$"
     ),
     POSTAL("\\d{10}"),
     DELETE_ADDRESS("^delete\\s+address\\s+-id\\s+(?<id>-?\\d+)$"),//non-integer gets invalid command!
@@ -37,8 +33,8 @@ public enum UserMenuCommands implements Commands {
     CHARGE_CREDIT_CARD("^Charge\\s+credit\\s+card\\s+-a\\s+(?<amount>-?\\d+.?\\d*)\\s+-id\\s+(?<id>-?\\d+?)$"),
     CHECK_CREDIT_CARD_BALANCE("^Check\\s+credit\\s+card\\s+balance\\s+-id\\s+(?<id>-?\\d+?)$"),
     SHOW_PRODUCTS_IN_CART("^show\\s+products\\s+in\\s+cart$"),
-    CHECKOUT("^checkout\\s+-card\\s+(?<cardID>.+?)\\s+-address\\s+(?<addressId>.+?)$"),
-    REMOVE_PRODUCT("^remove\\s+from\\s+cart\\s+-product\\s+(?<productID>.+?)\\s+-quantity\\s+(?<amount>.+?)$"),
+    CHECKOUT("^checkout\\s+-card\\s+(?<cardID>-?\\d+)\\s+-address\\s+(?<addressId>-?\\d+)$"),
+    REMOVE_PRODUCT("^remove\\s+from\\s+cart\\s+-product\\s+(?<productID>-?\\d+)\\s+-quantity\\s+(?<amount>-?\\d+)$"),
 
     ;
 

@@ -6,4 +6,7 @@ public enum sortBy {
     LOWER_PRICE_TO_HIGHER,
     NUMBER_OF_SOLDS;
 
+
+
+
 }

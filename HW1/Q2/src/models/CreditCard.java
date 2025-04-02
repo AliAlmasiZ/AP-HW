@@ -1,7 +1,6 @@
 package models;
 
 public class CreditCard {
-    private static long count = 0;
     private final String cardNumber;
     private final Date expirationDate;
     private final String cvv;

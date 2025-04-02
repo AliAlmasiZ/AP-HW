@@ -2,16 +2,47 @@ package controllers;
 
 import models.*;
 import models.enums.UserMenuCommands;
+import views.MainMenu;
 
+import java.util.ArrayList;
 import java.util.regex.Matcher;
 
 
-public class UserMenuController {
+public class UserMenuController extends MainMenuController {
     public Result listMyOrders() {
-
+        User user =(User) App.getLoggedInAccount();
+        if(user.idToOrder.isEmpty())
+            return new Result(false, "No orders found.");
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("order History  \n").append("━━━━━━━━━━━━━━━━━━━━━━━━━━  \n");
+        for (Order order : user.idToOrder.values()) {
+            stringBuilder.append(order.toString());
+        }
+        return new Result(true, stringBuilder.toString());
     }
 
     public Result showOrderDetails(String orderId) {
+        long id = Long.parseLong(orderId);
+        User user = (User) App.getLoggedInAccount();
+        Order order = user.idToOrder.get(id);
+        if(order == null)
+            return new Result(false, "Order not found.");
+        ArrayList<Product> products = new ArrayList<>(order.productsToQuantity.keySet());
+        products.sort((p1, p2) -> Long.compare(p1.getID(), p2.getID()));
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("Products in this order:  \n\n");
+        for (int i = 0; i < products.size(); i++) {
+            Product product = products.get(i);
+            stringBuilder.append(i + 1).append("-").append(printOrderProduct(
+                    product,
+                    order.productsToQuantity.get(product),
+                    order.productsToPrice.get(product)
+            ));
+        }
+        stringBuilder
+                .append("━━━━━━━━━━━━━━━━━━━━━━━━━━  \n")
+                .append(String.format("**Total Cost: $%.1f** ", order.getTotalCost()));
+        return new Result(true, stringBuilder.toString());
 
     }
 
@@ -19,7 +50,7 @@ public class UserMenuController {
         User user = (User) App.getLoggedInAccount();
         if (!password.equals(user.getPassword()))
             return new Result(false, "Incorrect password. Please try again.");
-        if (!firstName.equals(user.getFirstName()) || !lastName.equals(user.getLastName()))
+        if (firstName.equals(user.getFirstName()) || lastName.equals(user.getLastName()))
             return new Result(false, "The new name must be different from the current name.");
         if (firstName.length() < 3 || lastName.length() < 3)
             return new Result(false, "Name is too short.");
@@ -37,16 +68,18 @@ public class UserMenuController {
         if (email.equals(user.getEmail()))
             return new Result(false, "The new email must be different from the current email.");
         if (UserMenuCommands.EMAIL.getMatcher(email) == null)
-            return new Result(false, "Email already exists.");
+            return new Result(false, "Incorrect email format.");
         if (App.users.get(email) != null || App.stores.get(email) != null)
             return new Result(false, "Email already exists.");
+        App.users.remove(user.getEmail());
         user.setEmail(email);
+        App.users.put(email, user);
         return new Result(true, "Email updated successfully.");
     }
 
     public Result editPassword(String newPass, String oldPass) {
         User user = (User) App.getLoggedInAccount();
-        if (oldPass.equals(user.getPassword()))
+        if (!oldPass.equals(user.getPassword()))
             return new Result(false, "Incorrect password. Please try again.");
         if (oldPass.equals(newPass))
             return new Result(false, "The new password must be different from the old password.");
@@ -136,10 +169,12 @@ public class UserMenuController {
         if(index < 0) return new Result(false, "No credit card found.");
         CreditCard card = ((User) App.getLoggedInAccount()).cards.get(index);
         card.addValue(value);
+        amount = String.format("%.1f", value);
+        String newBalance = String.format("%.1f", card.getValue());
         return new Result(
                 true,
                 "$" + amount + " has been added to the credit card " + card.getID() +
-                        ". New balance: $" + card.getValue() + "."
+                        ". New balance: $" + newBalance + "."
         );
     }
 
@@ -147,10 +182,87 @@ public class UserMenuController {
         int index = getCardIndexById(Long.parseLong(ID));
         if(index < 0) return new Result(false, "No credit card found.");
         double value = ((User) App.getLoggedInAccount()).cards.get(index).getValue();
-        return new Result(true, "Current balance : $" + value);
+        return new Result(true, String.format("Current balance : $%.1f", value));
     }
 
+    public Result showProductsInCart() {
+        User user = (User) App.getLoggedInAccount();
+        if(user.getActiveCart().productsToQuantity.isEmpty())
+            return new Result(false, "Your shopping cart is empty.");
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("Your Shopping Cart:\n").append("------------------------------------\n");
+        ArrayList<Product> products = new ArrayList<>(user.getActiveCart().productsToQuantity.keySet());
+        products.sort((p1, p2) -> p1.getName().compareTo(p2.getName()));
+        for (Product product : products) {
+            stringBuilder.append(printCartProduct(
+                    product,
+                    user.getActiveCart().productsToQuantity.get(product),
+                    user.getActiveCart().productsToPrice.get(product)
+            ));
+        }
+        return new Result(true, stringBuilder.toString());
+    }
 
+    public Result checkout(String cardID, String addressID) {
+        User user = (User) App.getLoggedInAccount();
+        ShoppingCart cart = user.getActiveCart();
+        if(cart.productsToQuantity.isEmpty())
+            return new Result(false, "Your shopping cart is empty.");
+        int addressIndex = getAddressIndexById(Long.parseLong(addressID));
+        int cardIndex = getCardIndexById(Long.parseLong(cardID));
+        if(addressIndex == -1)
+            return new Result(false, "The provided address ID is invalid.");
+        if(cardIndex == -1)
+            return new Result(false, "The provided card ID is invalid.");
+        CreditCard card = user.cards.get(cardIndex);
+        if(cart.getTotalCost() > card.getValue())
+            return new Result(false, "Insufficient balance in the selected card.");
+        card.addValue(-cart.getTotalCost());
+        cart.setShippingAddress(user.addresses.get(addressIndex));
+        long ID = user.checkout();
+        return new Result(true, String.format("""
+                Order has been placed successfully!
+                Order ID: %d
+                Total Paid: $%.1f
+                Shipping to: %s""",
+                ID,
+                user.idToOrder.get(ID).getTotalCost(),
+                user.idToOrder.get(ID).getShippingAddress().toString()
+        ));
+    }
+
+    public Result removeFromCart(String productID, String amount) {
+        User user = (User) App.getLoggedInAccount();
+        ShoppingCart cart = user.getActiveCart();
+        long id = Long.parseLong(productID);
+        int quantity = Integer.parseInt(amount);
+        if(cart.productsToQuantity.isEmpty())
+            return new Result(false, "Your shopping cart is empty.");
+        Product product = cart.findProductById(id);
+        if(product == null)
+            return new Result(false, "The product with ID " + productID + " is not in your cart.");
+        if(quantity < 1)
+            return new Result(false, "Quantity must be a positive number.");
+        if(cart.productsToQuantity.get(product) < quantity)
+            return new Result(
+                    false,
+                    "You only have " + cart.productsToQuantity.get(product) +
+                            " of \"" + product.getName() +"\" in your cart."
+            );
+        cart.removeProduct(product, quantity);
+        if(cart.productsToQuantity.get(product) == 0) {
+            cart.productsToQuantity.remove(product);
+            cart.productsToPrice.remove(product);
+            return new Result(
+                    true,
+                    "\"" + product.getName() + "\" has been completely removed from your cart."
+            );
+        }
+        return new Result(
+                true,
+                "Successfully removed " + quantity + " of \"" + product.getName() + "\" from your cart."
+        );
+    }
 
     private int getAddressIndexById(long ID) {
         User user = (User) App.getLoggedInAccount();
@@ -184,6 +296,42 @@ public class UserMenuController {
             if(card.getCardNumber().equals(cardNumber)) return true;
         }
         return false;
+    }
+
+    private String printOrderProduct(Product product, int quantity, double price) {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder
+                .append(" Product Name: ").append(product.getName()).append("\n")
+                .append("    ID: ").append(product.getID()).append("\n")
+                .append("    Brand: ").append(product.getSeller().getBrand()).append("\n")
+                .append(String.format("    Rating: %.1f/5", product.getRating())).append("\n")
+                .append("    Quantity: ").append(quantity).append("\n")
+                .append(String.format("Price: $%.1f ", price));
+        if(quantity > 1)
+            stringBuilder.append("each");
+        stringBuilder.append("\n\n");
+        return stringBuilder.toString();
+    }
+
+    private String printCartProduct(Product product, int quantity, double price) { // :(
+        return String.format("""
+                        Product ID  : %d
+                        Name        : %s
+                        Quantity    : %d
+                        Price       : $%.1f (each)
+                        Total Price : $%.1f
+                        Brand       : %s
+                        Rating      : %.1f/5
+                        ------------------------------------
+                        """,
+                product.getID(),
+                product.getName(),
+                quantity,
+                price,
+                price * quantity,
+                product.getSeller().getBrand(),
+                product.getRating()
+        );
     }
 
 

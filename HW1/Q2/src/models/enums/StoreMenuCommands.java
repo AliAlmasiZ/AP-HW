@@ -4,22 +4,19 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public enum StoreMenuCommands implements Commands {
-    /* common commands */
-    GO_TO("^go\\s+to\\s+-m\\s+(?<nameOfTheMenu>.+)$"),
-    GO_BACK("^go back$"),
-    EXIT("^exit$"),
     /* StoreMenu Commands */
     ADD_PRODUCT(
-            "^add product\\s+-n\\s+\"(?<name>.+?)\"\\s+-pc\\s+(?<producerCost>.+?)\\s+" +
-                    "-p\\s+(?<price>.+?)]\\s+-about \"<aboutThisItem>\" -np <NumberOfProductToSell>"
+            "^add\\s+product\\s+-n\\s+\"(?<name>.+)\"\\s+-pc\\s+(?<producerCost>-?\\d+\\.?\\d*)\\s+" +
+                    "-p\\s+(?<price>-?\\d+\\.?\\d*)\\s+-about\\s+\"(?<aboutThisItem>.+)\"\\s+-np\\s+(?<NumberOfProductToSell>-?\\d+)$"
     ),
     APPLY_DISCOUNT(
-            "apply\\s+discount\\s+-p\\s+(?<productID>.+?)\\s+" +
-                    "-d\\s+(?<discountPercentage>.+?)\\s+-q\\s+(?<quantity>.+?)$"
+            "^apply\\s+discount\\s+-p\\s+(?<productID>-?\\d+)\\s+" +
+                    "-d\\s+(?<discountPercentage>-?\\d+)\\s+-q\\s+(?<quantity>\\d+)$"
     ),
-    SHOW_PROFIT("show\\s+profit"),
-    SHOW_LIST_OF_PRODUCTS("show\\s+list\\s+of\\s+products"),
-    ADD_STOCK("add\\s+stock\\s+-product\\s+(?<productId>.+?)\\s+-amount\\s+(?<amount>.+?)"),
+    SHOW_PROFIT("^show\\s+profit$"),
+    SHOW_LIST_OF_PRODUCTS("^show\\s+list\\s+of\\s+products$"),
+    ADD_STOCK("^add\\s+stock\\s+-product\\s+(?<productId>-?\\d+)\\s+-amount\\s+(?<amount>-?\\d+)$"),
+    UPDATE_PRICE("^update\\s+price\\s+-product\\s+(?<productId>-?\\d+)\\s+-price\\s+(?<newPrice>-?\\d+\\.?\\d*)$")
 
     ;
 

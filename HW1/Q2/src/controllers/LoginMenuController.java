@@ -1,9 +1,6 @@
 package controllers;
 
-import models.App;
-import models.Result;
-import models.Store;
-import models.User;
+import models.*;
 import models.enums.LoginMenuCommands;
 import models.enums.Menu;
 
@@ -36,10 +33,7 @@ public class LoginMenuController extends MainMenuController {
         return new Result(true, "Store account for \"" + brand + "\" created successfully.");
     }
 
-    public Result loginUser(String input) {
-        Matcher matcher = LoginMenuCommands.LOGIN_USER.getMatcher(input);
-        String email = matcher.group("email");
-        String password = matcher.group("password");
+    public Result loginUser(String email, String password) {
         User user = App.users.get(email);
         if(user == null)
             return new Result(false, "No user account found with the provided email.");
@@ -51,14 +45,11 @@ public class LoginMenuController extends MainMenuController {
         return new Result(true, "User logged in successfully. Redirecting to the MainMenu ...");
     }
 
-    public Result loginStore(String input) {
-        Matcher matcher = LoginMenuCommands.LOGIN_STORE.getMatcher(input);
-        String email = matcher.group("email");
-        String password = matcher.group("password");
+    public Result loginStore(String email, String password) {
         Store store = App.stores.get(email);
         if(store == null)
             return new Result(false, "No store account found with the provided email.");
-        if(password.equals(store.getPassword()))
+        if(!password.equals(store.getPassword()))
             return new Result(false, "Password is incorrect.");
 
         App.setLoggedInAccount(store);
@@ -86,17 +77,32 @@ public class LoginMenuController extends MainMenuController {
         return new Result(true, "Logged out successfully. Redirecting to the MainMenu ...");
     }
 
-    public Result deleteAccount(String input) {
-        String password = LoginMenuCommands.DELETE_ACOUNT.getMatcher(input).group("password");
-        String reEnterPassword = LoginMenuCommands.DELETE_ACOUNT.getMatcher(input).group("reEnterPassword");
+    public Result deleteAccount(String password, String reEnterPassword) {
         if(App.getLoggedInAccount() == null)
             return new Result(false, "You should login first.");
         if(!password.equals(reEnterPassword))
             return new Result(false, "Re-entered password is incorrect.");
         if(!password.equals(App.getLoggedInAccount().getPassword()))
             return new Result(false, "Password is incorrect.");
-        //TODO
+        if(App.getLoggedInAccount().getClass().equals(User.class)) {
+            User user = (User) App.getLoggedInAccount();
+            ShoppingCart cart = user.getActiveCart();
+            for (Product product : cart.productsToQuantity.keySet()) {
+                cart.removeProduct(product, cart.productsToQuantity.get(product));
+            }
+            App.users.remove(user.getEmail());
+        } else {
+            Store store = (Store) App.getLoggedInAccount();
+            for (User user : App.users.values()) {
+                for (Product product : user.getActiveCart().productsToQuantity.keySet()) {
+                    if(product.getSeller().equals(store))
+                        user.getActiveCart().removeProduct(product, user.getActiveCart().productsToQuantity.get(product));
+                }
+            }
+            App.stores.remove(store.getEmail());
+        }
         App.setActiveMenu(Menu.MAIN_MENU);
+        App.setLoggedInAccount(null);
         return new Result(true, "Account deleted successfully. Redirecting to the MainMenu ...");
     }
 

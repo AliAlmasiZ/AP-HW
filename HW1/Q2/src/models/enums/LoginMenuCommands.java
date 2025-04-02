@@ -6,15 +6,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public enum LoginMenuCommands implements Commands {
-    /* common commands */
-    GO_TO("^go\\s+to\\s+-m\\s+(?<nameOfTheMenu>.+)$"),
-    GO_BACK("^go back$"),
-    EXIT("^exit$"),
     /* LoginMenu commands */
     CREATE_USER(
             "^create\\s+a\\s+user\\s+account\\s+" +
                     "-fn\\s+(?<firstName>.+?)\\s+" +
-                    "^-ln\\s+(?<lastName>.+?)\\s+" +
+                    "-ln\\s+(?<lastName>.+?)\\s+" +
                     "-p\\s+(?<password>.+?)\\s+" +
                     "-rp\\s+(?<reEnteredPassword>.+?)\\s+" +
                     "-e\\s+(?<email>.+?)$"

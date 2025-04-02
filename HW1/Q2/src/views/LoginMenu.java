@@ -2,6 +2,7 @@ package views;
 
 import controllers.LoginMenuController;
 import models.enums.LoginMenuCommands;
+import models.enums.MainMenuCommands;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;
@@ -29,13 +30,18 @@ public class LoginMenu extends MainMenu implements AppMenu {
                     matcher.group("email")
             ));
         } else if ((matcher = LoginMenuCommands.LOGIN_USER.getMatcher(input)) != null) {
-            System.out.println(controller.loginUser(input));
+            System.out.println(controller.loginUser(matcher.group("email"), matcher.group("password")));
         } else if ((matcher = LoginMenuCommands.LOGIN_STORE.getMatcher(input)) != null) {
-            System.out.println(controller.loginStore(input));
+            System.out.println(controller.loginStore(matcher.group("email"), matcher.group("password")));
         } else if ((matcher = LoginMenuCommands.LOGOUT.getMatcher(input)) != null) {
             System.out.println(controller.logout());
         } else if ((matcher = LoginMenuCommands.DELETE_ACOUNT.getMatcher(input)) != null) {
-            System.out.println(controller.deleteAccount(input));
+            System.out.println(controller.deleteAccount(
+                    matcher.group("password"),
+                    matcher.group("reEnterPassword")
+            ));
+        } else if((matcher = MainMenuCommands.GO_BACK.getMatcher(input)) != null) {
+            System.out.println(controller.goBack());
         } else {
             System.out.println("invalid command");
         }

@@ -8,7 +8,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 
 public class MainMenu implements AppMenu {
-    MainMenuController controller = new MainMenuController();
+    private final MainMenuController controller = new MainMenuController();
     @Override
     public void checker(Scanner scanner) {
         String input = scanner.nextLine().trim();

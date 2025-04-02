@@ -39,4 +39,9 @@ public class Address {
     public boolean equals(Object obj) {
         return obj.getClass().equals(Address.class) && ((Address)obj).getPostal().equals(this.postal);
     }
+
+    @Override
+    public String toString() {
+        return this.street + ", " + this.city + ", " + this.country;
+    }
 }

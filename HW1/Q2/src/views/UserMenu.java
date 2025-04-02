@@ -1,6 +1,7 @@
 package views;
 
 import controllers.UserMenuController;
+import models.enums.MainMenuCommands;
 import models.enums.UserMenuCommands;
 
 import java.util.Scanner;
@@ -52,10 +53,14 @@ public class UserMenu extends MainMenu implements AppMenu{
             System.out.println(controller.chargeCreditCard(matcher.group("amount"), matcher.group("id")));
         } else if((matcher = UserMenuCommands.CHECK_CREDIT_CARD_BALANCE.getMatcher(input)) != null) {
             System.out.println(controller.checkCreditCardBalance(matcher.group("id")));
-        } else if((matcher = UserMenuCommands.LIST_ADDRESS.getMatcher(input)) != null) {
-            System.out.println(controller.listMyAddresses());
-        } else if((matcher = UserMenuCommands.LIST_ADDRESS.getMatcher(input)) != null) {
-            System.out.println(controller.listMyAddresses());
+        } else if((matcher = UserMenuCommands.SHOW_PRODUCTS_IN_CART.getMatcher(input)) != null) {
+            System.out.println(controller.showProductsInCart());
+        } else if((matcher = UserMenuCommands.CHECKOUT.getMatcher(input)) != null) {
+            System.out.println(controller.checkout(matcher.group("cardID"), matcher.group("addressId")));
+        } else if((matcher = UserMenuCommands.REMOVE_PRODUCT.getMatcher(input)) != null) {
+            System.out.println(controller.removeFromCart(matcher.group("productID"), matcher.group("amount")));
+        } else if((matcher = MainMenuCommands.GO_BACK.getMatcher(input)) != null) {
+            System.out.println(controller.goBack());
         } else {
             System.out.println("invalid command");
         }
