@@ -99,6 +99,7 @@ public class LoginMenuController extends MainMenuController {
                         user.getActiveCart().removeProduct(product, user.getActiveCart().productsToQuantity.get(product));
                 }
             }
+            App.products.values().removeIf(product -> product.getSeller().equals(store));
             App.stores.remove(store.getEmail());
         }
         App.setActiveMenu(Menu.MAIN_MENU);

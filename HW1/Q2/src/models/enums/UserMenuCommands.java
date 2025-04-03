@@ -24,7 +24,7 @@ public enum UserMenuCommands implements Commands {
     LIST_ADDRESS("^list\\s+my\\s+addresses$"),
     ADD_CREDIT_CARD(
             "^add\\s+a\\s+credit\\s+card\\s+-number\\s+(?<cardNumber>.+?)\\s+-ed\\s+(?<expirationDate>.+?)\\s+" +
-                    "-cvv\\s+(?<cvv>.+?)\\s+-initialValue\\s+(?<initialValue>-?\\d+.?\\d*)$"
+                    "-cvv\\s+(?<cvv>.+?)\\s+-initialValue\\s+(?<initialValue>-?\\d+\\.?\\d*)$"
 
     ),
     CARD_NUMBER("\\d{16}"),

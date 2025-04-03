@@ -24,11 +24,11 @@ public class ProductMenuController extends MainMenuController {
             stringBuilder.append(printProduct(products.get(i + page * 10)));
         }
         stringBuilder
-                .append("------------------------------------------------  \n")
+                .append("------------------------------------------------\n")
                 .append("(Showing ").append(page * 10 + 1).append("-").append(page * 10 + 10)
                 .append(" out of ").append(products.size()).append(")");
         if ((page + 1) * 10 < products.size()) {
-            stringBuilder.append("\nUse `show next 10 products' to see more.  ");
+            stringBuilder.append("\nUse `show next 10 products' to see more.");
         }
         return new Result(true, stringBuilder.toString());
     }
@@ -48,17 +48,17 @@ public class ProductMenuController extends MainMenuController {
             return new Result(false, "No product found.");
         StringBuilder sb = new StringBuilder();
         sb
-                .append("Product Details  \n").append("------------------------------------------------\n")
+                .append("Product Details\n").append("------------------------------------------------\n")
                 .append("Name: ").append(product.getName()).append(product.saleOrSoldOut()).append("\n")
                 .append("ID: ").append(product.getID()).append("\n")
                 .append("Rating: ").append(String.format("%.1f/5\n", product.getRating()))
                 .append(product.stirngPrice()).append("\n")
                 .append("Brand: ").append(product.getSeller().getBrand()).append("\n")
                 .append("Number of Products Remaining: ").append(product.getStock()).append("\n")
-                .append("About this item:  \n")
+                .append("About this item:\n")
                 .append(product.getAbout()).append("\n")
                 .append("\n")
-                .append("Customer Reviews:  \n")
+                .append("Customer Reviews:\n")
                 .append("------------------------------------------------\n")
                 .append(printReviews(product));
         return new Result(true, sb.toString());

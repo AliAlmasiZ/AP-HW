@@ -6,9 +6,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class App {
-    public static final HashMap<Long, Product> products = new HashMap<>();
-    public static final HashMap<String, User> users = new HashMap<>();
-    public static final HashMap<String, Store> stores = new HashMap<>();
+    public static final HashMap<Long, Product> products = new HashMap<>();//id to product
+    public static final HashMap<String, User> users = new HashMap<>();//email to user
+    public static final HashMap<String, Store> stores = new HashMap<>();//email to store
     private static Menu activeMenu = Menu.MAIN_MENU;
     private static Account loggedInAccount = null;
 

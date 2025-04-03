@@ -57,6 +57,7 @@ public class User extends Account{
     }
 
     public long checkout() {
+        activeCart.getTotalCost();
         Order order = activeCart;
         orderID++;
         order.setID(orderID);

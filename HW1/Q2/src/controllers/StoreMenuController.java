@@ -33,7 +33,8 @@ public class StoreMenuController extends MainMenuController{
         long id = Long.parseLong(ID);
         int discount = Integer.parseInt(discountPercent);
         int q = Integer.parseInt(quantity);
-        Product product = App.products.get(id);
+        Store store = (Store) App.getLoggedInAccount();
+        Product product = store.products.get(id);
         if (discount < 1 || discount > 100)
             return new Result(false, "Discount percentage must be between 1 and 100.");
         if (product == null)
@@ -54,7 +55,7 @@ public class StoreMenuController extends MainMenuController{
         double revenue = store.getRevenue();
         double costs = store.getCosts();
         double profit = revenue - costs;
-        message = String.format("Total Profit: $%.1f  \n(Revenue: $%.1f - Costs: $%.1f)", profit, revenue, costs);
+        message = String.format("Total Profit: $%.1f\n(Revenue: $%.1f - Costs: $%.1f)", profit, revenue, costs);
         return new Result(true, message);
     }
 
@@ -65,7 +66,7 @@ public class StoreMenuController extends MainMenuController{
             return new Result(false, "No products available in the store.");
         List<Product> products = new ArrayList<>(store.products.values());
         products.sort((p1, p2) -> Long.compare(p1.getID(), p2.getID()));
-        stringBuilder.append("Store Products (Sorted by date added)  \n");
+        stringBuilder.append("Store Products (Sorted by date added)\n");
         for (Product product : products) {
             stringBuilder.append(printProduct(product));
         }

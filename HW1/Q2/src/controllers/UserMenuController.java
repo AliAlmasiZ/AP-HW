@@ -14,7 +14,7 @@ public class UserMenuController extends MainMenuController {
         if(user.idToOrder.isEmpty())
             return new Result(false, "No orders found.");
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("order History  \n").append("━━━━━━━━━━━━━━━━━━━━━━━━━━  \n");
+        stringBuilder.append("order History\n").append("━━━━━━━━━━━━━━━━━━━━━━━━━━\n");
         for (Order order : user.idToOrder.values()) {
             stringBuilder.append(order.toString());
         }
@@ -30,7 +30,7 @@ public class UserMenuController extends MainMenuController {
         ArrayList<Product> products = new ArrayList<>(order.productsToQuantity.keySet());
         products.sort((p1, p2) -> Long.compare(p1.getID(), p2.getID()));
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("Products in this order:  \n\n");
+        stringBuilder.append("Products in this order:\n\n");
         for (int i = 0; i < products.size(); i++) {
             Product product = products.get(i);
             stringBuilder.append(i + 1).append("-").append(printOrderProduct(
@@ -40,8 +40,8 @@ public class UserMenuController extends MainMenuController {
             ));
         }
         stringBuilder
-                .append("━━━━━━━━━━━━━━━━━━━━━━━━━━  \n")
-                .append(String.format("**Total Cost: $%.1f** ", order.getTotalCost()));
+                .append("━━━━━━━━━━━━━━━━━━━━━━━━━━\n")
+                .append(String.format("**Total Cost: $%.1f**", order.getTotalCost()));
         return new Result(true, stringBuilder.toString());
 
     }
@@ -121,16 +121,16 @@ public class UserMenuController extends MainMenuController {
             return new Result(false, "No addresses found. Please add an address first.");
         }
         StringBuilder sb = new StringBuilder();
-        sb.append("Saved Addresses\n").append("━━━━━━━━━━━━━━━━━━━━━━━━━━  \n");
+        sb.append("Saved Addresses\n").append("━━━━━━━━━━━━━━━━━━━━━━━━━━");
         for (Address address : user.addresses) {
             sb
-                    .append("\n")
+                    .append("\n\n")
                     .append("Address ").append(address.getID()).append(":\n")
                     .append("Postal Code: ").append(address.getPostal()).append("\n")
                     .append("Country: ").append(address.getCountry()).append("\n")
                     .append("City: ").append(address.getCity()).append("\n")
                     .append("Street: ").append(address.getStreet()).append("\n")
-                    .append("\n━━━━━━━━━━━━━━━━━━━━━━━━━━  \n");
+                    .append("\n━━━━━━━━━━━━━━━━━━━━━━━━━━");
         }
         return new Result(true, sb.toString());
 
@@ -190,9 +190,14 @@ public class UserMenuController extends MainMenuController {
         if(user.getActiveCart().productsToQuantity.isEmpty())
             return new Result(false, "Your shopping cart is empty.");
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("Your Shopping Cart:\n").append("------------------------------------\n");
+        stringBuilder.append("Your Shopping Cart:\n").append("------------------------------------");
         ArrayList<Product> products = new ArrayList<>(user.getActiveCart().productsToQuantity.keySet());
-        products.sort((p1, p2) -> p1.getName().compareTo(p2.getName()));
+        products.sort((p1, p2) -> {
+            int res = p1.getName().compareTo(p2.getName());
+            if(res == 0)
+                return Long.compare(p1.getID(), p2.getID());
+            return res;
+        });
         for (Product product : products) {
             stringBuilder.append(printCartProduct(
                     product,
@@ -253,6 +258,7 @@ public class UserMenuController extends MainMenuController {
         if(cart.productsToQuantity.get(product) == 0) {
             cart.productsToQuantity.remove(product);
             cart.productsToPrice.remove(product);
+            cart.productsToDiscount.remove(product);
             return new Result(
                     true,
                     "\"" + product.getName() + "\" has been completely removed from your cart."
@@ -306,15 +312,16 @@ public class UserMenuController extends MainMenuController {
                 .append("    Brand: ").append(product.getSeller().getBrand()).append("\n")
                 .append(String.format("    Rating: %.1f/5", product.getRating())).append("\n")
                 .append("    Quantity: ").append(quantity).append("\n")
-                .append(String.format("Price: $%.1f ", price));
+                .append(String.format("    Price: $%.1f", price));
         if(quantity > 1)
-            stringBuilder.append("each");
+            stringBuilder.append(" each");
         stringBuilder.append("\n\n");
         return stringBuilder.toString();
     }
 
     private String printCartProduct(Product product, int quantity, double price) { // :(
         return String.format("""
+                        
                         Product ID  : %d
                         Name        : %s
                         Quantity    : %d
@@ -322,8 +329,7 @@ public class UserMenuController extends MainMenuController {
                         Total Price : $%.1f
                         Brand       : %s
                         Rating      : %.1f/5
-                        ------------------------------------
-                        """,
+                        ------------------------------------""",
                 product.getID(),
                 product.getName(),
                 quantity,

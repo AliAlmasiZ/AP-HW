@@ -35,7 +35,7 @@ public class Order {
                 .append("\n")
                 .append("Products (Sorted by Name):  \n");
         for (int i = 0; i < products.size(); i++) {
-            stringBuilder.append(i + 1).append("- ").append(products.get(i).getName()).append("\n");
+            stringBuilder.append("  ").append(i + 1).append("- ").append(products.get(i).getName()).append("\n");
         }
         stringBuilder.append("\n").append("━━━━━━━━━━━━━━━━━━━━━━━━━━  \n");
         return stringBuilder.toString();
@@ -49,25 +49,13 @@ public class Order {
         this.ID = ID;
     }
 
-    public void addProduct(Product product, int quantity) {
-        productsToQuantity.put(product, productsToQuantity.getOrDefault(product, 0) + quantity);
-        productsToPrice.put(product, product.getPrice());
-        totalCost += product.getPrice() * quantity;
-        if(product.getDicountProducts() > 0)
-            product.setDicountProducts(product.getDicountProducts() - quantity);
-        product.addStock(-quantity);
-    }
+
 
     public double getTotalCost() {
         return totalCost;
     }
 
-    public void removeProduct(Product product, int quantity) {
-        totalCost -= productsToPrice.get(product) * quantity;
-        product.addStock(quantity);
-        productsToQuantity.computeIfPresent(product, (key, oldValue) -> oldValue - quantity);
 
-    }
 
     public void setShippingAddress(Address shippingAddress) {
         this.shippingAddress = shippingAddress;

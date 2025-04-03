@@ -120,7 +120,7 @@ public class Product {
         );
         if (this.getDicountProducts() > 0) {
             price = String.format(
-                    "Price: ~$%.1f~ → $%.1f (-%d%%) ",
+                    "Price: ~$%.1f~ → $%.1f (-%d%%)",
                     this.getOrginalPrice(),
                     this.getPrice(),
                     this.getDiscount()
@@ -135,7 +135,7 @@ public class Product {
             string = "  **(On Sale! " + this.getDicountProducts() + " units discounted)**";
         }
         if(this.getStock() == 0) {
-            string = "  **(Sold out!)** ";
+            string = "  **(Sold out!)**";
         }
         return string;
     }

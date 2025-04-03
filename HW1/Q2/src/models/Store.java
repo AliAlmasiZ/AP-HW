@@ -36,4 +36,13 @@ public class Store extends Account{
     public String getBrand() {
         return this.brand;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj == null) return false;
+        if(obj == this ) return true;
+        if(!obj.getClass().equals(this.getClass())) return false;
+        Store store = (Store) obj;
+        return this.getEmail().equals(store.getEmail());
+    }
 }
