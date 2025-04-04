@@ -1,0 +1,115 @@
+go to  -m  	LoginMenu
+create a user account -fn Ali -ln Alm  -p Pass123 -rp Pass123 -e user1@gmail.com
+create a user account -fn Mahdi -ln Ghasemi -p Pass123 -rp Pass123 -e user2@gmail.com
+create a user account -fn Amin -ln Pakar -p Pass123 -rp Pass123 -e user3@gmail.com
+
+create a store account -b "a" -p Pass123 -rp Pass123 -e store1@gmail.com
+create a store account -b "Samsung" -p Pass123 -rp Pass123 -e store1@gmail.com
+create a store account -b "Apple" -p Pass123 -rp Pass123 -e store2@gmail.com
+create a store account -b "AminStore" -p Pass123 -rp Pass123 -e store3@gmail.com
+create a store account -b "MahdiStore" -p Pass123 -rp Pass123 -e store4@gmail.com
+## Store 1 : adds 2 product
+login as store -e store1@gmail.com -p Pass123
+go to -m storeMenu
+go to -m StoreMenu
+add product -n "A35s" -pc 500.23 -p 999.999 -about "a good phone" -np 100
+add product -n "A55" -pc 700.60 -p 1345.5 -about "a better phone" -np 10
+show profit
+go back
+go to -m LoginMenu
+logout
+## Store 2 : adds some product and discount
+go to -m LoginMenu
+login as store -e store2@gmail.com -p Pass123
+go to -m StoreMenu
+add product -n "IPhone 15 Pro" -pc 500.23 -p 999.999 -about "a good phone" -np 100
+add product -n "IPhone 15 Pro Max" -pc 700.60 -p 1345.5 -about "a better phone" -np 10
+apply discount -p 101 -d 10 -q 2
+apply discount -p 104 -d 10 -q 12
+apply discount -p 104 -d 10 -q 10
+show profit
+go back
+go to -m LoginMenu
+logout
+## Store 3:
+go to -m LoginMenu
+login as store -e store3@gmail.com -p Pass123
+go to -m StoreMenu
+add product -n "Moz 1" -pc 700.60 -p 1345.5 -about "Moz moozi" -np 105
+add product -n "Moz 2" -pc 700.60 -p 1345.5 -about "Moz moozi" -np 106
+add product -n "Moz 3" -pc 700.60 -p 1345.5 -about "Moz moozi" -np 107
+add product -n "Moz 4" -pc 700.60 -p 1345.5 -about "Moz moozi" -np 108
+add product -n "Moz 5" -pc 700.60 -p 1345.5 -about "Moz moozi" -np 109
+add product -n "Moz 6" -pc 700.60 -p 1345.5 -about "Moz moozi" -np 110
+add product -n "Moz 7" -pc 700.60 -p 1345.5 -about "Moz moozi" -np 111
+add product -n "Moz 8" -pc 700.60 -p 1345.5 -about "Moz moozi" -np 112
+add product -n "Moz 9" -pc 700.60 -p 1345.5 -about "Moz moozi" -np 113
+add product -n "Moz 10" -pc 700.60 -p 1345.5 -about "Moz moozi" -np 114
+add product -n "Moz 11" -pc 700.60 -p 1345.5 -about "Moz moozi" -np 115
+show profit
+go back
+go to -m LoginMenu
+logout
+## Store 4:
+go to -m LoginMenu
+login as store -e store4@gmail.com -p Pass123
+go back
+go to -m StoreMenu
+add product -n "Moz 12" -pc 700.60 -p 1345.5 -about "Moz moozi" -np 116
+apply discount -p 101 -d -1000 -q -200
+apply discount -p 116 -d -1000 -q -200
+apply discount -p 116 -d 0 -q -200
+apply discount -p 116 -d 100 -q 200
+apply discount -p 102 -d 100 -q 10
+apply discount -p 103 -d 100 -q 5
+go back
+go to -m LoginMenu
+logout
+## User 3 :
+go to -m LoginMenu
+login as user -e user3@gmail.com -p Pass123
+go to -m ProductMenu
+show next 10 products
+show products -sortBy rate
+show next 10 products
+show past 10 products
+doonya yalan doonya di
+show next 10 products
+show next 10 products
+show past 10 products
+show past 10 products
+show past 10 products
+show past 10 products
+show next 10 products
+show next 10 products
+add to cart -product 104 -quantity 10
+show products -sortBy rate
+go back
+go to -m UserMenu
+remove from cart -product 103 -quantity 1
+remove from cart -product 104 -quantity 4
+go back
+go to -m ProductMenu
+show products -sortBy rate
+go back
+go to -m LoginMenu
+delete account -p Pass123 -rp Pass123
+go back
+go to -m ProductMenu
+show products -sortBy rate
+go back
+go to -m LoginMenu
+login as store -e store1@gmail.com -p Pass123
+go to -m LoginMenu
+delete account -p Pass123 -rp Pass123
+go back
+go to -m ProductMenu
+show products -sortBy rate
+
+
+
+
+
+go back
+exit
+

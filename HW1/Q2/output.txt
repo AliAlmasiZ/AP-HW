@@ -1,0 +1,2545 @@
+Redirecting to the LoginMenu ...
+Name is too short.
+Name is too short.
+Name is too short.
+Name is too short.
+Incorrect name format.
+Incorrect password format.
+Incorrect password format.
+Incorrect password format.
+Incorrect password format.
+Incorrect password format.
+Re-entered password is incorrect.
+Incorrect email format.
+Incorrect email format.
+Incorrect email format.
+Incorrect email format.
+Incorrect email format.
+Incorrect email format.
+Incorrect email format.
+Incorrect email format.
+User account for First Last created successfully.
+Incorrect email format.
+invalid command
+invalid command
+User account for First Lname created successfully.
+User account for Second Lname created successfully.
+User account for Third Lname created successfully.
+invalid command
+Brand name is too short.
+Incorrect email format.
+Incorrect email format.
+Incorrect email format.
+Incorrect email format.
+Incorrect email format.
+Incorrect email format.
+Incorrect email format.
+Incorrect email format.
+Email already exists.
+Incorrect email format.
+invalid command
+Email already exists.
+Store account for "Store2" created successfully.
+Store account for "Store3" created successfully.
+invalid command
+You should login first.
+invalid command
+User logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the UserMenu ...
+Your shopping cart is empty.
+No orders found.
+Order not found.
+invalid command
+Name: First Lname
+Email: one@gmail.com
+Incorrect password. Please try again.
+Name is too short.
+Name is too short.
+Name is too short.
+The new name must be different from the current name.
+The new name must be different from the current name.
+The new name must be different from the current name.
+Incorrect name format.
+Name updated successfully.
+The new name must be different from the current name.
+invalid command
+Incorrect password. Please try again.
+Incorrect email format.
+Incorrect email format.
+Incorrect email format.
+Incorrect email format.
+Incorrect email format.
+Incorrect email format.
+Incorrect email format.
+The new email must be different from the current email.
+Email already exists.
+Email updated successfully.
+Name: Firstnew Last
+Email: z@gmail.com
+Email updated successfully.
+invalid command
+The new password must be different from the old password.
+The new password is weak.
+The new password is weak.
+The new password is weak.
+The new password is weak.
+The new password is weak.
+Incorrect password. Please try again.
+Password updated successfully.
+Password updated successfully.
+invalid command
+No addresses found. Please add an address first.
+Invalid postal code. It should be a 10-digit number.
+Invalid postal code. It should be a 10-digit number.
+Invalid postal code. It should be a 10-digit number.
+Invalid postal code. It should be a 10-digit number.
+Invalid postal code. It should be a 10-digit number.
+Address successfully added with id 1.
+Address successfully added with id 2.
+This postal code is already associated with an existing address.
+Address successfully added with id 3.
+Address successfully added with id 4.
+Address successfully added with id 5.
+Saved Addresses
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Address 1:
+Postal Code: 1234567890
+Country: Iran
+City: Tehran
+Street: Tehran
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Address 2:
+Postal Code: 1234567891
+Country: Iran
+City: Tehran
+Street: Tehran
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Address 3:
+Postal Code: 1234567893
+Country: Iran
+City: Tehran
+Street: Tehran
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Address 4:
+Postal Code: 1234567894
+Country: Iran
+City: Tehran
+Street: Tehran
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Address 5:
+Postal Code: 2234567890
+Country: Iran   Tehran
+City: Tehran   Tehran
+Street: a   a
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+invalid command
+No address found.
+Address with id 4 deleted successfully.
+Address with id 2 deleted successfully.
+Saved Addresses
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Address 1:
+Postal Code: 1234567890
+Country: Iran
+City: Tehran
+Street: Tehran
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Address 3:
+Postal Code: 1234567893
+Country: Iran
+City: Tehran
+Street: Tehran
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Address 5:
+Postal Code: 2234567890
+Country: Iran   Tehran
+City: Tehran   Tehran
+Street: a   a
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+Address with id 1 deleted successfully.
+Address with id 3 deleted successfully.
+Saved Addresses
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Address 5:
+Postal Code: 2234567890
+Country: Iran   Tehran
+City: Tehran   Tehran
+Street: a   a
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+Address successfully added with id 6.
+This postal code is already associated with an existing address.
+Address successfully added with id 7.
+Address successfully added with id 8.
+This postal code is already associated with an existing address.
+Saved Addresses
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Address 5:
+Postal Code: 2234567890
+Country: Iran   Tehran
+City: Tehran   Tehran
+Street: a   a
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Address 6:
+Postal Code: 1234567891
+Country: Iran
+City: Tehran
+Street: Tehran
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Address 7:
+Postal Code: 1234567893
+Country: Iran
+City: Tehran
+Street: Tehran
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Address 8:
+Postal Code: 1234567894
+Country: Iran
+City: Tehran
+Street: Tehran
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+invalid command
+invalid command
+The card number must be exactly 16 digits.
+The card number must be exactly 16 digits.
+Invalid expiration date. Please enter a valid date in MM/YY format.
+Invalid expiration date. Please enter a valid date in MM/YY format.
+Invalid expiration date. Please enter a valid date in MM/YY format.
+Invalid expiration date. Please enter a valid date in MM/YY format.
+Invalid expiration date. Please enter a valid date in MM/YY format.
+The CVV code must be 3 or 4 digits.
+The CVV code must be 3 or 4 digits.
+The initial value cannot be negative.
+invalid command
+Credit card with Id 1 has been added successfully.
+Credit card with Id 2 has been added successfully.
+Credit card with Id 3 has been added successfully.
+invalid command
+No credit card found.
+No credit card found.
+Current balance : $100.0
+Current balance : $100.0
+Current balance : $100.0
+invalid command
+invalid command
+No credit card found.
+invalid command
+No credit card found.
+The amount must be greater than zero.
+$12.0 has been added to the credit card 1. New balance: $112.0.
+$113.0 has been added to the credit card 3. New balance: $213.0.
+$121.0 has been added to the credit card 2. New balance: $221.0.
+The amount must be greater than zero.
+The amount must be greater than zero.
+invalid command
+This card is already saved in your account.
+invalid command
+Your shopping cart is empty.
+Your shopping cart is empty.
+invalid command
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Store logged in successfully. Redirecting to the MainMenu ...
+invalid command
+You need to login as a user before accessing the user menu.
+Redirecting to the StoreMenu ...
+invalid command
+Total Profit: $0.0
+(Revenue: $0.0 - Costs: $0.0)
+No products available in the store.
+invalid command
+invalid command
+invalid command
+No product found.
+invalid command
+invalid command
+Selling price must be greater than or equal to the producer cost.
+invalid command
+invalid command
+invalid command
+invalid command
+Number of products must be a positive number.
+Number of products must be a positive number.
+invalid command
+Product "gaming Mouse" has been added successfully with ID 101.
+Product "gaming bowl" has been added successfully with ID 102.
+Product "gaming tape" has been added successfully with ID 103.
+Product "gaming trump" has been added successfully with ID 104.
+Product "gaming horse" has been added successfully with ID 105.
+invalid command
+Total Profit: $-8225.0
+(Revenue: $0.0 - Costs: $8225.0)
+invalid command
+No product found.
+invalid command
+invalid command
+invalid command
+Amount must be a positive number.
+Amount must be a positive number.
+Amount must be a positive number.
+20 units of "gaming Mouse" have been added to the stock.
+invalid command
+Store Products (Sorted by date added)
+------------------------------------------------
+ID: 101
+Name: gaming Mouse
+Price: $40.0
+Stock: 70
+Sold: 0
+------------------------------------------------
+ID: 102
+Name: gaming bowl
+Price: $40.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 103
+Name: gaming tape
+Price: $40.1
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 104
+Name: gaming trump
+Price: $40.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 105
+Name: gaming horse
+Price: $40.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+Total Profit: $-9025.0
+(Revenue: $0.0 - Costs: $9025.0)
+invalid command
+invalid command
+invalid command
+invalid command
+No product found.
+Price must be a positive number.
+Price must be a positive number.
+Price of "gaming Mouse" has been updated to $1.1.
+Price of "gaming Mouse" has been updated to $100.3.
+invalid command
+Store Products (Sorted by date added)
+------------------------------------------------
+ID: 101
+Name: gaming Mouse
+Price: $100.3
+Stock: 70
+Sold: 0
+------------------------------------------------
+ID: 102
+Name: gaming bowl
+Price: $40.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 103
+Name: gaming tape
+Price: $40.1
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 104
+Name: gaming trump
+Price: $40.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 105
+Name: gaming horse
+Price: $40.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+invalid command
+Redirecting to the MainMenu ...
+Redirecting to the ProductMenu ...
+invalid command
+Product List (Sorted by: Rate)
+------------------------------------------------
+ID: 101
+Name: gaming Mouse
+Rate: 2.5/5
+Price: $100.3
+Brand: Store2
+Stock: 70
+------------------------------------------------
+ID: 102
+Name: gaming bowl
+Rate: 2.5/5
+Price: $40.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 103
+Name: gaming tape
+Rate: 2.5/5
+Price: $40.1
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 104
+Name: gaming trump
+Rate: 2.5/5
+Price: $40.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 105
+Name: gaming horse
+Rate: 2.5/5
+Price: $40.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+(Showing 1-10 out of 5)
+Product List (Sorted by: Higher price to lower)
+------------------------------------------------
+ID: 101
+Name: gaming Mouse
+Rate: 2.5/5
+Price: $100.3
+Brand: Store2
+Stock: 70
+------------------------------------------------
+ID: 103
+Name: gaming tape
+Rate: 2.5/5
+Price: $40.1
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 102
+Name: gaming bowl
+Rate: 2.5/5
+Price: $40.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 104
+Name: gaming trump
+Rate: 2.5/5
+Price: $40.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 105
+Name: gaming horse
+Rate: 2.5/5
+Price: $40.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+(Showing 1-10 out of 5)
+Product List (Sorted by: Lower price to higher)
+------------------------------------------------
+ID: 102
+Name: gaming bowl
+Rate: 2.5/5
+Price: $40.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 104
+Name: gaming trump
+Rate: 2.5/5
+Price: $40.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 105
+Name: gaming horse
+Rate: 2.5/5
+Price: $40.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 103
+Name: gaming tape
+Rate: 2.5/5
+Price: $40.1
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 101
+Name: gaming Mouse
+Rate: 2.5/5
+Price: $100.3
+Brand: Store2
+Stock: 70
+------------------------------------------------
+(Showing 1-10 out of 5)
+Product List (Sorted by: Number of sold)
+------------------------------------------------
+ID: 101
+Name: gaming Mouse
+Rate: 2.5/5
+Price: $100.3
+Brand: Store2
+Stock: 70
+------------------------------------------------
+ID: 102
+Name: gaming bowl
+Rate: 2.5/5
+Price: $40.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 103
+Name: gaming tape
+Rate: 2.5/5
+Price: $40.1
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 104
+Name: gaming trump
+Rate: 2.5/5
+Price: $40.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 105
+Name: gaming horse
+Rate: 2.5/5
+Price: $40.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+(Showing 1-10 out of 5)
+invalid command
+No product found.
+invalid command
+Product Details
+------------------------------------------------
+Name: gaming Mouse
+ID: 101
+Rating: 2.5/5
+Price: $100.3
+Brand: Store2
+Number of Products Remaining: 70
+About this item:
+High precision with RGB lighting.
+
+Customer Reviews:
+------------------------------------------------
+
+Product Details
+------------------------------------------------
+Name: gaming tape
+ID: 103
+Rating: 2.5/5
+Price: $40.1
+Brand: Store2
+Number of Products Remaining: 50
+About this item:
+High precision with RGB lighting.
+
+Customer Reviews:
+------------------------------------------------
+
+Product Details
+------------------------------------------------
+Name: gaming trump
+ID: 104
+Rating: 2.5/5
+Price: $40.0
+Brand: Store2
+Number of Products Remaining: 50
+About this item:
+trump.
+
+Customer Reviews:
+------------------------------------------------
+
+invalid command
+No product found.
+invalid command
+invalid command
+Rating must be between 1 and 5.
+You must be logged in to rate a product.
+You must be logged in to rate a product.
+invalid command
+You must be logged in to add items to your cart.
+invalid command
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Password is incorrect.
+Re-entered password is incorrect.
+Account deleted successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+User logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the ProductMenu ...
+No more products available.
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Store account for "Store2" created successfully.
+Store logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the StoreMenu ...
+invalid command
+Product "gaming Mouse" has been added successfully with ID 106.
+Product "gaming bowl" has been added successfully with ID 107.
+Product "gaming tape" has been added successfully with ID 108.
+Product "gaming trump" has been added successfully with ID 109.
+Product "gaming horse" has been added successfully with ID 110.
+Product "gaming ball" has been added successfully with ID 111.
+Product "gaming adapter" has been added successfully with ID 112.
+Product "gaming box" has been added successfully with ID 113.
+Product "gaming wire" has been added successfully with ID 114.
+Product "gaming wood" has been added successfully with ID 115.
+invalid command
+Store Products (Sorted by date added)
+------------------------------------------------
+ID: 106
+Name: gaming Mouse
+Price: $100.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 107
+Name: gaming bowl
+Price: $90.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 108
+Name: gaming tape
+Price: $80.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 109
+Name: gaming trump
+Price: $70.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 110
+Name: gaming horse
+Price: $60.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 111
+Name: gaming ball
+Price: $70.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 112
+Name: gaming adapter
+Price: $90.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 113
+Name: gaming box
+Price: $60.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 114
+Name: gaming wire
+Price: $80.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 115
+Name: gaming wood
+Price: $80.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+Total Profit: $-18225.0
+(Revenue: $0.0 - Costs: $18225.0)
+Redirecting to the MainMenu ...
+Redirecting to the ProductMenu ...
+Product List (Sorted by: Higher price to lower)
+------------------------------------------------
+ID: 106
+Name: gaming Mouse
+Rate: 2.5/5
+Price: $100.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 107
+Name: gaming bowl
+Rate: 2.5/5
+Price: $90.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 112
+Name: gaming adapter
+Rate: 2.5/5
+Price: $90.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 108
+Name: gaming tape
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 114
+Name: gaming wire
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 115
+Name: gaming wood
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 109
+Name: gaming trump
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 111
+Name: gaming ball
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 110
+Name: gaming horse
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 113
+Name: gaming box
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+(Showing 1-10 out of 10)
+invalid command
+Redirecting to the MainMenu ...
+Redirecting to the StoreMenu ...
+Product "gambler pet robot dog" has been added successfully with ID 116.
+Redirecting to the MainMenu ...
+Redirecting to the ProductMenu ...
+Product List (Sorted by: Lower price to higher)
+------------------------------------------------
+ID: 110
+Name: gaming horse
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 113
+Name: gaming box
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 109
+Name: gaming trump
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 111
+Name: gaming ball
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 108
+Name: gaming tape
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 114
+Name: gaming wire
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 115
+Name: gaming wood
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 107
+Name: gaming bowl
+Rate: 2.5/5
+Price: $90.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 112
+Name: gaming adapter
+Rate: 2.5/5
+Price: $90.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 106
+Name: gaming Mouse
+Rate: 2.5/5
+Price: $100.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+(Showing 1-10 out of 11)
+Use `show next 10 products' to see more.
+Redirecting to the MainMenu ...
+Redirecting to the StoreMenu ...
+invalid command
+invalid command
+invalid command
+A 50% discount has been applied to 10 units of product ID 106.
+Store Products (Sorted by date added)
+------------------------------------------------
+ID: 106  **(On Sale! 10 units discounted)**
+Name: gaming Mouse
+Price: ~$100.0~ → $50.0 (-50%)
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 107
+Name: gaming bowl
+Price: $90.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 108
+Name: gaming tape
+Price: $80.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 109
+Name: gaming trump
+Price: $70.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 110
+Name: gaming horse
+Price: $60.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 111
+Name: gaming ball
+Price: $70.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 112
+Name: gaming adapter
+Price: $90.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 113
+Name: gaming box
+Price: $60.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 114
+Name: gaming wire
+Price: $80.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 115
+Name: gaming wood
+Price: $80.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 116
+Name: gambler pet robot dog
+Price: $100000.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+10 units of "gaming Mouse" have been added to the stock.
+Store Products (Sorted by date added)
+------------------------------------------------
+ID: 106  **(On Sale! 10 units discounted)**
+Name: gaming Mouse
+Price: ~$100.0~ → $50.0 (-50%)
+Stock: 60
+Sold: 0
+------------------------------------------------
+ID: 107
+Name: gaming bowl
+Price: $90.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 108
+Name: gaming tape
+Price: $80.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 109
+Name: gaming trump
+Price: $70.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 110
+Name: gaming horse
+Price: $60.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 111
+Name: gaming ball
+Price: $70.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 112
+Name: gaming adapter
+Price: $90.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 113
+Name: gaming box
+Price: $60.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 114
+Name: gaming wire
+Price: $80.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 115
+Name: gaming wood
+Price: $80.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+ID: 116
+Name: gambler pet robot dog
+Price: $100000.0
+Stock: 50
+Sold: 0
+------------------------------------------------
+invalid command
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+User logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the ProductMenu ...
+Product List (Sorted by: Lower price to higher)
+------------------------------------------------
+ID: 106  **(On Sale! 10 units discounted)**
+Name: gaming Mouse
+Rate: 2.5/5
+Price: ~$100.0~ → $50.0 (-50%)
+Brand: Store2
+Stock: 60
+------------------------------------------------
+ID: 110
+Name: gaming horse
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 113
+Name: gaming box
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 109
+Name: gaming trump
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 111
+Name: gaming ball
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 108
+Name: gaming tape
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 114
+Name: gaming wire
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 115
+Name: gaming wood
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 107
+Name: gaming bowl
+Rate: 2.5/5
+Price: $90.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 112
+Name: gaming adapter
+Rate: 2.5/5
+Price: $90.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+(Showing 1-10 out of 11)
+Use `show next 10 products' to see more.
+invalid command
+invalid command
+invalid command
+Quantity must be a positive number.
+Quantity must be a positive number.
+"gaming Mouse" (x5) has been added to your cart.
+Product List (Sorted by: Lower price to higher)
+------------------------------------------------
+ID: 106  **(On Sale! 5 units discounted)**
+Name: gaming Mouse
+Rate: 2.5/5
+Price: ~$100.0~ → $50.0 (-50%)
+Brand: Store2
+Stock: 55
+------------------------------------------------
+ID: 110
+Name: gaming horse
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 113
+Name: gaming box
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 109
+Name: gaming trump
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 111
+Name: gaming ball
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 108
+Name: gaming tape
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 114
+Name: gaming wire
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 115
+Name: gaming wood
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 107
+Name: gaming bowl
+Rate: 2.5/5
+Price: $90.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 112
+Name: gaming adapter
+Rate: 2.5/5
+Price: $90.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+(Showing 1-10 out of 11)
+Use `show next 10 products' to see more.
+invalid command
+Redirecting to the MainMenu ...
+Redirecting to the UserMenu ...
+invalid command
+Your Shopping Cart:
+------------------------------------
+Product ID  : 106
+Name        : gaming Mouse
+Quantity    : 5
+Price       : $50.0 (each)
+Total Price : $250.0
+Brand       : Store2
+Rating      : 2.5/5
+------------------------------------
+invalid command
+Redirecting to the MainMenu ...
+Redirecting to the ProductMenu ...
+"gaming Mouse" (x5) has been added to your cart.
+Product List (Sorted by: Lower price to higher)
+------------------------------------------------
+ID: 110
+Name: gaming horse
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 113
+Name: gaming box
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 109
+Name: gaming trump
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 111
+Name: gaming ball
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 108
+Name: gaming tape
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 114
+Name: gaming wire
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 115
+Name: gaming wood
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 107
+Name: gaming bowl
+Rate: 2.5/5
+Price: $90.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 112
+Name: gaming adapter
+Rate: 2.5/5
+Price: $90.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 106
+Name: gaming Mouse
+Rate: 2.5/5
+Price: $100.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+(Showing 1-10 out of 11)
+Use `show next 10 products' to see more.
+invalid command
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+User logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the ProductMenu ...
+"gaming Mouse" (x10) has been added to your cart.
+Product List (Sorted by: Lower price to higher)
+------------------------------------------------
+ID: 110
+Name: gaming horse
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 113
+Name: gaming box
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 109
+Name: gaming trump
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 111
+Name: gaming ball
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 108
+Name: gaming tape
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 114
+Name: gaming wire
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 115
+Name: gaming wood
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 107
+Name: gaming bowl
+Rate: 2.5/5
+Price: $90.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 112
+Name: gaming adapter
+Rate: 2.5/5
+Price: $90.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 106
+Name: gaming Mouse
+Rate: 2.5/5
+Price: $100.0
+Brand: Store2
+Stock: 40
+------------------------------------------------
+(Showing 1-10 out of 11)
+Use `show next 10 products' to see more.
+invalid command
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+User logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the UserMenu ...
+invalid command
+Your Shopping Cart:
+------------------------------------
+Product ID  : 106
+Name        : gaming Mouse
+Quantity    : 10
+Price       : $50.0 (each)
+Total Price : $500.0
+Brand       : Store2
+Rating      : 2.5/5
+------------------------------------
+invalid command
+invalid command
+invalid command
+Quantity must be a positive number.
+Quantity must be a positive number.
+Successfully removed 5 of "gaming Mouse" from your cart.
+Your Shopping Cart:
+------------------------------------
+Product ID  : 106
+Name        : gaming Mouse
+Quantity    : 5
+Price       : $50.0 (each)
+Total Price : $250.0
+Brand       : Store2
+Rating      : 2.5/5
+------------------------------------
+invalid command
+Redirecting to the MainMenu ...
+Redirecting to the ProductMenu ...
+Product List (Sorted by: Lower price to higher)
+------------------------------------------------
+ID: 106  **(On Sale! 5 units discounted)**
+Name: gaming Mouse
+Rate: 2.5/5
+Price: ~$100.0~ → $50.0 (-50%)
+Brand: Store2
+Stock: 45
+------------------------------------------------
+ID: 110
+Name: gaming horse
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 113
+Name: gaming box
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 109
+Name: gaming trump
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 111
+Name: gaming ball
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 108
+Name: gaming tape
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 114
+Name: gaming wire
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 115
+Name: gaming wood
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 107
+Name: gaming bowl
+Rate: 2.5/5
+Price: $90.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 112
+Name: gaming adapter
+Rate: 2.5/5
+Price: $90.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+(Showing 1-10 out of 11)
+Use `show next 10 products' to see more.
+invalid command
+Redirecting to the MainMenu ...
+Redirecting to the UserMenu ...
+"gaming Mouse" has been completely removed from your cart.
+Your shopping cart is empty.
+invalid command
+Redirecting to the MainMenu ...
+Redirecting to the ProductMenu ...
+Product List (Sorted by: Lower price to higher)
+------------------------------------------------
+ID: 106  **(On Sale! 10 units discounted)**
+Name: gaming Mouse
+Rate: 2.5/5
+Price: ~$100.0~ → $50.0 (-50%)
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 110
+Name: gaming horse
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 113
+Name: gaming box
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 109
+Name: gaming trump
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 111
+Name: gaming ball
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 108
+Name: gaming tape
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 114
+Name: gaming wire
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 115
+Name: gaming wood
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 107
+Name: gaming bowl
+Rate: 2.5/5
+Price: $90.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 112
+Name: gaming adapter
+Rate: 2.5/5
+Price: $90.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+(Showing 1-10 out of 11)
+Use `show next 10 products' to see more.
+"gaming Mouse" (x10) has been added to your cart.
+invalid command
+Redirecting to the MainMenu ...
+Redirecting to the UserMenu ...
+invalid command
+invalid command
+Insufficient balance in the selected card.
+invalid command
+$5000.0 has been added to the credit card 1. New balance: $5112.0.
+Order has been placed successfully!
+Order ID: 101
+Total Paid: $500.0
+Shipping to: a   a, Tehran   Tehran, Iran   Tehran
+invalid command
+order History
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Order ID: 101
+Shipping Address: a   a, Tehran   Tehran, Iran   Tehran
+Total Items Ordered: 10
+
+Products (Sorted by Name):  
+  1- gaming Mouse
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━  
+
+Products in this order:
+
+1- Product Name: gaming Mouse
+    ID: 106
+    Brand: Store2
+    Rating: 2.5/5
+    Quantity: 10
+    Price: $50.0 each
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+**Total Cost: $500.0**
+invalid command
+Redirecting to the MainMenu ...
+Redirecting to the ProductMenu ...
+"gaming Mouse" (x40) has been added to your cart.
+"gaming bowl" (x20) has been added to your cart.
+"gaming tape" (x30) has been added to your cart.
+"gaming ball" (x1) has been added to your cart.
+"gaming box" (x30) has been added to your cart.
+invalid command
+Product List (Sorted by: Number of sold)
+------------------------------------------------
+ID: 106  **(Sold out!)**
+Name: gaming Mouse
+Rate: 2.5/5
+Price: $100.0
+Brand: Store2
+Stock: 0
+------------------------------------------------
+ID: 107
+Name: gaming bowl
+Rate: 2.5/5
+Price: $90.0
+Brand: Store2
+Stock: 30
+------------------------------------------------
+ID: 108
+Name: gaming tape
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 20
+------------------------------------------------
+ID: 109
+Name: gaming trump
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 110
+Name: gaming horse
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 111
+Name: gaming ball
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 49
+------------------------------------------------
+ID: 112
+Name: gaming adapter
+Rate: 2.5/5
+Price: $90.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 113
+Name: gaming box
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 20
+------------------------------------------------
+ID: 114
+Name: gaming wire
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 115
+Name: gaming wood
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+(Showing 1-10 out of 11)
+Use `show next 10 products' to see more.
+invalid command
+Redirecting to the MainMenu ...
+Redirecting to the UserMenu ...
+Insufficient balance in the selected card.
+$50000.0 has been added to the credit card 1. New balance: $54612.0.
+Order has been placed successfully!
+Order ID: 102
+Total Paid: $10070.0
+Shipping to: a   a, Tehran   Tehran, Iran   Tehran
+Products in this order:
+
+1- Product Name: gaming Mouse
+    ID: 106
+    Brand: Store2
+    Rating: 2.5/5
+    Quantity: 10
+    Price: $50.0 each
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+**Total Cost: $500.0**
+invalid command
+Redirecting to the MainMenu ...
+Redirecting to the ProductMenu ...
+Product List (Sorted by: Number of sold)
+------------------------------------------------
+ID: 106  **(Sold out!)**
+Name: gaming Mouse
+Rate: 2.5/5
+Price: $100.0
+Brand: Store2
+Stock: 0
+------------------------------------------------
+ID: 108
+Name: gaming tape
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 20
+------------------------------------------------
+ID: 113
+Name: gaming box
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 20
+------------------------------------------------
+ID: 107
+Name: gaming bowl
+Rate: 2.5/5
+Price: $90.0
+Brand: Store2
+Stock: 30
+------------------------------------------------
+ID: 111
+Name: gaming ball
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 49
+------------------------------------------------
+ID: 109
+Name: gaming trump
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 110
+Name: gaming horse
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 112
+Name: gaming adapter
+Rate: 2.5/5
+Price: $90.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 114
+Name: gaming wire
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 115
+Name: gaming wood
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+(Showing 1-10 out of 11)
+Use `show next 10 products' to see more.
+invalid command
+invalid command
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Rating must be between 1 and 5.
+Thank you! Your rating and review have been submitted successfully.
+invalid command
+Product List (Sorted by: Rate)
+------------------------------------------------
+ID: 107
+Name: gaming bowl
+Rate: 4.0/5
+Price: $90.0
+Brand: Store2
+Stock: 30
+------------------------------------------------
+ID: 106  **(Sold out!)**
+Name: gaming Mouse
+Rate: 3.0/5
+Price: $100.0
+Brand: Store2
+Stock: 0
+------------------------------------------------
+ID: 109
+Name: gaming trump
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 110
+Name: gaming horse
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 111
+Name: gaming ball
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 49
+------------------------------------------------
+ID: 112
+Name: gaming adapter
+Rate: 2.5/5
+Price: $90.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 113
+Name: gaming box
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 20
+------------------------------------------------
+ID: 114
+Name: gaming wire
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 115
+Name: gaming wood
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 116
+Name: gambler pet robot dog
+Rate: 2.5/5
+Price: $100000.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+(Showing 1-10 out of 11)
+Use `show next 10 products' to see more.
+Product List (Sorted by: Rate)
+------------------------------------------------
+ID: 108
+Name: gaming tape
+Rate: 1.0/5
+Price: $80.0
+Brand: Store2
+Stock: 20
+------------------------------------------------
+(Showing 11-20 out of 11)
+No more products available.
+Product List (Sorted by: Rate)
+------------------------------------------------
+ID: 107
+Name: gaming bowl
+Rate: 4.0/5
+Price: $90.0
+Brand: Store2
+Stock: 30
+------------------------------------------------
+ID: 106  **(Sold out!)**
+Name: gaming Mouse
+Rate: 3.0/5
+Price: $100.0
+Brand: Store2
+Stock: 0
+------------------------------------------------
+ID: 109
+Name: gaming trump
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 110
+Name: gaming horse
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 111
+Name: gaming ball
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 49
+------------------------------------------------
+ID: 112
+Name: gaming adapter
+Rate: 2.5/5
+Price: $90.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 113
+Name: gaming box
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 20
+------------------------------------------------
+ID: 114
+Name: gaming wire
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 115
+Name: gaming wood
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 116
+Name: gambler pet robot dog
+Rate: 2.5/5
+Price: $100000.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+(Showing 1-10 out of 11)
+Use `show next 10 products' to see more.
+No more products available.
+invalid command
+Redirecting to the MainMenu ...
+Redirecting to the UserMenu ...
+Products in this order:
+
+1- Product Name: gaming Mouse
+    ID: 106
+    Brand: Store2
+    Rating: 3.0/5
+    Quantity: 10
+    Price: $50.0 each
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+**Total Cost: $500.0**
+Products in this order:
+
+1- Product Name: gaming Mouse
+    ID: 106
+    Brand: Store2
+    Rating: 3.0/5
+    Quantity: 40
+    Price: $100.0 each
+
+2- Product Name: gaming bowl
+    ID: 107
+    Brand: Store2
+    Rating: 4.0/5
+    Quantity: 20
+    Price: $90.0 each
+
+3- Product Name: gaming tape
+    ID: 108
+    Brand: Store2
+    Rating: 1.0/5
+    Quantity: 30
+    Price: $80.0 each
+
+4- Product Name: gaming ball
+    ID: 111
+    Brand: Store2
+    Rating: 2.5/5
+    Quantity: 1
+    Price: $70.0
+
+5- Product Name: gaming box
+    ID: 113
+    Brand: Store2
+    Rating: 2.5/5
+    Quantity: 30
+    Price: $60.0 each
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+**Total Cost: $10070.0**
+invalid command
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+User logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the ProductMenu ...
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+invalid command
+invalid command
+Product Details
+------------------------------------------------
+Name: gaming Mouse  **(Sold out!)**
+ID: 106
+Rating: 2.0/5
+Price: $100.0
+Brand: Store2
+Number of Products Remaining: 0
+About this item:
+High precision with RGB lighting.
+
+Customer Reviews:
+------------------------------------------------
+Firstnew Last (3/5)
+"goot"
+------------------------------------------------
+Second Lname (1/5)
+------------------------------------------------
+
+Product Details
+------------------------------------------------
+Name: gaming bowl
+ID: 107
+Rating: 4.5/5
+Price: $90.0
+Brand: Store2
+Number of Products Remaining: 30
+About this item:
+High precision with RGB lighting.
+
+Customer Reviews:
+------------------------------------------------
+Firstnew Last (4/5)
+"goot"
+------------------------------------------------
+Second Lname (5/5)
+------------------------------------------------
+
+Product Details
+------------------------------------------------
+Name: gaming tape
+ID: 108
+Rating: 2.0/5
+Price: $80.0
+Brand: Store2
+Number of Products Remaining: 20
+About this item:
+High precision with RGB lighting.
+
+Customer Reviews:
+------------------------------------------------
+Firstnew Last (1/5)
+------------------------------------------------
+Second Lname (3/5)
+"jolly"
+------------------------------------------------
+
+Product Details
+------------------------------------------------
+Name: gaming trump
+ID: 109
+Rating: 2.5/5
+Price: $70.0
+Brand: Store2
+Number of Products Remaining: 50
+About this item:
+trump.
+
+Customer Reviews:
+------------------------------------------------
+
+invalid command
+Product List (Sorted by: Rate)
+------------------------------------------------
+ID: 107
+Name: gaming bowl
+Rate: 4.5/5
+Price: $90.0
+Brand: Store2
+Stock: 30
+------------------------------------------------
+ID: 109
+Name: gaming trump
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 110
+Name: gaming horse
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 111
+Name: gaming ball
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 49
+------------------------------------------------
+ID: 112
+Name: gaming adapter
+Rate: 2.5/5
+Price: $90.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 113
+Name: gaming box
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 20
+------------------------------------------------
+ID: 114
+Name: gaming wire
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 115
+Name: gaming wood
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 116
+Name: gambler pet robot dog
+Rate: 2.5/5
+Price: $100000.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 106  **(Sold out!)**
+Name: gaming Mouse
+Rate: 2.0/5
+Price: $100.0
+Brand: Store2
+Stock: 0
+------------------------------------------------
+(Showing 1-10 out of 11)
+Use `show next 10 products' to see more.
+invalid command
+Redirecting to the MainMenu ...
+Redirecting to the UserMenu ...
+Your Shopping Cart:
+------------------------------------
+Product ID  : 106
+Name        : gaming Mouse
+Quantity    : 10
+Price       : $100.0 (each)
+Total Price : $1000.0
+Brand       : Store2
+Rating      : 2.0/5
+------------------------------------
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Store logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the StoreMenu ...
+Product "non gaming tape" has been added successfully with ID 117.
+Product "non gaming rope" has been added successfully with ID 118.
+Product "non gaming ant" has been added successfully with ID 119.
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+User logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the ProductMenu ...
+Product List (Sorted by: Lower price to higher)
+------------------------------------------------
+ID: 117
+Name: non gaming tape
+Rate: 2.5/5
+Price: $35.0
+Brand: Store3
+Stock: 50
+------------------------------------------------
+ID: 118
+Name: non gaming rope
+Rate: 2.5/5
+Price: $35.0
+Brand: Store3
+Stock: 50
+------------------------------------------------
+ID: 119
+Name: non gaming ant
+Rate: 2.5/5
+Price: $35.0
+Brand: Store3
+Stock: 50
+------------------------------------------------
+ID: 110
+Name: gaming horse
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 113
+Name: gaming box
+Rate: 2.5/5
+Price: $60.0
+Brand: Store2
+Stock: 20
+------------------------------------------------
+ID: 109
+Name: gaming trump
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 111
+Name: gaming ball
+Rate: 2.5/5
+Price: $70.0
+Brand: Store2
+Stock: 49
+------------------------------------------------
+ID: 108
+Name: gaming tape
+Rate: 2.0/5
+Price: $80.0
+Brand: Store2
+Stock: 20
+------------------------------------------------
+ID: 114
+Name: gaming wire
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+ID: 115
+Name: gaming wood
+Rate: 2.5/5
+Price: $80.0
+Brand: Store2
+Stock: 50
+------------------------------------------------
+(Showing 1-10 out of 14)
+Use `show next 10 products' to see more.
+"non gaming tape" (x20) has been added to your cart.
+"gaming horse" (x10) has been added to your cart.
+"non gaming ant" (x12) has been added to your cart.
+Redirecting to the MainMenu ...
+Redirecting to the UserMenu ...
+Your Shopping Cart:
+------------------------------------
+Product ID  : 106
+Name        : gaming Mouse
+Quantity    : 10
+Price       : $100.0 (each)
+Total Price : $1000.0
+Brand       : Store2
+Rating      : 2.0/5
+------------------------------------
+Product ID  : 110
+Name        : gaming horse
+Quantity    : 10
+Price       : $60.0 (each)
+Total Price : $600.0
+Brand       : Store2
+Rating      : 2.5/5
+------------------------------------
+Product ID  : 119
+Name        : non gaming ant
+Quantity    : 12
+Price       : $35.0 (each)
+Total Price : $420.0
+Brand       : Store3
+Rating      : 2.5/5
+------------------------------------
+Product ID  : 117
+Name        : non gaming tape
+Quantity    : 20
+Price       : $35.0 (each)
+Total Price : $700.0
+Brand       : Store3
+Rating      : 2.5/5
+------------------------------------
+Credit card with Id 1 has been added successfully.
+$10021.0 has been added to the credit card 1. New balance: $10121.0.
+Address successfully added with id 1.
+invalid command
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Store logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Account deleted successfully. Redirecting to the MainMenu ...
+invalid command
+Redirecting to the LoginMenu ...
+User logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the ProductMenu ...
+Product List (Sorted by: Rate)
+------------------------------------------------
+ID: 117
+Name: non gaming tape
+Rate: 2.5/5
+Price: $35.0
+Brand: Store3
+Stock: 30
+------------------------------------------------
+ID: 118
+Name: non gaming rope
+Rate: 2.5/5
+Price: $35.0
+Brand: Store3
+Stock: 50
+------------------------------------------------
+ID: 119
+Name: non gaming ant
+Rate: 2.5/5
+Price: $35.0
+Brand: Store3
+Stock: 38
+------------------------------------------------
+(Showing 1-10 out of 3)
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+invalid command
+Product Details
+------------------------------------------------
+Name: non gaming tape
+ID: 117
+Rating: 3.0/5
+Price: $35.0
+Brand: Store3
+Number of Products Remaining: 30
+About this item:
+High precision with RGB lighting.
+
+Customer Reviews:
+------------------------------------------------
+Second Lname (3/5)
+"goot"
+------------------------------------------------
+
+Product Details
+------------------------------------------------
+Name: non gaming rope
+ID: 118
+Rating: 2.0/5
+Price: $35.0
+Brand: Store3
+Number of Products Remaining: 50
+About this item:
+High precision with RGB lighting.
+
+Customer Reviews:
+------------------------------------------------
+Second Lname (2/5)
+"goot"
+------------------------------------------------
+
+Product Details
+------------------------------------------------
+Name: non gaming ant
+ID: 119
+Rating: 4.0/5
+Price: $35.0
+Brand: Store3
+Number of Products Remaining: 38
+About this item:
+High precision with RGB lighting.
+
+Customer Reviews:
+------------------------------------------------
+Second Lname (4/5)
+"goot"
+------------------------------------------------
+
+invalid command
+Redirecting to the MainMenu ...
+Redirecting to the UserMenu ...
+Your Shopping Cart:
+------------------------------------
+Product ID  : 106
+Name        : gaming Mouse
+Quantity    : 0
+Price       : $100.0 (each)
+Total Price : $0.0
+Brand       : Store2
+Rating      : 2.0/5
+------------------------------------
+Product ID  : 110
+Name        : gaming horse
+Quantity    : 0
+Price       : $60.0 (each)
+Total Price : $0.0
+Brand       : Store2
+Rating      : 2.5/5
+------------------------------------
+Product ID  : 119
+Name        : non gaming ant
+Quantity    : 12
+Price       : $35.0 (each)
+Total Price : $420.0
+Brand       : Store3
+Rating      : 4.0/5
+------------------------------------
+Product ID  : 117
+Name        : non gaming tape
+Quantity    : 20
+Price       : $35.0 (each)
+Total Price : $700.0
+Brand       : Store3
+Rating      : 3.0/5
+------------------------------------
+invalid command
+Redirecting to the MainMenu ...
+Redirecting to the ProductMenu ...
+"non gaming tape" (x10) has been added to your cart.
+"non gaming ant" (x38) has been added to your cart.
+"non gaming rope" (x50) has been added to your cart.
+Product List (Sorted by: Number of sold)
+------------------------------------------------
+ID: 117
+Name: non gaming tape
+Rate: 3.0/5
+Price: $35.0
+Brand: Store3
+Stock: 20
+------------------------------------------------
+ID: 118  **(Sold out!)**
+Name: non gaming rope
+Rate: 2.0/5
+Price: $35.0
+Brand: Store3
+Stock: 0
+------------------------------------------------
+ID: 119  **(Sold out!)**
+Name: non gaming ant
+Rate: 4.0/5
+Price: $35.0
+Brand: Store3
+Stock: 0
+------------------------------------------------
+(Showing 1-10 out of 3)
+invalid command
+Redirecting to the MainMenu ...
+Redirecting to the UserMenu ...
+Your Shopping Cart:
+------------------------------------
+Product ID  : 106
+Name        : gaming Mouse
+Quantity    : 0
+Price       : $100.0 (each)
+Total Price : $0.0
+Brand       : Store2
+Rating      : 2.0/5
+------------------------------------
+Product ID  : 110
+Name        : gaming horse
+Quantity    : 0
+Price       : $60.0 (each)
+Total Price : $0.0
+Brand       : Store2
+Rating      : 2.5/5
+------------------------------------
+Product ID  : 119
+Name        : non gaming ant
+Quantity    : 50
+Price       : $35.0 (each)
+Total Price : $1750.0
+Brand       : Store3
+Rating      : 4.0/5
+------------------------------------
+Product ID  : 118
+Name        : non gaming rope
+Quantity    : 50
+Price       : $35.0 (each)
+Total Price : $1750.0
+Brand       : Store3
+Rating      : 2.0/5
+------------------------------------
+Product ID  : 117
+Name        : non gaming tape
+Quantity    : 30
+Price       : $35.0 (each)
+Total Price : $1050.0
+Brand       : Store3
+Rating      : 3.0/5
+------------------------------------
+invalid command
+invalid command
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Store logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the StoreMenu ...
+A 30% discount has been applied to 5 units of product ID 117.
+30 units of "non gaming rope" have been added to the stock.
+A 30% discount has been applied to 5 units of product ID 118.
+Store Products (Sorted by date added)
+------------------------------------------------
+ID: 117  **(On Sale! 5 units discounted)**
+Name: non gaming tape
+Price: ~$35.0~ → $24.5 (-30%)
+Stock: 20
+Sold: 0
+------------------------------------------------
+ID: 118  **(On Sale! 5 units discounted)**
+Name: non gaming rope
+Price: ~$35.0~ → $24.5 (-30%)
+Stock: 30
+Sold: 0
+------------------------------------------------
+ID: 119  (**Sold out!**) 
+Name: non gaming ant
+Price: $35.0
+Stock: 0
+Sold: 0
+------------------------------------------------
+Redirecting to the MainMenu ...
+Redirecting to the ProductMenu ...
+Product List (Sorted by: Lower price to higher)
+------------------------------------------------
+ID: 117  **(On Sale! 5 units discounted)**
+Name: non gaming tape
+Rate: 3.0/5
+Price: ~$35.0~ → $24.5 (-30%)
+Brand: Store3
+Stock: 20
+------------------------------------------------
+ID: 118  **(On Sale! 5 units discounted)**
+Name: non gaming rope
+Rate: 2.0/5
+Price: ~$35.0~ → $24.5 (-30%)
+Brand: Store3
+Stock: 30
+------------------------------------------------
+ID: 119  **(Sold out!)**
+Name: non gaming ant
+Rate: 4.0/5
+Price: $35.0
+Brand: Store3
+Stock: 0
+------------------------------------------------
+(Showing 1-10 out of 3)
+invalid command
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+User logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Account deleted successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Store logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the ProductMenu ...
+Product List (Sorted by: Number of sold)
+------------------------------------------------
+ID: 117  **(On Sale! 5 units discounted)**
+Name: non gaming tape
+Rate: 3.0/5
+Price: ~$35.0~ → $24.5 (-30%)
+Brand: Store3
+Stock: 50
+------------------------------------------------
+ID: 118  **(On Sale! 5 units discounted)**
+Name: non gaming rope
+Rate: 2.0/5
+Price: ~$35.0~ → $24.5 (-30%)
+Brand: Store3
+Stock: 80
+------------------------------------------------
+ID: 119
+Name: non gaming ant
+Rate: 4.0/5
+Price: $35.0
+Brand: Store3
+Stock: 50
+------------------------------------------------
+(Showing 1-10 out of 3)

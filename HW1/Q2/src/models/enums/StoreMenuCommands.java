@@ -11,7 +11,7 @@ public enum StoreMenuCommands implements Commands {
     ),
     APPLY_DISCOUNT(
             "^apply\\s+discount\\s+-p\\s+(?<productID>-?\\d+)\\s+" +
-                    "-d\\s+(?<discountPercentage>-?\\d+)\\s+-q\\s+(?<quantity>\\d+)$"
+                    "-d\\s+(?<discountPercentage>-?\\d+)\\s+-q\\s+(?<quantity>-?\\d+)$"
     ),
     SHOW_PROFIT("^show\\s+profit$"),
     SHOW_LIST_OF_PRODUCTS("^show\\s+list\\s+of\\s+products$"),
