@@ -28,14 +28,19 @@ public class SignupMenuController {
         if (SignupMenuCommands.PASSWORD_SPECIAL_LETTERS.getMatcher(password) == null) {
             return new Result(false, "password doesn't have special characters");
         }
-        if (SignupMenuCommands.EMAIL.getMatcher(password) == null) {
+        if (SignupMenuCommands.EMAIL.getMatcher(email) == null) {
             return new Result(false, "invalid email format");
         }
+        App.setActiveMenu(Menu.LOGIN_MENU);
         return registerUser(username, password, email);
     }
 
     public void goToLoginMenu() {
         App.setActiveMenu(Menu.LOGIN_MENU);
+    }
+
+    public void exit() {
+        App.setActiveMenu(Menu.EXIT_MENU);
     }
 
 

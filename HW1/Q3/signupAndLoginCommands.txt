@@ -1,0 +1,29 @@
+register -username 1Ali_03 -password 1Pa                                                    safjassfkjdsj     ss -email a.l.i@gmail.com
+register -username Ali_03 -password 1P  a -email a.l.i@gmail.com
+register -username Ali_03 -password 1P                                  sfasfsfsf     a -email a.l.i@gmail.com
+register -username Ali_03 -password 1Pass  123 -email a.l.i@gmail.com
+register -username Ali_03 -password 1Pass123 -email a.l.i@gmail.com
+register -username Ali_03 -password Pass1234 -email a.l.i@gmail.com
+register -username Ali_03 -password Pass123@#$@# -email a.l.i@gmail.com
+register -username Ali_03 -password Pass123# -email ali@gmail.com
+back
+register -username Ali_03 -password Pa         ss -email a.l.i@gmail.com
+register -username Mahdi_03 -password Pass123# -email mah.di@gmail.com
+back
+register -username Amin_03 -password Pass123# -email ami_n@gmail.com
+register -username Amin_03 -password Pass123# -email am.in@gmail.com
+back
+register -username Parsa_03 -password Pass123# -email Par.3a@gmail.com
+
+login -username <username> -password <password>
+login -username  Ali_03 -password asd sdsd sdsd
+forget-password -username <username> -email <email>
+forget-password -username Ali_03 -email al.i@gmail.com
+forget-password -username Ali_03 -email ali@gmail.com
+login -username  Ali_03 -password Pass123#
+
+
+
+
+
+exit

@@ -8,8 +8,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 
 public class SignupMenu implements AppMenu{
-    SignupMenuController controller = new SignupMenuController();
-
+    private final SignupMenuController controller = new SignupMenuController();
     @Override
     public void checker(Scanner scanner) {
         String input = scanner.nextLine().trim();
@@ -24,6 +23,8 @@ public class SignupMenu implements AppMenu{
             ));
         } else if((matcher = SignupMenuCommands.LOGIN.getMatcher(input)) != null) {
             controller.goToLoginMenu();
+        } else if((matcher = SignupMenuCommands.EXIT.getMatcher(input)) != null) {
+            controller.exit();
         } else {
             System.out.println("invalid command");
         }

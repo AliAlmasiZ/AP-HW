@@ -31,5 +31,13 @@ public class LoginMenuController {
         return new Result(true, "password: " + user.getPassword());
     }
 
+    public void exit() {
+        App.setActiveMenu(Menu.EXIT_MENU);
+    }
+
+    public void back() {
+        App.setActiveMenu(Menu.SIGNUP_MENU);
+    }
+
 
 }

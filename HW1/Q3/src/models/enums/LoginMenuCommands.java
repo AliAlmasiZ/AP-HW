@@ -5,6 +5,8 @@ import java.util.regex.Pattern;
 
 public enum LoginMenuCommands implements Commands {
     SHOW_CURRENT_MENU("show\\s+current\\s+menu"),
+    BACK("back"),
+    EXIT("exit"),
     LOGIN("^login\\s+-username\\s+(?<username>.+?)\\s+-password\\s+(?<password>.+?)$"),
     FORGET_PASSWORD("^forget-password\\s+-username\\s+(?<username>.+?)\\s+-email\\s+(?<email>.+?)$"),
     ;

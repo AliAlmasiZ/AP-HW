@@ -7,6 +7,7 @@ public enum MainMenuCommands implements Commands{
 
     SHOW_CURRENT_MENU("show current menu"),
     LOGOUT("logout"),
+    EXIT("exit"),
     LEADERBOARD("leaderboard"),
     PLAY("play(\\s+(?<user1>\\S+))?(\\s+(?<user2>\\S+))?(\\s+(?<user3>\\S+))?(\\s+(?<user4>\\S+))?")
 
