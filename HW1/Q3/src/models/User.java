@@ -1,9 +1,13 @@
 package models;
 
+import models.enums.Country;
+
 public class User {
     private String username;
     private String password;
     private String email;
+
+    private Country playingCountry;
 
     public User(String username, String password, String email) {
         this.username = username;
@@ -25,5 +29,13 @@ public class User {
 
     public String getEmail() {
         return email;
+    }
+
+    public Country getPlayingCountry() {
+        return playingCountry;
+    }
+
+    public void setPlayingCountry(Country playingCountry) {
+        this.playingCountry = playingCountry;
     }
 }

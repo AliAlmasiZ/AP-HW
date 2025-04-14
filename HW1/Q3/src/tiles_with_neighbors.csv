@@ -1,0 +1,57 @@
+id,country,landNeighbors,seaNeighbors
+1,Soviet Union,2;5,
+2,Soviet Union,1;3;6,
+3,Soviet Union,2;4;7,
+4,Soviet Union,3;8,
+5,Soviet Union,1;6;9,
+6,Soviet Union,2;5;7;10,
+7,Soviet Union,6;8;3;11,
+8,Soviet Union,4;7;12,35;36;54
+9,Soviet Union,5;10;13,
+10,Soviet Union,6;9;11;14,
+11,Soviet Union,7;10;12;15,
+12,Soviet Union,8;11;35;16,
+13,Soviet Union,9;14,
+14,Soviet Union,10;13;15;17;18,
+15,Soviet Union,11;14;16;19;20,
+16,Soviet Union,15;12;39;21;22,
+17,United States,14;18;23,
+18,United States,14;17;19;24,
+19,United States,15;18;20;25,
+20,United States,15;19;21;26,
+21,United States,16;20;22;27,
+22,United States,16;21;43;28,
+23,United States,17;24;29,
+24,United States,18;23;25;30,
+25,United States,19;24;26;31,
+26,United States,20;25;27;32,
+27,United States,21;26;28;33,
+28,United States,22;27;47;34,
+29,United States,23;30,
+30,United States,24;29;31,
+31,United States,25;30;32,
+32,United States,26;31;33,
+33,United States,27;32;34,
+34,United States,28;33,47;48;49;52
+35,German Reich,12;36;39,8;36;54
+36,German Reich,35;37;40,8;35;54
+37,German Reich,36;38;41;54,
+38,German Reich,37;42;55,
+39,German Reich,35;16;40;43,
+40,German Reich,36;39;41;44,
+41,German Reich,37;40;42;45,
+42,German Reich,38;41;46,
+43,German Reich,22;39;44;47,
+44,German Reich,40;43;45;48,
+45,German Reich,41;44;46;49,
+46,German Reich,42;45;50,
+47,German Reich,28;43;48,34;48;49;52
+48,German Reich,47;49;44,34;47;49;52
+49,German Reich,48;50;45,34;47;48;52
+50,German Reich,49;46;51;52
+51,Japan,50;53,
+52,Japan,50;53,34;47;48;49
+53,Japan,51;52,
+54,United Kingdom,55;37,8;35;36
+55,United Kingdom,54;56;38,
+56,United Kingdom,55,
