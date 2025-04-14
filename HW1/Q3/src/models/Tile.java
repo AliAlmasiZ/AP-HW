@@ -1,9 +1,11 @@
 package models;
 
+import models.enums.BattalionType;
 import models.enums.Country;
 import models.enums.Terrain;
 import models.enums.Weather;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Tile {
@@ -14,6 +16,8 @@ public class Tile {
     private List<Integer> seaNeighbors;
     private Terrain terrain;
     private Weather weather;
+    private ArrayList<Battalion> battalions;
+
 
     public Tile(int id, String country, List<Integer> neighborsIds, List<Integer> seaNeighbors) {
         this.id = id;
@@ -23,6 +27,7 @@ public class Tile {
         this.isTerrainChanged = false;
         this.terrain = Terrain.PLAIN;
         this.weather = Weather.SUNNY;
+        this.battalions = new ArrayList<>();
     }
 
     public int getId() {
@@ -59,5 +64,25 @@ public class Tile {
 
     public Weather getWeather() {
         return weather;
+    }
+
+    public Battalion getBattlionByName(String name) {
+        for (Battalion battalion : battalions) {
+            if(battalion.getName().equalsIgnoreCase(name)) return battalion;
+        }
+        return null;
+    }
+
+    public int typeCount(BattalionType type) {
+        int res = 0;
+        for (Battalion battalion : battalions) {
+            if(battalion.getType().equals(type))
+                res++;
+        }
+        return res;
+    }
+
+    public void addBattalion(Battalion battalion) {
+        battalions.add(battalion);
     }
 }

@@ -7,5 +7,21 @@ public class Battalion {
     private BattalionType type;
     private String name;
 
+    public Battalion(Tile position, BattalionType type, String name) {
+        this.position = position;
+        this.type = type;
+        this.name = name;
+    }
 
+    public Tile getPosition() {
+        return position;
+    }
+
+    public BattalionType getType() {
+        return type;
+    }
+
+    public String getName() {
+        return name;
+    }
 }

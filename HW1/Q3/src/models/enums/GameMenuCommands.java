@@ -15,6 +15,9 @@ public enum GameMenuCommands implements Commands {
     SHOW_FACTORY("^show\\s+factories\\s+(?<tile-index>-?\\d+)$"),
     SET_TERRAIN("^set\\s+terrain\\s+(?<tile-index>-?\\d+)\\s+(?<terrain-name>\\S+)$"),
     ADD_BATTALION("^add\\s+battalion\\s+(?<tile-index>-\\d+)\\s+(?<battalion-type>\\S+)\\s+(?<name>.+)$"),
+    ///////////////
+    CREATE_FACTION("^create\\s+faction\\s+(?<name>.+)$"),
+    JOIN_FACTION("^join\\s+faction\\s+(?<faction-name>.+)$"),
 
     ;
 

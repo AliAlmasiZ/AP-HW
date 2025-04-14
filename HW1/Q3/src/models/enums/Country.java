@@ -1,10 +1,9 @@
 package models.enums;
 
+import models.Faction;
 import models.Tile;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Timer;
+import java.util.*;
 
 public enum Country {
     GERMAN_REICH("German Reich", Leader.HITLER, 100, 60000000, 100000, 200000, 300000),
@@ -29,7 +28,7 @@ public enum Country {
     private final int initialSulfur;
 
     private ArrayList<Country> puppets;
-    private ArrayList<String> factions;
+    private HashMap<String, Faction> factions;
     private ArrayList<Tile> tiles;
 
     Country(String name, Leader leader, int stability, int manPower, int fuel, int sulfur, int steel) {
@@ -104,7 +103,16 @@ public enum Country {
         return puppets;
     }
 
-    public ArrayList<String> getFactions() {
-        return factions;
+    public List<String> getFactionsNames() {
+        return factions.keySet().stream().toList();
     }
+
+    public void addFaction(Faction faction) {
+        factions.put(faction.getName(), faction);
+    }
+
+    public void removeFaction(String name) {
+        factions.remove(name);
+    }
+
 }

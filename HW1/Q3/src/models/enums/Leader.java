@@ -27,4 +27,12 @@ public enum Leader {
         this.ideology = ideology;
         this.country = country;
     }
+
+    public Ideology getIdeology() {
+        return ideology;
+    }
+
+    public Country getCountry() {
+        return country;
+    }
 }
