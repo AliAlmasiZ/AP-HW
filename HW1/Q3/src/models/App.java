@@ -1,5 +1,6 @@
 package models;
 
+import models.enums.CountryType;
 import models.enums.Menu;
 
 import java.util.*;
@@ -10,6 +11,7 @@ public class App {
     private static Game activeGame = null;
     private static final HashMap<String, User> usernameToUser = new HashMap<>();
     private static final HashMap<Integer, Tile> allTiles = new HashMap<>();
+
 
 
 
@@ -40,6 +42,7 @@ public class App {
     public static void addTile(Tile tile) {
         allTiles.put(tile.getId(), tile);
     }
+
     public static void setActiveUser(User activeUser) {
         App.activeUser = activeUser;
     }

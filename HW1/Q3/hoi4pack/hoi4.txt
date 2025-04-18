@@ -1,0 +1,34 @@
+0 1 2 7 game menu nadare
+0 2 6 leaderboard nadare
+2 4 5 forget pass dare
+leaderboard :
+show ranking 3 5
+show history 3 5
+
+game menu :
+election 3 4 5
+attack 3 5
+upgrade battalion 3 4 5
+build factory 3 4 6
+4 5 6 puppet
+add battalion 3 4 5
+add infantry 5
+add panzer 3
+add airforce 3 5
+add navy 4
+show battalions 3 4 5
+create faction 3 4 6
+run factory 3 4
+puppet 4 5 6
+civil war 3
+join faction 3 4 6
+leave faction 3
+show detail 3 4 5 6
+set terrain 3 4
+set weather 3
+move battalion 3
+test 5 : bishtar az 5 bazi
+test 6 : ham jenahan mikhad puppet kone
+test 4 : tile index -1
+test 4 : add battalion 2 puppet y jenah
+

@@ -16,8 +16,10 @@ public class MainMenu implements AppMenu{
         Matcher matcher;
         if((matcher = MainMenuCommands.SHOW_CURRENT_MENU.getMatcher(input)) != null) {
             System.out.println(App.getActiveMenu());
+        } else if((matcher = MainMenuCommands.LEADERBOARD.getMatcher(input)) != null) {
+            controller.leaderBoard();
         } else if((matcher = MainMenuCommands.LOGOUT.getMatcher(input)) != null) {
-            System.out.println(App.getActiveMenu());
+            controller.logout();
         } else if((matcher = MainMenuCommands.EXIT.getMatcher(input)) != null) {
             controller.exit();
         } else {

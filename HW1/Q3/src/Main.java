@@ -3,13 +3,7 @@ import models.Tile;
 import models.enums.TileData;
 import views.AppView;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -35,7 +29,7 @@ public class Main {
 //				}
             Tile tile = new Tile(id, country, landNeighbors, seaNeighbors);
             App.addTile(tile);
-            tile.getCountry().addTile(tile);
+            tile.getCountryType().addTile(tile);
         }
     }
 }

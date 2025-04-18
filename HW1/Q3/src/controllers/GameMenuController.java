@@ -7,7 +7,8 @@ import java.util.List;
 
 public class GameMenuController {
     public Result showDetail(String countryName) {
-        Country country = Country.stringToCountry(countryName);
+
+        Country country = App.getActiveGame().getCountryByType(CountryType.stringToCountry(countryName));
         if (country == null) return new Result(false, "country doesn't exist");
         String string = countryName + "\n" +
                 "leader : " + country.getLeader().name().toLowerCase() + "\n" +
@@ -23,7 +24,7 @@ public class GameMenuController {
 
     public Result tileOwner(String index) {
         int idx = Integer.parseInt(index);
-        return new Result(true, App.getTile(idx).getCountry().getName());
+        return new Result(true, App.getTile(idx).getCountryType().getName());
     }
 
     public Result tileNeighbors(String index) {
@@ -52,12 +53,10 @@ public class GameMenuController {
 
     public Result showBattalion(String index) {
         //TODO
-        return null;
     }
 
     public Result showFactories(String index) {
         //TODO
-        return null;
     }
 
     public Result setTerrain(String index, String terrainName) {
@@ -65,7 +64,7 @@ public class GameMenuController {
         Tile tile = App.getTile(idx);
         Terrain terrain = Terrain.stringToTerrain(terrainName);
         assert tile != null;
-        if (!App.getActiveGame().getPlayingUser().getPlayingCountry().equals(tile.getCountry()))
+        if (!App.getActiveGame().getPlayingUser().getPlayingCountry().equals(tile.getCountryType()))
             return new Result(false, "you don't own this tile");
         if (terrain == null)
             return new Result(false, "terrain doesn't exist");
@@ -80,13 +79,14 @@ public class GameMenuController {
         Tile tile = App.getTile(idx);
         Weather weather = Weather.stringToWeather(weatherName);
         assert tile != null;
-        if (!App.getActiveGame().getPlayingUser().getPlayingCountry().equals(tile.getCountry()))
+        if (!App.getActiveGame().getPlayingUser().getPlayingCountry().equals(tile.getCountryType()))
             return new Result(false, "you don't own this tile");
         if (weather == null)
             return new Result(false, "weather doesn't exist");
         tile.setWeather(weather);
         return new Result(true, "weather set successfully");
     }
+
 
     public Result addBattalion(String tileIndex, String battalionType, String name) {
         int idx = Integer.parseInt(tileIndex);
@@ -96,7 +96,7 @@ public class GameMenuController {
         BattalionType type = BattalionType.stringToBattalionType(battalionType);
         if (
                 tile == null ||
-                        (!tile.getCountry().equals(user.getPlayingCountry()) && true /* TODO logic */)
+                        (!tile.getCountryType().equals(user.getPlayingCountry()) && true /* TODO logic */)
         ) {
             return new Result(false, "tile is unavailable");
         }
@@ -106,22 +106,28 @@ public class GameMenuController {
         if (tile.getBattlionByName(name) != null) {
             return new Result(false, "battalion name already taken" );
         }
-        boolean isDouble = country.getLeader().getIdeology().equals(Ideology.DEMOCRACY);
+
         if (
-                country.getFuel() < type.getFuelCost(isDouble) ||
-                country.getSteel() < type.getSteelCost(isDouble) ||
-                country.getSulfur() < type.getSulfurCost(isDouble) ||
-                country.getManPower() < type.getManPowerCost(isDouble)
+                country.getFuel() < type.getFuelCost() ||
+                country.getSteel() < type.getSteelCost() ||
+                country.getSulfur() < type.getSulfurCost() ||
+                country.getManPower() < type.getManPowerCost()
         ) {
             return new Result(false, "daddy USA plz help us");
         }
-        if (tile.typeCount(type) >= 3)
+        if (tile.battalionTypeCount(type) >= 3)
             return new Result(false, "you can't add this type of battalion anymore");
+        country.handleCosts(type.getSteelCost(), type.getManPowerCost(), type.getSulfurCost(), type.getFuelCost());
         tile.addBattalion(new Battalion(tile, type, name));
         return new Result(true, "battalion set successfully");
     }
-    //TODO
+    public Result moveBattalion() {
+        //TODO
+    }
 
+    public Result upgradeBattalion() {
+        //TODO
+    }
     public Result createFaction(String name) {
         Game game = App.getActiveGame();
         if(game.getFaction(name) != null) {
@@ -153,13 +159,60 @@ public class GameMenuController {
         return new Result(true, country + " left " + name);
     }
 
+    public Result buildFactory(String tileIndex, String factoryType, String name) {
+        FactoryType type = FactoryType.stringToFactoryType(factoryType);
+        Tile tile = App.getTile(Integer.parseInt(tileIndex));
+        Country country = App.getActiveUser().getPlayingCountry();
+        if(tile == null || !country.canAccessTile(tile))
+            return new Result(false, "invalid tile");
+        if(type == null)
+            return new Result(false, "invalid factory type");
+        if(
+                type.getManPowerCost(tile) > country.getManPower() ||
+                        type.getSteelCost(tile) > country.getSteel()
+        )
+            return new Result(false, "not enough money to build factory");
+        if(tile.factoryTypeCount(type) == 3)
+            return new Result(false, "factory limit exceeded");
+
+        country.handleCosts(type.getSteelCost(tile), type.getManPowerCost(tile), 0, 0);
+        tile.addFactory(new Factory(tile, name, type));
+        return new Result(true, "factory built successfully");
+    }
+
+    public Result runFactory(String tileIndex, String name, String manPowerCount) {
+        //TODO
+    }
+
+    public Result attack() {
+        //TODO
+    }
+
+    public Result startCivilWar() {
+        //TODO
+    }
+
     public Result puppet(String countryName) {
-        Country puppet = Country.stringToCountry(countryName);
+        Country puppet = App.getActiveGame().getCountryByType(CountryType.stringToCountry(countryName));
         Country myCountry = App.getActiveGame().getPlayingUser().getPlayingCountry();
+        if(puppet == null)
+            return new Result(false, "country doesn't exist");
         if (
-                myCountry.getManPower() <= puppet.getManPower() ||
+                !(myCountry.getManPower() > puppet.getManPower()) ||
+                !myCountry.canMakePuppet(puppet.getCountryType()) ||
+                !(
+                        myCountry.getLeader().getIdeology().equals(Ideology.COMMUNISM) ||
+                        myCountry.getLeader().getIdeology().equals(Ideology.FASCISM)
+                ) ||
+                        myCountry.isInFaction(puppet)
 
         )
+            return new Result(false, "you are not allowed to puppet this country");
+        myCountry.addPuppet(puppet);
+        return new Result(
+                true,
+                "now " + puppet.getCountryType().getName() +" is my puppet yo ho ha ha ha"
+        );
     }
 
     private <T> String printList(List<T> list) {

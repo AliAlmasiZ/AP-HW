@@ -1,6 +1,6 @@
 package models;
 
-import models.enums.Country;
+import models.enums.CountryType;
 
 import java.util.ArrayList;
 
@@ -26,5 +26,9 @@ public class Faction {
 
     public void removeCountry(Country country) {
         countries.remove(country);
+    }
+
+    public boolean hasCountry(Country country) {
+        return countries.contains(country);
     }
 }

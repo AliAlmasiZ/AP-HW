@@ -1,9 +1,6 @@
 package models;
 
-import models.enums.BattalionType;
-import models.enums.Country;
-import models.enums.Terrain;
-import models.enums.Weather;
+import models.enums.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,17 +8,18 @@ import java.util.List;
 public class Tile {
     private int id;
     private boolean isTerrainChanged;
-    private Country country;
+    private CountryType countryType;
     private List<Integer> landNeighbors;
     private List<Integer> seaNeighbors;
     private Terrain terrain;
     private Weather weather;
     private ArrayList<Battalion> battalions;
+    private ArrayList<Factory> factories;
 
 
-    public Tile(int id, String country, List<Integer> neighborsIds, List<Integer> seaNeighbors) {
+    public Tile(int id, String countryType, List<Integer> neighborsIds, List<Integer> seaNeighbors) {
         this.id = id;
-        this.country = Country.stringToCountry(country);
+        this.countryType = CountryType.stringToCountry(countryType);
         this.landNeighbors = neighborsIds;
         this.seaNeighbors = seaNeighbors;
         this.isTerrainChanged = false;
@@ -34,8 +32,12 @@ public class Tile {
         return id;
     }
 
-    public Country getCountry() {
-        return country;
+    public CountryType getCountryType() {
+        return countryType;
+    }
+
+    public void setCountryType(CountryType countryType) {
+        this.countryType = countryType;
     }
 
     public List<Integer> getLandNeighbors() {
@@ -73,7 +75,7 @@ public class Tile {
         return null;
     }
 
-    public int typeCount(BattalionType type) {
+    public int battalionTypeCount(BattalionType type) {
         int res = 0;
         for (Battalion battalion : battalions) {
             if(battalion.getType().equals(type))
@@ -82,7 +84,21 @@ public class Tile {
         return res;
     }
 
+    public int factoryTypeCount(FactoryType type) {
+        int res = 0;
+        for (Factory factory : factories) {
+            if(factory.getFactoryType().equals(type))
+                res++;
+        }
+        return res;
+    }
+
     public void addBattalion(Battalion battalion) {
         battalions.add(battalion);
     }
+
+    public void addFactory(Factory factory) {
+        factories.add(factory);
+    }
+
 }

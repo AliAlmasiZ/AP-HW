@@ -4,7 +4,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public enum LeaderboardMenuCommands implements Commands{
-    SHOW_CURRENT_MENU("show current menu"),
+    SHOW_CURRENT_MENU("show\\s+current\\s+menu"),
+    BACK("back"),
+    EXIT("exit"),
     ;
 
 

@@ -1,6 +1,6 @@
 package models;
 
-import models.enums.Country;
+import models.enums.CountryType;
 
 public class User {
     private String username;

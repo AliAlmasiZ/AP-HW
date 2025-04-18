@@ -1,5 +1,7 @@
 package models.enums;
 
+import models.App;
+
 import java.util.HashMap;
 
 public enum BattalionType {
@@ -20,7 +22,7 @@ public enum BattalionType {
             10, 25, 15, 20, 15
     );
 
-    private final HashMap<Country, Integer> powerHashmap = new HashMap<>(5);
+    private final HashMap<CountryType, Integer> powerHashmap = new HashMap<>(5);
 
     int fuelCost;
     int steelCost;
@@ -37,36 +39,40 @@ public enum BattalionType {
 
 
 
-        powerHashmap.put(Country.GERMAN_REICH, germanReichPower);
-        powerHashmap.put(Country.SOVIET_UNION, sovietUnionPower);
-        powerHashmap.put(Country.UNITED_STATES, unitedStatesPower);
-        powerHashmap.put(Country.UNITED_KINGDOM, unitedKingdomPower);
-        powerHashmap.put(Country.JAPAN, japanPower);
+        powerHashmap.put(CountryType.GERMAN_REICH, germanReichPower);
+        powerHashmap.put(CountryType.SOVIET_UNION, sovietUnionPower);
+        powerHashmap.put(CountryType.UNITED_STATES, unitedStatesPower);
+        powerHashmap.put(CountryType.UNITED_KINGDOM, unitedKingdomPower);
+        powerHashmap.put(CountryType.JAPAN, japanPower);
     }
 
-    public int getPower(Country country) {
+    public int getPower(CountryType country) {
         return powerHashmap.get(country);
     }
 
-    public int getFuelCost(boolean isDouble) {
+    public int getFuelCost() {
+        boolean isDouble = App.getActiveUser().getPlayingCountry().getLeader().getIdeology().equals(Ideology.DEMOCRACY);
         if(isDouble)
             return fuelCost * 2;
         return fuelCost;
     }
 
-    public int getSteelCost(boolean isDouble) {
+    public int getSteelCost() {
+        boolean isDouble = App.getActiveUser().getPlayingCountry().getLeader().getIdeology().equals(Ideology.DEMOCRACY);
         if(isDouble)
             return steelCost * 2;
         return steelCost;
     }
 
-    public int getSulfurCost(boolean isDouble) {
+    public int getSulfurCost() {
+        boolean isDouble = App.getActiveUser().getPlayingCountry().getLeader().getIdeology().equals(Ideology.DEMOCRACY);
         if(isDouble)
             return sulfurCost * 2;
         return sulfurCost;
     }
 
-    public int getManPowerCost(boolean isDouble) {
+    public int getManPowerCost() {
+        boolean isDouble = App.getActiveUser().getPlayingCountry().getLeader().getIdeology().equals(Ideology.DEMOCRACY);
         if(isDouble)
             return manPowerCost * 2;
         return manPowerCost;
