@@ -23,4 +23,12 @@ public enum Weather {
         }
         return null;
     }
+
+    public int getAttack() {
+        return attack;
+    }
+
+    public int getAirAttack() {
+        return airAttack;
+    }
 }

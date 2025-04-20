@@ -6,6 +6,7 @@ import java.util.regex.Pattern;
 public enum GameMenuCommands implements Commands {
     SHOW_CURRENT_MENU("^show\\s+current\\s+menu$"),
     SHOW_DETAIL("^show\\s+detail\\s+(?<country_name>.+)$"),
+    EXIT("exit"),
     TILE_OWNER("^tile\\s+owner\\s+(?<index>-?\\d+)$"),
     TILE_NEIGHBORS("^tile\\s+neighbors\\s+(?<index>-?\\d+)$"),
     TILE_SEA_NEIGHBORS("^tile\\s+sea\\s+neighbors\\s+(?<index>-?\\d+)$"),
@@ -16,7 +17,7 @@ public enum GameMenuCommands implements Commands {
     SET_TERRAIN("^set\\s+terrain\\s+(?<tile_index>-?\\d+)\\s+(?<terrain_name>\\S+)$"),
     ADD_BATTALION("^add\\s+battalion\\s+(?<tile_index>-\\d+)\\s+(?<battalion_type>\\S+)\\s+(?<name>\\S+)$"),
     MOVE_BATTALION(
-            "^move\\s+battalion\\s+(?<tile_index>.+?)\\s+(?<battalion_name>\\S+?)\\s+(?<destination_tile_index>-?\\d+)$"
+            "^move\\s+battalion\\s+(?<tile_index>-?\\d+?)\\s+(?<battalion_name>\\S+?)\\s+(?<destination_tile_index>-?\\d+)$"
     ),//TODO : mobham
     UPGRADE_BATTALION("^upgrade\\s+battalion\\s+(?<tile_index>-?\\d+)\\s+(?<battalion_name>\\S+)$"),
     CREATE_FACTION("^create\\s+faction\\s+(?<name>\\S+)$"),

@@ -6,26 +6,24 @@ import models.Tile;
 import java.util.*;
 
 public enum CountryType {
-    GERMAN_REICH("German Reich", Leader.HITLER, 100, 60000000, 100000, 200000, 300000),
-    UNITED_STATES("United States", Leader.ROOSEVELT, 100, 120000000, 200000, 100000, 200000),
-    SOVIET_UNION("Soviet Union", Leader.STALIN, 100, 160000000, 300000, 50000, 100000),
-    JAPAN("Japan", Leader.HIROHITO, 100, 70000000, 50000, 50000, 50000),
-    UNITED_KINGDOM("United Kingdom", Leader.CHURCHILL, 100, 30000000, 0, 1, 10);
+    GERMAN_REICH("German Reich", Leader.HITLER, 60000000, 100000, 200000, 300000),
+    UNITED_STATES("United States", Leader.ROOSEVELT,  120000000, 200000, 100000, 200000),
+    SOVIET_UNION("Soviet Union", Leader.STALIN,  160000000, 300000, 50000, 100000),
+    JAPAN("Japan", Leader.HIROHITO,  70000000, 50000, 50000, 50000),
+    UNITED_KINGDOM("United Kingdom", Leader.CHURCHILL, 30000000, 0, 1, 10);
 
     private final String name;
 
     private final Leader initialLeader;
-    private final int initialStability;
     private final int initialManPower;
     private final int initialFuel;
     private final int initialSteel;
     private final int initialSulfur;
-    private ArrayList<Tile> tiles;
+    private final ArrayList<Tile> tiles;
 
-    CountryType(String name, Leader leader, int stability, int manPower, int fuel, int sulfur, int steel) {
+    CountryType(String name, Leader leader, int manPower, int fuel, int sulfur, int steel) {
         this.name = name;
         this.initialLeader = leader;
-        this.initialStability = stability;
         this.initialManPower = manPower;
         this.initialFuel = fuel;
         this.initialSteel = steel;
@@ -53,7 +51,7 @@ public enum CountryType {
     }
 
     public int getInitialStability() {
-        return initialStability;
+        return 100;
     }
 
     public int getInitialManPower() {

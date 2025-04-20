@@ -1,11 +1,11 @@
 package models;
 
 import models.enums.CountryType;
+import models.enums.Ideology;
 import models.enums.Leader;
 import models.enums.TileData;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Country {
     private final CountryType countryType;
@@ -113,10 +113,55 @@ public class Country {
         return isInFaction(country) || puppets.contains(country);
     }
 
+    public boolean canAttackWithTile(Tile tile) {
+        Country country = App.getActiveGame().getCountryByType(tile.getCountryType());
+        return puppets.contains(country) || country.equals(this);
+    }
+
     public void handleCosts(int steel, int manPower, int sulfur, int fuel) {
         this.steel -= steel;
         this.fuel -= fuel;
         this.manPower -= manPower;
         this.sulfur -= sulfur;
     }
+
+    public Set<Country> alies() {
+        Set<Country> res = new HashSet<>();
+        for (Faction faction : factions.values()) {
+            res.addAll(faction.getCountries());
+        }
+        res.remove(this);
+        return res;
+    }
+
+    public Set<Country> alliesByIdeology(Ideology ideology) {
+        Set<Country> res = new HashSet<>();
+        for (Country aly : alies()) {
+            if(aly.leader.getIdeology().equals(ideology))
+                res.add(aly);
+        }
+        return res;
+
+    }
+
+    public boolean isPuppeteer(CountryType countryType) {
+        Country country = App.getActiveGame().getCountryByType(countryType);
+        return country.puppets.contains(this);
+    }
+
+    public void addTile(Tile tile) {
+        tiles.add(tile);
+        tile.setCountryType(this.countryType);
+    }
+
+    public void removeTile(Tile tile) {
+        tiles.remove(tile);
+    }
+
+    public void multiplyStability(double weight) {
+        this.stability = (int) (this.stability * weight);
+        if(this.stability > 100)
+            this.stability = 100;
+    }
+
 }

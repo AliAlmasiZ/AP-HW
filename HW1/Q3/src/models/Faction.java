@@ -3,10 +3,12 @@ package models;
 import models.enums.CountryType;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Faction {
     private String name;
-    private final ArrayList<Country> countries = new ArrayList<>();
+    private final Set<Country> countries = new HashSet<>();
 
     public Faction(String name) {
         this.name = name;
@@ -16,7 +18,7 @@ public class Faction {
         return name;
     }
 
-    public ArrayList<Country> getCountries() {
+    public Set<Country> getCountries() {
         return countries;
     }
 
