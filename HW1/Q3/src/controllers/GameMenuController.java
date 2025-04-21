@@ -3,10 +3,7 @@ package controllers;
 import models.*;
 import models.enums.*;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
-import java.util.Set;
+import java.util.*;
 
 public class GameMenuController {
     public Result showDetail(String countryName) {
@@ -217,7 +214,7 @@ public class GameMenuController {
 
     public Result leaveFaction(String name) {
         Country country = App.getActiveGame().getPlayingUser().getPlayingCountry();
-        if(App.getActiveGame().getFaction(name) == null)
+        if(App.getActiveGame().getFaction(name.toLowerCase()) == null)
             return new Result(false, "faction doesn't exist");
         if(!country.getFactionsNames().contains(name.toLowerCase()))
             return new Result(false, "your country isn't in this faction");
@@ -533,19 +530,36 @@ public class GameMenuController {
     }
 
     private Result handleAttack(Tile attackerTile, Tile defenderTile, BattalionType type) {
+        Country country = App.getActiveUser().getPlayingCountry();
         Country attacker = App.getActiveGame().getCountryByType(attackerTile.getCountryType());
         Country defender = App.getActiveGame().getCountryByType(defenderTile.getCountryType());
         ArrayList<Battalion>attackerBattalions = attackerTile.getBattalionsByType(type);
         ArrayList<Battalion>defenderBattalions = defenderTile.getBattalionsByType(type);
         int attackerPower = 0, defenderPower = 0;
         for(Battalion battalion : attackerBattalions) {
-            attackerPower += battalion.getPower();
+            attackerPower += battalion.getRawPower();
         }
+
         for(Battalion battalion : defenderBattalions) {
-            defenderPower += battalion.getPower();
+            defenderPower += battalion.getRawPower();
+        }
+        if(type.equals(BattalionType.AIRFORCE)) {
+            attackerPower = attackerPower * attackerTile.getTerrain().getAirAttack()
+                    * attackerTile.getWeather().getAirAttack() / 10000;
+//            attackerPower = attackerPower * attackerTile.getWeather().getAirAttack() / 100;
+            defenderPower = defenderPower * defenderTile.getTerrain().getAirAttack()
+                    * attackerTile.getWeather().getAirAttack()/ 10000;
+//            defenderPower = defenderPower * defenderTile.getWeather().getAirAttack() / 100;
+        } else if(type.equals(BattalionType.PANZER) || type.equals(BattalionType.INFANTRY)) {
+            defenderPower = defenderPower * defenderTile.getTerrain().getAttack()
+                    * defenderTile.getWeather().getAttack() / 10000;
+//            defenderPower = defenderPower * defenderTile.getWeather().getAttack() / 100;
+            attackerPower = attackerPower * attackerTile.getTerrain().getAttack()
+                    * attackerTile.getWeather().getAttack() / 10000;
+//            attackerPower = attackerPower * attackerTile.getWeather().getAttack() / 100;
         }
         int powerDiff = attackerPower - defenderPower;
-        powerDiff = (powerDiff > 0) ? powerDiff + 1 : powerDiff - 1;
+//        powerDiff = (powerDiff > 0) ? powerDiff + 1 : powerDiff - 1;
         int rawPoint = powerDiff * type.getPointWeight();
         if(powerDiff > 0) {
             int capturePower = 0;
@@ -557,6 +571,14 @@ public class GameMenuController {
             }
             defenderBattalions.clear();
             // ???TODO : should I move attacker battalion to this tile ???
+//            Iterator<Battalion> iterator = attackerBattalions.iterator();
+//            while (iterator.hasNext()) {
+//                Battalion battalion = iterator.next();
+//                defenderTile.addBattalion(battalion);
+//                iterator.remove();
+//                battalion.setPosition(defenderTile);
+//            }
+
             defender.removeTile(defenderTile);
             attacker.addTile(defenderTile);
             attacker.multiplyStability(1.5);
@@ -587,7 +609,7 @@ public class GameMenuController {
         defender.addPoint(-rawPoint * 10);
         attacker.addPoint(rawPoint * 5);
         powerDiff *= -1;
-        defender.handleCosts(powerDiff * 100, 0, powerDiff * 100, powerDiff * 100);
+        defender.handleCosts(powerDiff * 100, 0, powerDiff * 100, powerDiff * 1000);
         return new Result(true, "war is over\n" +
                 "winner : " + defender.getCountryType().getName() + "\n" +
                 "loser : " + attacker.getCountryType().getName());

@@ -47,6 +47,7 @@ public class MainMenuController {
 
         App.setActiveGame(new Game(players));
         App.setActiveMenu(Menu.GAME_MENU);
+        App.resetTiles();
         return new Result(true, "aghaaz faAliat");
     }
 

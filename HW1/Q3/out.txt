@@ -1,29 +1,194 @@
+signup menu
+invalid length
+invalid command
+invalid username
+invalid length
+invalid length
+don't use whitespace in password
+don't use whitespace in password
+password must start with English letters
+password must start with English letters
+password doesn't have special characters
+invalid command
+invalid email format
+invalid email format
+user registered successfully
+invalid command
+invalid command
 user registered successfully
 user registered successfully
 user registered successfully
+user registered successfully
+user registered successfully
+user registered successfully
+invalid command
+password: Pass@123
+username doesn't exist!
+email doesn't match!
+invalid command
 user logged in successfully
+invalid command
 main menu
+leaderboard menu
+History:
+Leaderboard:
+mr_1house 0
+user1 0
+user2 0
+user3 0
+user4 0
+user5 0
+user6 0
+main menu
+invalid command
 select between available users
-users must be distinct
-users must be distinct
+select between available users
+invalid command
 you can't choose urself
-select between available users
+users must be distinct
+invalid command
 aghaaz faAliat
-choosing country for Kiarash:
+choosing country for user1:
 wrong country name
 wrong country name
-choosing country for Amirhossein:
+wrong country name
+choosing country for user2:
+choosing country for user3:
 country already taken
-choosing country for Sana:
+country already taken
 choosing country for guest1:
-wrong country name
 choosing country for guest2:
-German Reich
 tile doesn't exist
-37 , 42 , 55
-51 , 52
+tile doesn't exist
+2 , 5
+invalid command
+1 , 3 , 6
+2 , 4 , 7
+3 , 8
+1 , 6 , 9
+2 , 5 , 7 , 10
+3 , 6 , 8 , 11
+4 , 7 , 12
+5 , 10 , 13
+6 , 9 , 11 , 14
+7 , 10 , 12 , 15
+8 , 11 , 16 , 35
+9 , 14
+10 , 13 , 15 , 17 , 18
+11 , 14 , 16 , 19 , 20
+12 , 15 , 21 , 22 , 39
+14 , 18 , 23
+14 , 17 , 19 , 24
+15 , 18 , 20 , 25
+15 , 19 , 21 , 26
+16 , 20 , 22 , 27
+16 , 21 , 28 , 43
+17 , 24 , 29
+18 , 23 , 25 , 30
+19 , 24 , 26 , 31
+20 , 25 , 27 , 32
 21 , 26 , 28 , 33
-country doesn't exist
+22 , 27 , 34 , 47
+23 , 30
+24 , 29 , 31
+25 , 30 , 32
+26 , 31 , 33
+27 , 32 , 34
+28 , 33
+12 , 36 , 39
+35 , 37 , 40
+36 , 38 , 41 , 54
+37 , 42 , 55
+16 , 35 , 40 , 43
+36 , 39 , 41 , 44
+37 , 40 , 42 , 45
+38 , 41 , 46
+22 , 39 , 44 , 47
+40 , 43 , 45 , 48
+41 , 44 , 46 , 49
+42 , 45 , 50
+28 , 43 , 48
+44 , 47 , 49
+45 , 48 , 50
+46 , 49 , 51 , 52
+50 , 53
+50 , 53
+51 , 52
+37 , 55
+38 , 54 , 56
+55
+tile doesn't exist
+tile doesn't exist
+invalid command
+invalid command
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+35 , 36 , 54
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+47 , 48 , 49 , 52
+8 , 36 , 54
+8 , 35 , 54
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+no sea neighbors
+34 , 48 , 49 , 52
+34 , 47 , 49 , 52
+34 , 47 , 48 , 52
+no sea neighbors
+no sea neighbors
+34 , 47 , 48 , 49
+no sea neighbors
+8 , 35 , 36
+no sea neighbors
+no sea neighbors
+invalid command
+player doesn't exist
+player doesn't exist
+you can't switch to yourself
+switched to user2
+you can't switch to yourself
+switched to user3
+switched to user1
+switched to guest1
+switched to guest2
+player doesn't exist
+switched to user1
+invalid command
 Japan
 leader : hirohito
 stability : 100
@@ -33,136 +198,429 @@ sulfur : 50000
 steel : 50000
 faction : 
 puppet : 
-no sea neighbors
-34 , 47 , 48 , 49
-can't show battalions
-infantry:
-
-panzer:
-
-airforce:
-
-navy:
+German Reich
+leader : hitler
+stability : 100
+man power : 60000000
+fuel : 100000
+sulfur : 200000
+steel : 300000
+faction : 
+puppet : 
+United States
+leader : roosevelt
+stability : 100
+man power : 120000000
+fuel : 200000
+sulfur : 100000
+steel : 200000
+faction : 
+puppet : 
+United Kingdom
+leader : churchill
+stability : 100
+man power : 30000000
+fuel : 0
+sulfur : 1
+steel : 10
+faction : 
+puppet : 
+Soviet Union
+leader : stalin
+stability : 100
+man power : 160000000
+fuel : 300000
+sulfur : 50000
+steel : 100000
+faction : 
+puppet : 
+country doesn't exist
+invalid command
+invalid command
+invalid command
+Soviet Union
+tile doesn't exist
+tile doesn't exist
+invalid command
+Soviet Union
+Soviet Union
+Soviet Union
+Soviet Union
+Soviet Union
+Soviet Union
+Soviet Union
+Soviet Union
+Soviet Union
+Soviet Union
+Soviet Union
+Soviet Union
+Soviet Union
+Soviet Union
+Soviet Union
+United States
+United States
+United States
+United States
+United States
+United States
+United States
+United States
+United States
+United States
+United States
+United States
+United States
+United States
+United States
+United States
+United States
+United States
+German Reich
+German Reich
+German Reich
+German Reich
+German Reich
+German Reich
+German Reich
+German Reich
+German Reich
+German Reich
+German Reich
+German Reich
+German Reich
+German Reich
+German Reich
+German Reich
+Japan
+Japan
+Japan
+United Kingdom
+United Kingdom
+United Kingdom
+sunny
+tile doesn't exist
+tile doesn't exist
+invalid command
 plain
+tile doesn't exist
+tile doesn't exist
+invalid command
+you don't own this tile
+invalid command
+you don't own this tile
+you don't own this tile
 you don't own this tile
 terrain set successfully
 you can't change terrain twice
-weather doesn't exist
+you can't change terrain twice
+urban
+weather set successfully
+sunny
 you don't own this tile
+invalid command
+tile doesn't exist
+tile doesn't exist
+invalid command
 weather set successfully
-selected tile doesn't have this type of battalion
-selected tile doesn't have this type of battalion
-faction created successfully
-faction name already taken
-player doesn't exist
-you can't switch to yourself
-switched to Sana
-faction doesn't exist
-Soviet Union joined axis
-faction doesn't exist
-Soviet Union left axis
-Soviet Union joined axis
-terrain set successfully
+blizzard
 weather set successfully
-tile is unavailable
-you can't use imaginary battalions
-battalion set successfully
-battalion name already taken
-battalion set successfully
-battalion set successfully
-Soviet Union
-leader : stalin
-stability : 100
-man power : 159985000
-fuel : 270000
-sulfur : 20000
-steel : 40000
-faction : axis
-puppet : 
-you can't add this type of battalion anymore
-tile is unavailable
-no battalion with the given name
-battalion moved successfully
-no battalion with the given name
-can't upgrade battalions on this tile
-MASSIVEPanzers upgraded to level 1
-MASSIVEPanzers upgraded to level 2
-aww you can't upgrade your battalion
-daddy USA plz help us
+sandstorm
+sunny
 infantry:
 
 panzer:
-girlsUndPanzers 0 15 60
-T34 0 15 60
+
+airforce:
+
+navy:
+infantry:
+
+panzer:
 
 airforce:
 
 navy:
 can't show battalions
-infantry:
-
-panzer:
-MASSIVEPanzers 2 27 60
-
-airforce:
-
-navy:
-country doesn't exist
-invalid tile
-invalid factory type
-factory built successfully
-factory built successfully
-factory built successfully
-factory limit exceeded
-factory built successfully
-not enough money to build factory
-Soviet Union
-leader : stalin
-stability : 100
-man power : 159877500
-fuel : 255000
-sulfur : 5000
-steel : 0
-faction : axis
-puppet : 
-terrain set successfully
-invalid tile
-this tile doesn't contain this factory
-you are poor!
-factory extracted 10000 of fuel
+tile doesn't exist
+tile doesn't exist
+invalid command
 fuel refinery:
-fazliRefinery 100000
-masjedSoleymaan 90000
-meow 100000
+
+steel factory:
+
+sulfur factory:
+fuel refinery:
 
 steel factory:
 
 sulfur factory:
 can't show factories
-faction doesn't exist
-Soviet Union left axis
-attacker tile unavailable
-switched to Kiarash
-terrain set successfully
-weather set successfully
-switched to Sana
-war is over
-winner : Soviet Union
-loser : German Reich
+tile doesn't exist
+tile doesn't exist
+invalid command
+invalid command
+tile is unavailable
+tile is unavailable
+tile is unavailable
+you can't use imaginary battalions
+switched to guest1
+infantry:
+
+panzer:
+
+airforce:
+
+navy:
+you can't use imaginary battalions
+battalion set successfully
+infantry:
+inf1 0 20 20
+
+panzer:
+
+airforce:
+
+navy:
+battalion set successfully
+battalion set successfully
+infantry:
+inf1 0 20 20
+inf2 0 20 20
+inf3 0 20 20
+
+panzer:
+
+airforce:
+
+navy:
 Soviet Union
 leader : stalin
 stability : 100
-man power : 159876500
-fuel : 265000
+man power : 159955000
+fuel : 300000
+sulfur : 20000
+steel : 70000
+faction : 
+puppet : 
+battalion name already taken
+battalion name already taken
+battalion name already taken
+you can't add this type of battalion anymore
+you can't add this type of battalion anymore
+can't upgrade battalions on this tile
+can't upgrade battalions on this tile
+invalid command
+no battalion with the given name
+can't upgrade battalions on this tile
+Soviet Union
+leader : stalin
+stability : 100
+man power : 159955000
+fuel : 300000
+sulfur : 20000
+steel : 70000
+faction : 
+puppet : 
+inf1 upgraded to level 1
+infantry:
+inf1 1 25 20
+inf2 0 20 20
+inf3 0 20 20
+
+panzer:
+
+airforce:
+
+navy:
+Soviet Union
+leader : stalin
+stability : 100
+man power : 159947500
+fuel : 300000
+sulfur : 15000
+steel : 65000
+faction : 
+puppet : 
+inf1 upgraded to level 2
+infantry:
+inf1 2 32 20
+inf2 0 20 20
+inf3 0 20 20
+
+panzer:
+
+airforce:
+
+navy:
+Soviet Union
+leader : stalin
+stability : 100
+man power : 159932500
+fuel : 300000
 sulfur : 5000
-steel : 0
+steel : 55000
+faction : 
+puppet : 
+aww you can't upgrade your battalion
+fuel refinery:
+
+steel factory:
+
+sulfur factory:
+invalid tile
+invalid tile
+invalid command
+invalid tile
+factory built successfully
+fuel refinery:
+
+steel factory:
+
+sulfur factory:
+sf3 20000
+Soviet Union
+leader : stalin
+stability : 100
+man power : 159922500
+fuel : 300000
+sulfur : 5000
+steel : 55000
+faction : 
+puppet : 
+factory built successfully
+factory built successfully
+fuel refinery:
+
+steel factory:
+
+sulfur factory:
+sf1 20000
+sf2 20000
+sf3 20000
+Soviet Union
+leader : stalin
+stability : 100
+man power : 159902500
+fuel : 300000
+sulfur : 5000
+steel : 55000
+faction : 
+puppet : 
+invalid tile
+invalid tile
+invalid command
+invalid tile
+this tile doesn't contain this factory
+factory extracted 20000 of sulfur
+Soviet Union
+leader : stalin
+stability : 100
+man power : 159901500
+fuel : 300000
+sulfur : 25000
+steel : 55000
+faction : 
+puppet : 
+this tile doesn't contain this factory
+fuel refinery:
+
+steel factory:
+
+sulfur factory:
+sf2 20000
+sf3 20000
+factory extracted 20000 of sulfur
+this tile doesn't contain this factory
+factory extracted 20000 of sulfur
+this tile doesn't contain this factory
+fuel refinery:
+
+steel factory:
+
+sulfur factory:
+Soviet Union
+leader : stalin
+stability : 100
+man power : 159899500
+fuel : 300000
+sulfur : 65000
+steel : 55000
 faction : 
 puppet : 
 infantry:
+inf1 2 32 20
+inf2 0 20 20
+inf3 0 20 20
 
 panzer:
-girlsUndPanzers 0 23 60
-T34 0 23 60
+
+airforce:
+
+navy:
+inf1 upgraded to level 3
+Soviet Union
+leader : stalin
+stability : 100
+man power : 159869500
+fuel : 300000
+sulfur : 45000
+steel : 35000
+faction : 
+puppet : 
+infantry:
+inf1 3 42 20
+inf2 0 20 20
+inf3 0 20 20
+
+panzer:
+
+airforce:
+
+navy:
+tile is unavailable
+tile is unavailable
+tile is unavailable
+tile is unavailable
+invalid command
+invalid command
+tile is unavailable
+tile is unavailable
+no battalion with the given name
+battalion moved successfully
+infantry:
+inf1 3 42 20
+inf2 0 20 20
+
+panzer:
+
+airforce:
+
+navy:
+infantry:
+inf3 0 20 20
+
+panzer:
+
+airforce:
+
+navy:
+Soviet Union
+leader : stalin
+stability : 100
+man power : 159869500
+fuel : 300000
+sulfur : 45000
+steel : 35000
+faction : 
+puppet : 
+no battalion with the given name
+battalion moved successfully
+infantry:
+inf1 3 42 20
+inf2 0 20 20
+inf3 0 20 20
+
+panzer:
 
 airforce:
 
@@ -174,29 +632,1318 @@ panzer:
 airforce:
 
 navy:
-switched to Amirhossein
-no civil war for you
-switched to Kiarash
-invalid battalion type
+battalion moved successfully
+battalion moved successfully
+infantry:
+inf2 0 20 20
+
+panzer:
+
+airforce:
+
+navy:
+infantry:
+inf1 3 42 20
+inf3 0 20 20
+
+panzer:
+
+airforce:
+
+navy:
+Soviet Union
+leader : stalin
+stability : 100
+man power : 159869500
+fuel : 300000
+sulfur : 45000
+steel : 35000
+faction : 
+puppet : 
 battalion set successfully
-civil war ended. 41 won.
+Soviet Union
+leader : stalin
+stability : 100
+man power : 159854500
+fuel : 300000
+sulfur : 35000
+steel : 25000
+faction : 
+puppet : 
+infantry:
+inf2 0 20 20
+inf4 0 20 20
+
+panzer:
+
+airforce:
+
+navy:
+battalion moved successfully
+maximum battalion of this type in destination exists
+infantry:
+inf4 0 20 20
+
+panzer:
+
+airforce:
+
+navy:
+infantry:
+inf1 3 42 20
+inf2 0 20 20
+inf3 0 20 20
+
+panzer:
+
+airforce:
+
+navy:
+Soviet Union
+leader : stalin
+stability : 100
+man power : 159854500
+fuel : 300000
+sulfur : 35000
+steel : 25000
+faction : 
+puppet : 
+battalion set successfully
+Soviet Union
+leader : stalin
+stability : 100
+man power : 159849500
+fuel : 290000
+sulfur : 25000
+steel : 5000
+faction : 
+puppet : 
+daddy USA plz help us
+daddy USA plz help us
+infantry:
+inf4 0 20 20
+
+panzer:
+pan1 0 15 60
+
+airforce:
+
+navy:
+factory built successfully
+Soviet Union
+leader : stalin
+stability : 100
+man power : 159844500
+fuel : 290000
+sulfur : 25000
+steel : 5000
+faction : 
+puppet : 
+fuel refinery:
+
+steel factory:
+sf1 30000
+
+sulfur factory:
+factory built successfully
+factory built successfully
+fuel refinery:
+
+steel factory:
+sf1 30000
+sf2 30000
+sf3 30000
+
+sulfur factory:
+factory extracted 20000 of steel
+fuel refinery:
+
+steel factory:
+sf1 10000
+sf2 30000
+sf3 30000
+
+sulfur factory:
+factory extracted 10000 of steel
+fuel refinery:
+
+steel factory:
+sf2 30000
+sf3 30000
+
+sulfur factory:
+factory extracted 30000 of steel
+factory extracted 30000 of steel
+fuel refinery:
+
+steel factory:
+
+sulfur factory:
+Soviet Union
+leader : stalin
+stability : 100
+man power : 159825500
+fuel : 290000
+sulfur : 25000
+steel : 95000
+faction : 
+puppet : 
+battalion set successfully
+battalion set successfully
+infantry:
+inf4 0 20 20
+
+panzer:
+pan1 0 15 60
+pan2 0 15 60
+pan3 0 15 60
+
+airforce:
+
+navy:
+faction created successfully
+Soviet Union
+leader : stalin
+stability : 100
+man power : 159815500
+fuel : 270000
+sulfur : 5000
+steel : 55000
+faction : axis
+puppet : 
+faction name already taken
+faction created successfully
+Soviet Union
+leader : stalin
+stability : 100
+man power : 159815500
+fuel : 270000
+sulfur : 5000
+steel : 55000
+faction : axis,axis2
+puppet : 
+faction name already taken
+faction created successfully
+faction created successfully
+switched to guest2
+German Reich
+leader : hitler
+stability : 100
+man power : 60000000
+fuel : 100000
+sulfur : 200000
+steel : 300000
+faction : 
+puppet : 
+faction doesn't exist
+German Reich joined axis
+German Reich joined axis2
+German Reich
+leader : hitler
+stability : 100
+man power : 60000000
+fuel : 100000
+sulfur : 200000
+steel : 300000
+faction : axis,axis2
+puppet : 
+you don't own this tile
+terrain set successfully
+can't show battalions
+infantry:
+inf4 0 20 20
+
+panzer:
+pan1 0 15 60
+pan2 0 15 60
+pan3 0 15 60
+
+airforce:
+
+navy:
+battalion set successfully
+infantry:
+germanInf1 0 20 20
+inf4 0 20 20
+
+panzer:
+pan1 0 15 60
+pan2 0 15 60
+pan3 0 15 60
+
+airforce:
+
+navy:
+infantry:
+
+panzer:
+
+airforce:
+
+navy:
+battalion set successfully
+infantry:
+germanInf2 0 15 50
+
+panzer:
+
+airforce:
+
+navy:
+battalion moved successfully
+infantry:
+germanInf2 0 15 50
+inf4 0 20 20
+
+panzer:
+
+airforce:
+
+navy:
+German Reich
+leader : hitler
+stability : 100
+man power : 59970000
+fuel : 100000
+sulfur : 180000
+steel : 280000
+faction : axis,axis2
+puppet : 
+factory built successfully
+German Reich
+leader : hitler
+stability : 100
+man power : 59950000
+fuel : 100000
+sulfur : 180000
+steel : 280000
+faction : axis,axis2
+puppet : 
+German Reich left axis
+German Reich
+leader : hitler
+stability : 100
+man power : 59950000
+fuel : 100000
+sulfur : 180000
+steel : 280000
+faction : axis2
+puppet : 
+infantry:
+germanInf1 0 20 20
+
+panzer:
+pan1 0 15 60
+pan2 0 15 60
+pan3 0 15 60
+
+airforce:
+
+navy:
+German Reich left axis2
+German Reich
+leader : hitler
+stability : 100
+man power : 59950000
+fuel : 100000
+sulfur : 180000
+steel : 280000
+faction : 
+puppet : 
+can't show battalions
+German Reich joined axis
+infantry:
+germanInf1 0 20 20
+
+panzer:
+pan1 0 15 60
+pan2 0 15 60
+pan3 0 15 60
+
+airforce:
+
+navy:
+infantry:
+inf1 3 42 20
+inf2 0 20 20
+inf3 0 20 20
+
+panzer:
+
+airforce:
+
+navy:
+battalion moved successfully
+battalion moved successfully
+battalion moved successfully
+infantry:
+
+panzer:
+
+airforce:
+
+navy:
+infantry:
+inf1 3 42 20
+inf2 0 20 20
+inf3 0 20 20
+
+panzer:
+
+airforce:
+
+navy:
+battalion is on highest level
+inf2 upgraded to level 1
+infantry:
+inf1 3 42 20
+inf2 1 25 20
+inf3 0 20 20
+
+panzer:
+
+airforce:
+
+navy:
+battalion moved successfully
+infantry:
+inf2 1 25 20
+inf3 0 20 20
+
+panzer:
+
+airforce:
+
+navy:
+infantry:
+germanInf2 0 15 50
+inf1 3 42 20
+inf4 0 20 20
+
+panzer:
+
+airforce:
+
+navy:
+switched to user2
+Japan
+leader : hirohito
+stability : 100
+man power : 70000000
+fuel : 50000
+sulfur : 50000
+steel : 50000
+faction : 
+puppet : 
+battalion set successfully
+Japan
+leader : hirohito
+stability : 100
+man power : 69985000
+fuel : 50000
+sulfur : 40000
+steel : 40000
+faction : 
+puppet : 
+infantry:
+japanInf1 0 10 40
+
+panzer:
+
+airforce:
+
+navy:
+switched to guest2
+battalion moved successfully
+infantry:
+inf1 3 42 20
+
+panzer:
+
+airforce:
+
+navy:
+we are rivals , not enemies
+battalion moved successfully
+attacker tile unavailable
+attacker tile unavailable
+attacker tile unavailable
+attacker tile unavailable
+invalid command
+invalid command
+selected tile doesn't have this type of battalion
+enemy tile unavailable for attacking
+infantry:
+germanInf2 0 15 50
+inf1 3 42 20
+inf4 0 20 20
+
+panzer:
+
+airforce:
+
+navy:
+infantry:
+inf2 1 25 20
+inf3 0 20 20
+
+panzer:
+
+airforce:
+
+navy:
+German Reich left axis
+war is over
+winner : German Reich
+loser : Soviet Union
+infantry:
+germanInf2 0 18 50
+inf1 3 45 20
+inf4 0 23 20
+
+panzer:
+
+airforce:
+
+navy:
+infantry:
+
+panzer:
+
+airforce:
+
+navy:
+German Reich
+leader : hitler
+stability : 100
+man power : 59942500
+fuel : 100000
+sulfur : 175000
+steel : 275000
+faction : 
+puppet : 
+Soviet Union
+leader : stalin
+stability : 50
+man power : 159815500
+fuel : 270000
+sulfur : 5000
+steel : 55000
+faction : axis,axis2,axis3,axis4
+puppet : 
+switched to guest1
+game is locked
+game is locked
+game is locked
+game is locked
+game is locked
+game is locked
+game is locked
+game is locked
+game is locked
+game is locked
+game is locked
+game is locked
+game is locked
+game is locked
+game is locked
+game is locked
+game is locked
+game is locked
+game is locked
+game is locked
+game is locked
+game is locked
+game is locked
+game is locked
+game is locked
+invalid command
+game is locked
+game is locked
+game is locked
+game is locked
+switched to guest2
+infantry:
+
+panzer:
+
+airforce:
+
+navy:
+infantry:
+germanInf2 0 18 50
+inf1 3 45 20
+inf4 0 23 20
+
+panzer:
+
+airforce:
+
+navy:
+German Reich
+battalion moved successfully
+battalion moved successfully
+terrain set successfully
+weather set successfully
+switched to guest1
+game is locked
+game is locked
+game is locked
+game is locked
+game is locked
+game is locked
+game is locked
+game is locked
+switched to guest2
+infantry:
+germanInf2 0 18 50
+inf4 0 23 20
+
+panzer:
+
+airforce:
+
+navy:
+forest
+rainy
+switched to guest1
+game is locked
+game is locked
+switched to guest2
+German Reich
+leader : hitler
+stability : 100
+man power : 59942500
+fuel : 100000
+sulfur : 175000
+steel : 275000
+faction : 
+puppet : 
+switched to guest1
+game is locked
+game is locked
+Available leaders:
+zombie-lenin
+stalin
+trotsky
+leader doesn't exist
+leader doesn't exist
+leader doesn't exist
+German Reich
+leader : hitler
+stability : 100
+man power : 59942500
+fuel : 100000
+sulfur : 175000
+steel : 275000
+faction : 
+puppet : 
+Soviet Union
+leader : stalin
+stability : 100
+man power : 159815500
+fuel : 270000
+sulfur : 5000
+steel : 55000
+faction : axis,axis2,axis3,axis4
+puppet : 
+switched to guest2
+infantry:
+germanInf2 0 18 50
+inf4 0 23 20
+
+panzer:
+
+airforce:
+
+navy:
+invalid command
+factory built successfully
+factory extracted 20000 of steel
+German Reich
+leader : hitler
+stability : 100
+man power : 59890500
+fuel : 100000
+sulfur : 175000
+steel : 295000
+faction : 
+puppet : 
+Soviet Union
+leader : stalin
+stability : 100
+man power : 159815500
+fuel : 270000
+sulfur : 5000
+steel : 55000
+faction : axis,axis2,axis3,axis4
+puppet : 
+German Reich joined axis
+factory extracted 10000 of steel
+German Reich
+leader : hitler
+stability : 100
+man power : 59889500
+fuel : 100000
+sulfur : 175000
+steel : 300000
+faction : axis
+puppet : 
+Soviet Union
+leader : stalin
+stability : 100
+man power : 159815500
+fuel : 270000
+sulfur : 5000
+steel : 60000
+faction : axis,axis2,axis3,axis4
+puppet : 
+you are not allowed to puppet this country
+country doesn't exist
+infantry:
+germanInf2 0 18 50
+inf4 0 23 20
+
+panzer:
+
+airforce:
+
+navy:
+German Reich left axis
+switched to guest1
+you are not allowed to puppet this country
+switched to guest2
+battalion moved successfully
+battalion moved successfully
+switched to guest1
+infantry:
+
+panzer:
+
+airforce:
+
+navy:
+infantry:
+germanInf1 0 20 20
+
+panzer:
+pan1 0 15 60
+pan2 0 15 60
+pan3 0 15 60
+
+airforce:
+
+navy:
+battalion moved successfully
+battalion moved successfully
+battalion moved successfully
+war is over
+winner : Soviet Union
+loser : German Reich
+now German Reich is my puppet yo ho ha ha ha
+Soviet Union
+leader : stalin
+stability : 100
+man power : 159815500
+fuel : 270000
+sulfur : 5000
+steel : 60000
+faction : axis,axis2,axis3,axis4
+puppet : German Reich
+now Japan is my puppet yo ho ha ha ha
+now United Kingdom is my puppet yo ho ha ha ha
+switched to guest2
+enemy tile unavailable for attacking
+switched to guest1
+infantry:
+germanInf2 0 18 50
+inf1 3 45 20
+inf4 0 23 20
+
+panzer:
+
+airforce:
+
+navy:
+battalion moved successfully
+infantry:
+inf1 3 45 20
+
+panzer:
+
+airforce:
+
+navy:
+switched to user2
+infantry:
+japanInf1 0 10 40
+
+panzer:
+
+airforce:
+
+navy:
+switched to guest1
+we are rivals , not enemies
+switched to guest2
+Available leaders:
+adenauer
+pieck
+hitler
+war is over
+winner : German Reich
+loser : Japan
+infantry:
+
+panzer:
+
+airforce:
+
+navy:
+German Reich
+main menu
+History:
+user1 United Kingdom 0
+user2 Japan -2100
+user3 United States 0
+guest1 Soviet Union 2830
+guest2 German Reich 2110
+Leaderboard:
+mr_1house 0
+user1 0
+user3 0
+user4 0
+user5 0
+user6 0
+user2 -2100
+user logged in successfully
+aghaaz faAliat
+choosing country for user2:
+choosing country for user1:
+choosing country for user5:
+choosing country for user3:
+choosing country for guest1:
+Soviet Union
+Soviet Union
+Soviet Union
+Soviet Union
+Soviet Union
+Soviet Union
+Soviet Union
+Soviet Union
+Soviet Union
+Soviet Union
+Soviet Union
+Soviet Union
+Soviet Union
+Soviet Union
+Soviet Union
+Soviet Union
+United States
+United States
+United States
+United States
+United States
+United States
+United States
+United States
+United States
+United States
+United States
+United States
+United States
+United States
+United States
+United States
+United States
+United States
+German Reich
+German Reich
+German Reich
+German Reich
+German Reich
+German Reich
+German Reich
+German Reich
+German Reich
+German Reich
+German Reich
+German Reich
+German Reich
+German Reich
+German Reich
+German Reich
+Japan
+Japan
+Japan
+United Kingdom
+United Kingdom
+United Kingdom
+Soviet Union
+leader : stalin
+stability : 100
+man power : 160000000
+fuel : 300000
+sulfur : 50000
+steel : 100000
+faction : 
+puppet : 
+German Reich
+leader : hitler
+stability : 100
+man power : 60000000
+fuel : 100000
+sulfur : 200000
+steel : 300000
+faction : 
+puppet : 
+United States
+leader : roosevelt
+stability : 100
+man power : 120000000
+fuel : 200000
+sulfur : 100000
+steel : 200000
+faction : 
+puppet : 
+United Kingdom
+leader : churchill
+stability : 100
+man power : 30000000
+fuel : 0
+sulfur : 1
+steel : 10
+faction : 
+puppet : 
+Japan
+leader : hirohito
+stability : 100
+man power : 70000000
+fuel : 50000
+sulfur : 50000
+steel : 50000
+faction : 
+puppet : 
+switched to user1
+battalion set successfully
+battalion set successfully
+infantry:
+inf1 0 15 50
+
+panzer:
+
+airforce:
+
+navy:
+nv1 0 5 20
+switched to user2
+can't show battalions
+battalion set successfully
+switched to user1
+enemy tile unavailable for attacking
+8 , 35 , 54
+war is over
+winner : Soviet Union
+loser : German Reich
+switched to user2
+infantry:
+
+panzer:
+
+airforce:
+
+navy:
+sovNv1 0 11 30
+switched to user1
+enemy tile unavailable for attacking
+German Reich
+leader : hitler
+stability : 50
+man power : 59980000
+fuel : 70000
+sulfur : 180000
+steel : 240000
+faction : 
+puppet : 
+Available leaders:
+adenauer
+pieck
+hitler
+German Reich
+leader : pieck
+stability : 100
+man power : 59980000
+fuel : 70000
+sulfur : 180000
+steel : 240000
+faction : 
+puppet : 
+switched to user2
+now German Reich is my puppet yo ho ha ha ha
+switched to user5
+you are not allowed to puppet this country
+Available leaders:
+roosevelt
+browder
+pelley
+now German Reich is my puppet yo ho ha ha ha
+battalion moved successfully
+switched to user2
+battalion set successfully
+switched to user5
+enemy tile unavailable for attacking
+History:
+user2 Soviet Union 500
+user1 German Reich -250
+user5 United States 0
+user3 Japan 0
+guest1 United Kingdom 0
+----
+user1 United Kingdom 0
+user2 Japan -2100
+user3 United States 0
+guest1 Soviet Union 2830
+guest2 German Reich 2110
+Leaderboard:
+mr_1house 0
+user3 0
+user4 0
+user5 0
+user6 0
+user1 -250
+user2 -1600
+aghaaz faAliat
+choosing country for user2:
+choosing country for user1:
+choosing country for user3:
+choosing country for user5:
+choosing country for guest1:
+switched to user1
+plain
+plain
+plain
+terrain set successfully
+terrain set successfully
+terrain set successfully
+factory built successfully
+factory built successfully
+factory built successfully
+factory built successfully
+factory built successfully
+factory built successfully
+German Reich
+leader : hitler
+stability : 100
+man power : 59094000
+fuel : 100000
+sulfur : 200000
+steel : 224500
+faction : 
+puppet : 
+fuel refinery:
+f1 100000
+
+steel factory:
+f2 30000
+
+sulfur factory:
+factory extracted 0 of fuel
+fuel refinery:
+f1 100000
+
+steel factory:
+f2 30000
+
+sulfur factory:
+German Reich
+leader : hitler
+stability : 100
+man power : 59093000
+fuel : 100000
+sulfur : 200000
+steel : 224500
+faction : 
+puppet : 
+factory extracted 0 of fuel
+German Reich
+leader : hitler
+stability : 100
+man power : 59083000
+fuel : 100000
+sulfur : 200000
+steel : 224500
+faction : 
+puppet : 
+factory extracted 10000 of fuel
+fuel refinery:
+f1 90000
+
+steel factory:
+f2 30000
+
+sulfur factory:
+German Reich
+leader : hitler
+stability : 100
+man power : 59082000
+fuel : 110000
+sulfur : 200000
+steel : 224500
+faction : 
+puppet : 
+factory extracted 85000 of fuel
+fuel refinery:
+f1 5000
+
+steel factory:
+f2 30000
+
+sulfur factory:
+German Reich
+leader : hitler
+stability : 100
+man power : 59073500
+fuel : 195000
+sulfur : 200000
+steel : 224500
+faction : 
+puppet : 
+factory extracted 5000 of fuel
+fuel refinery:
+
+steel factory:
+f2 30000
+
+sulfur factory:
+German Reich
+leader : hitler
+stability : 100
+man power : 59073000
+fuel : 200000
+sulfur : 200000
+steel : 224500
+faction : 
+puppet : 
+History:
+user2 Soviet Union 0
+user1 German Reich 0
+user3 United States 0
+user5 United Kingdom 0
+guest1 Japan 0
+----
+user2 Soviet Union 500
+user1 German Reich -250
+user5 United States 0
+user3 Japan 0
+guest1 United Kingdom 0
+----
+user1 United Kingdom 0
+user2 Japan -2100
+user3 United States 0
+guest1 Soviet Union 2830
+guest2 German Reich 2110
+aghaaz faAliat
+choosing country for user2:
+choosing country for user1:
+choosing country for user3:
+choosing country for guest1:
+choosing country for guest2:
+switched to user1
+battalion set successfully
+infantry:
+
+panzer:
+
+airforce:
+air1 0 10 40
+
+navy:
+switched to user2
+battalion set successfully
+war is over
+winner : German Reich
+loser : Soviet Union
+Available leaders:
+zombie-lenin
+stalin
+trotsky
+infantry:
+
+panzer:
+
+airforce:
+
+navy:
+switched to user1
+infantry:
+
+panzer:
+
+airforce:
+air1 0 12 40
+
+navy:
+battalion set successfully
+civil war ended. 50 won.
 game is locked
 Available leaders:
 adenauer
 pieck
 hitler
-leader doesn't exist
-leader doesn't exist
-Soviet Union
-main menu
-leaderboard menu
+infantry:
+
+panzer:
+
+airforce:
+air1 0 12 40
+
+navy:
+infantry:
+inf1 0 15 50
+
+panzer:
+
+airforce:
+
+navy:
+daddy USA plz help us
+civil war ended. 50 won.
+Available leaders:
+adenauer
+pieck
+hitler
+infantry:
+
+panzer:
+
+airforce:
+air1 0 12 40
+
+navy:
+German Reich
+leader : hitler
+stability : 100
+man power : 59984000
+fuel : 44000
+sulfur : 179400
+steel : 254400
+faction : 
+puppet : 
+factory built successfully
+factory extracted 100000 of fuel
+German Reich
+leader : hitler
+stability : 100
+man power : 59932000
+fuel : 144000
+sulfur : 179400
+steel : 249400
+faction : 
+puppet : 
+battalion set successfully
+civil war ended. 50 won.
+Available leaders:
+adenauer
+pieck
+hitler
+infantry:
+
+panzer:
+
+airforce:
+air1 0 12 40
+
+navy:
+infantry:
+inf1 0 15 50
+
+panzer:
+
+airforce:
+
+navy:
+battalion set successfully
+can't start civil war between these tiles
+battalion moved successfully
+man dige harfi nadaram.
+Available leaders:
+adenauer
+pieck
+hitler
+infantry:
+
+panzer:
+
+airforce:
+air1 0 12 40
+
+navy:
+infantry:
+
+panzer:
+
+airforce:
+
+navy:
 History:
-Kiarash German Reich -245
-Amirhossein United States 0
-Sana Soviet Union 490
+user2 Soviet Union -900
+user1 German Reich 1800
+user3 Japan 0
 guest1 United Kingdom 0
-guest2 Japan 0
-Leaderboard:
-Sana 490
-Amirhossein 0
-Kiarash -245
+guest2 United States 0
+----
+user2 Soviet Union 0
+user1 German Reich 0
+user3 United States 0
+user5 United Kingdom 0
+guest1 Japan 0
+----
+user2 Soviet Union 500
+user1 German Reich -250
+user5 United States 0
+user3 Japan 0
+guest1 United Kingdom 0
+----
+user1 United Kingdom 0
+user2 Japan -2100
+user3 United States 0
+guest1 Soviet Union 2830
+guest2 German Reich 2110
+invalid command
+aghaaz faAliat
+choosing country for user2:
+choosing country for user1:
+choosing country for guest1:
+choosing country for guest2:
+choosing country for guest3:
+History:
+user2 German Reich 0
+user1 Soviet Union 0
+guest1 United Kingdom 0
+guest2 United States 0
+guest3 Japan 0
+----
+user2 Soviet Union -900
+user1 German Reich 1800
+user3 Japan 0
+guest1 United Kingdom 0
+guest2 United States 0
+----
+user2 Soviet Union 0
+user1 German Reich 0
+user3 United States 0
+user5 United Kingdom 0
+guest1 Japan 0
+----
+user2 Soviet Union 500
+user1 German Reich -250
+user5 United States 0
+user3 Japan 0
+guest1 United Kingdom 0
+----
+user1 United Kingdom 0
+user2 Japan -2100
+user3 United States 0
+guest1 Soviet Union 2830
+guest2 German Reich 2110
+leaderboard menu
