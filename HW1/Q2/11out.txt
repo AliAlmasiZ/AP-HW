@@ -1,0 +1,4007 @@
+invalid command
+Redirecting to the LoginMenu ...
+invalid command
+User account for Foad Khab created successfully.
+User account for Fatemeh Tamehri created successfully.
+User account for Mahdyar Mostash created successfully.
+Store account for "Samsung" created successfully.
+Store account for "Gucci" created successfully.
+Store account for "Rolex" created successfully.
+Store account for "Sony" created successfully.
+Store account for "Lenovo" created successfully.
+invalid command
+Store logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the StoreMenu ...
+Product "Samsung Galaxy S24 Ultra" has been added successfully with ID 101.
+Product "Samsung 55-inch 4K QLED TV" has been added successfully with ID 102.
+Product "Samsung Galaxy SmartTag 2-Pack" has been added successfully with ID 103.
+Product "Samsung Fast Charger 45W" has been added successfully with ID 104.
+Product "Samsung USB-C to HDMI Adapter" has been added successfully with ID 105.
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Store logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the StoreMenu ...
+Product "Gucci Leather Shoulder Bag" has been added successfully with ID 106.
+Product "Gucci GG Canvas Sneakers" has been added successfully with ID 107.
+Product "Gucci Branded Socks" has been added successfully with ID 108.
+Product "Gucci Keychain" has been added successfully with ID 109.
+Product "Gucci Card Holder" has been added successfully with ID 110.
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Store logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the StoreMenu ...
+Product "Rolex Submariner Watch" has been added successfully with ID 111.
+Product "Rolex Daytona Chronograph" has been added successfully with ID 112.
+Product "Rolex Premium Cleaning Kit" has been added successfully with ID 113.
+Product "Rolex Watch Box" has been added successfully with ID 114.
+Product "Rolex Cufflinks" has been added successfully with ID 115.
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Store logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the StoreMenu ...
+Product "Sony PlayStation 5" has been added successfully with ID 116.
+Product "Sony WH-1000XM5 Headphones" has been added successfully with ID 117.
+Product "Sony PlayStation 5 Controller Charger" has been added successfully with ID 118.
+Product "Sony Noise-Canceling Earbuds" has been added successfully with ID 119.
+Product "Sony 64GB SD Card" has been added successfully with ID 120.
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Store logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the StoreMenu ...
+Product "Lenovo ThinkPad X1 Carbon" has been added successfully with ID 121.
+Product "Lenovo Legion Pro 7i Gaming Laptop" has been added successfully with ID 122.
+Product "Lenovo Wireless Mouse" has been added successfully with ID 123.
+Product "Lenovo Laptop Stand" has been added successfully with ID 124.
+Product "Lenovo USB-C Hub" has been added successfully with ID 125.
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+Redirecting to the ProductMenu ...
+invalid command
+Product List (Sorted by: Higher price to lower)
+------------------------------------------------
+ID: 112
+Name: Rolex Daytona Chronograph
+Rate: 2.5/5
+Price: $11000.0
+Brand: Rolex
+Stock: 3
+------------------------------------------------
+ID: 111
+Name: Rolex Submariner Watch
+Rate: 2.5/5
+Price: $8000.0
+Brand: Rolex
+Stock: 4
+------------------------------------------------
+ID: 122
+Name: Lenovo Legion Pro 7i Gaming Laptop
+Rate: 2.5/5
+Price: $2200.0
+Brand: Lenovo
+Stock: 5
+------------------------------------------------
+ID: 121
+Name: Lenovo ThinkPad X1 Carbon
+Rate: 2.5/5
+Price: $1600.0
+Brand: Lenovo
+Stock: 7
+------------------------------------------------
+ID: 106
+Name: Gucci Leather Shoulder Bag
+Rate: 2.5/5
+Price: $1300.0
+Brand: Gucci
+Stock: 6
+------------------------------------------------
+ID: 101
+Name: Samsung Galaxy S24 Ultra
+Rate: 2.5/5
+Price: $1200.0
+Brand: Samsung
+Stock: 10
+------------------------------------------------
+ID: 102
+Name: Samsung 55-inch 4K QLED TV
+Rate: 2.5/5
+Price: $1000.0
+Brand: Samsung
+Stock: 8
+------------------------------------------------
+ID: 107
+Name: Gucci GG Canvas Sneakers
+Rate: 2.5/5
+Price: $800.0
+Brand: Gucci
+Stock: 8
+------------------------------------------------
+ID: 116
+Name: Sony PlayStation 5
+Rate: 2.5/5
+Price: $600.0
+Brand: Sony
+Stock: 12
+------------------------------------------------
+ID: 117
+Name: Sony WH-1000XM5 Headphones
+Rate: 2.5/5
+Price: $400.0
+Brand: Sony
+Stock: 10
+------------------------------------------------
+(Showing 1-10 out of 25)
+Use `show next 10 products' to see more.
+Product List (Sorted by: Higher price to lower)
+------------------------------------------------
+ID: 110
+Name: Gucci Card Holder
+Rate: 2.5/5
+Price: $100.0
+Brand: Gucci
+Stock: 10
+------------------------------------------------
+ID: 114
+Name: Rolex Watch Box
+Rate: 2.5/5
+Price: $100.0
+Brand: Rolex
+Stock: 12
+------------------------------------------------
+ID: 115
+Name: Rolex Cufflinks
+Rate: 2.5/5
+Price: $100.0
+Brand: Rolex
+Stock: 8
+------------------------------------------------
+ID: 119
+Name: Sony Noise-Canceling Earbuds
+Rate: 2.5/5
+Price: $100.0
+Brand: Sony
+Stock: 10
+------------------------------------------------
+ID: 109
+Name: Gucci Keychain
+Rate: 2.5/5
+Price: $90.0
+Brand: Gucci
+Stock: 12
+------------------------------------------------
+ID: 113
+Name: Rolex Premium Cleaning Kit
+Rate: 2.5/5
+Price: $80.0
+Brand: Rolex
+Stock: 10
+------------------------------------------------
+ID: 125
+Name: Lenovo USB-C Hub
+Rate: 2.5/5
+Price: $80.0
+Brand: Lenovo
+Stock: 12
+------------------------------------------------
+ID: 108
+Name: Gucci Branded Socks
+Rate: 2.5/5
+Price: $70.0
+Brand: Gucci
+Stock: 15
+------------------------------------------------
+ID: 124
+Name: Lenovo Laptop Stand
+Rate: 2.5/5
+Price: $70.0
+Brand: Lenovo
+Stock: 10
+------------------------------------------------
+ID: 105
+Name: Samsung USB-C to HDMI Adapter
+Rate: 2.5/5
+Price: $60.0
+Brand: Samsung
+Stock: 10
+------------------------------------------------
+(Showing 11-20 out of 25)
+Use `show next 10 products' to see more.
+Product List (Sorted by: Higher price to lower)
+------------------------------------------------
+ID: 118
+Name: Sony PlayStation 5 Controller Charger
+Rate: 2.5/5
+Price: $60.0
+Brand: Sony
+Stock: 14
+------------------------------------------------
+ID: 104
+Name: Samsung Fast Charger 45W
+Rate: 2.5/5
+Price: $50.0
+Brand: Samsung
+Stock: 15
+------------------------------------------------
+ID: 123
+Name: Lenovo Wireless Mouse
+Rate: 2.5/5
+Price: $50.0
+Brand: Lenovo
+Stock: 15
+------------------------------------------------
+ID: 103
+Name: Samsung Galaxy SmartTag 2-Pack
+Rate: 2.5/5
+Price: $40.0
+Brand: Samsung
+Stock: 12
+------------------------------------------------
+ID: 120
+Name: Sony 64GB SD Card
+Rate: 2.5/5
+Price: $40.0
+Brand: Sony
+Stock: 15
+------------------------------------------------
+(Showing 21-30 out of 25)
+No more products available.
+No more products available.
+Product List (Sorted by: Higher price to lower)
+------------------------------------------------
+ID: 110
+Name: Gucci Card Holder
+Rate: 2.5/5
+Price: $100.0
+Brand: Gucci
+Stock: 10
+------------------------------------------------
+ID: 114
+Name: Rolex Watch Box
+Rate: 2.5/5
+Price: $100.0
+Brand: Rolex
+Stock: 12
+------------------------------------------------
+ID: 115
+Name: Rolex Cufflinks
+Rate: 2.5/5
+Price: $100.0
+Brand: Rolex
+Stock: 8
+------------------------------------------------
+ID: 119
+Name: Sony Noise-Canceling Earbuds
+Rate: 2.5/5
+Price: $100.0
+Brand: Sony
+Stock: 10
+------------------------------------------------
+ID: 109
+Name: Gucci Keychain
+Rate: 2.5/5
+Price: $90.0
+Brand: Gucci
+Stock: 12
+------------------------------------------------
+ID: 113
+Name: Rolex Premium Cleaning Kit
+Rate: 2.5/5
+Price: $80.0
+Brand: Rolex
+Stock: 10
+------------------------------------------------
+ID: 125
+Name: Lenovo USB-C Hub
+Rate: 2.5/5
+Price: $80.0
+Brand: Lenovo
+Stock: 12
+------------------------------------------------
+ID: 108
+Name: Gucci Branded Socks
+Rate: 2.5/5
+Price: $70.0
+Brand: Gucci
+Stock: 15
+------------------------------------------------
+ID: 124
+Name: Lenovo Laptop Stand
+Rate: 2.5/5
+Price: $70.0
+Brand: Lenovo
+Stock: 10
+------------------------------------------------
+ID: 105
+Name: Samsung USB-C to HDMI Adapter
+Rate: 2.5/5
+Price: $60.0
+Brand: Samsung
+Stock: 10
+------------------------------------------------
+(Showing 11-20 out of 25)
+Use `show next 10 products' to see more.
+Product List (Sorted by: Higher price to lower)
+------------------------------------------------
+ID: 118
+Name: Sony PlayStation 5 Controller Charger
+Rate: 2.5/5
+Price: $60.0
+Brand: Sony
+Stock: 14
+------------------------------------------------
+ID: 104
+Name: Samsung Fast Charger 45W
+Rate: 2.5/5
+Price: $50.0
+Brand: Samsung
+Stock: 15
+------------------------------------------------
+ID: 123
+Name: Lenovo Wireless Mouse
+Rate: 2.5/5
+Price: $50.0
+Brand: Lenovo
+Stock: 15
+------------------------------------------------
+ID: 103
+Name: Samsung Galaxy SmartTag 2-Pack
+Rate: 2.5/5
+Price: $40.0
+Brand: Samsung
+Stock: 12
+------------------------------------------------
+ID: 120
+Name: Sony 64GB SD Card
+Rate: 2.5/5
+Price: $40.0
+Brand: Sony
+Stock: 15
+------------------------------------------------
+(Showing 21-30 out of 25)
+No more products available.
+Product List (Sorted by: Higher price to lower)
+------------------------------------------------
+ID: 110
+Name: Gucci Card Holder
+Rate: 2.5/5
+Price: $100.0
+Brand: Gucci
+Stock: 10
+------------------------------------------------
+ID: 114
+Name: Rolex Watch Box
+Rate: 2.5/5
+Price: $100.0
+Brand: Rolex
+Stock: 12
+------------------------------------------------
+ID: 115
+Name: Rolex Cufflinks
+Rate: 2.5/5
+Price: $100.0
+Brand: Rolex
+Stock: 8
+------------------------------------------------
+ID: 119
+Name: Sony Noise-Canceling Earbuds
+Rate: 2.5/5
+Price: $100.0
+Brand: Sony
+Stock: 10
+------------------------------------------------
+ID: 109
+Name: Gucci Keychain
+Rate: 2.5/5
+Price: $90.0
+Brand: Gucci
+Stock: 12
+------------------------------------------------
+ID: 113
+Name: Rolex Premium Cleaning Kit
+Rate: 2.5/5
+Price: $80.0
+Brand: Rolex
+Stock: 10
+------------------------------------------------
+ID: 125
+Name: Lenovo USB-C Hub
+Rate: 2.5/5
+Price: $80.0
+Brand: Lenovo
+Stock: 12
+------------------------------------------------
+ID: 108
+Name: Gucci Branded Socks
+Rate: 2.5/5
+Price: $70.0
+Brand: Gucci
+Stock: 15
+------------------------------------------------
+ID: 124
+Name: Lenovo Laptop Stand
+Rate: 2.5/5
+Price: $70.0
+Brand: Lenovo
+Stock: 10
+------------------------------------------------
+ID: 105
+Name: Samsung USB-C to HDMI Adapter
+Rate: 2.5/5
+Price: $60.0
+Brand: Samsung
+Stock: 10
+------------------------------------------------
+(Showing 11-20 out of 25)
+Use `show next 10 products' to see more.
+Product List (Sorted by: Higher price to lower)
+------------------------------------------------
+ID: 112
+Name: Rolex Daytona Chronograph
+Rate: 2.5/5
+Price: $11000.0
+Brand: Rolex
+Stock: 3
+------------------------------------------------
+ID: 111
+Name: Rolex Submariner Watch
+Rate: 2.5/5
+Price: $8000.0
+Brand: Rolex
+Stock: 4
+------------------------------------------------
+ID: 122
+Name: Lenovo Legion Pro 7i Gaming Laptop
+Rate: 2.5/5
+Price: $2200.0
+Brand: Lenovo
+Stock: 5
+------------------------------------------------
+ID: 121
+Name: Lenovo ThinkPad X1 Carbon
+Rate: 2.5/5
+Price: $1600.0
+Brand: Lenovo
+Stock: 7
+------------------------------------------------
+ID: 106
+Name: Gucci Leather Shoulder Bag
+Rate: 2.5/5
+Price: $1300.0
+Brand: Gucci
+Stock: 6
+------------------------------------------------
+ID: 101
+Name: Samsung Galaxy S24 Ultra
+Rate: 2.5/5
+Price: $1200.0
+Brand: Samsung
+Stock: 10
+------------------------------------------------
+ID: 102
+Name: Samsung 55-inch 4K QLED TV
+Rate: 2.5/5
+Price: $1000.0
+Brand: Samsung
+Stock: 8
+------------------------------------------------
+ID: 107
+Name: Gucci GG Canvas Sneakers
+Rate: 2.5/5
+Price: $800.0
+Brand: Gucci
+Stock: 8
+------------------------------------------------
+ID: 116
+Name: Sony PlayStation 5
+Rate: 2.5/5
+Price: $600.0
+Brand: Sony
+Stock: 12
+------------------------------------------------
+ID: 117
+Name: Sony WH-1000XM5 Headphones
+Rate: 2.5/5
+Price: $400.0
+Brand: Sony
+Stock: 10
+------------------------------------------------
+(Showing 1-10 out of 25)
+Use `show next 10 products' to see more.
+No more products available.
+No more products available.
+Product List (Sorted by: Higher price to lower)
+------------------------------------------------
+ID: 110
+Name: Gucci Card Holder
+Rate: 2.5/5
+Price: $100.0
+Brand: Gucci
+Stock: 10
+------------------------------------------------
+ID: 114
+Name: Rolex Watch Box
+Rate: 2.5/5
+Price: $100.0
+Brand: Rolex
+Stock: 12
+------------------------------------------------
+ID: 115
+Name: Rolex Cufflinks
+Rate: 2.5/5
+Price: $100.0
+Brand: Rolex
+Stock: 8
+------------------------------------------------
+ID: 119
+Name: Sony Noise-Canceling Earbuds
+Rate: 2.5/5
+Price: $100.0
+Brand: Sony
+Stock: 10
+------------------------------------------------
+ID: 109
+Name: Gucci Keychain
+Rate: 2.5/5
+Price: $90.0
+Brand: Gucci
+Stock: 12
+------------------------------------------------
+ID: 113
+Name: Rolex Premium Cleaning Kit
+Rate: 2.5/5
+Price: $80.0
+Brand: Rolex
+Stock: 10
+------------------------------------------------
+ID: 125
+Name: Lenovo USB-C Hub
+Rate: 2.5/5
+Price: $80.0
+Brand: Lenovo
+Stock: 12
+------------------------------------------------
+ID: 108
+Name: Gucci Branded Socks
+Rate: 2.5/5
+Price: $70.0
+Brand: Gucci
+Stock: 15
+------------------------------------------------
+ID: 124
+Name: Lenovo Laptop Stand
+Rate: 2.5/5
+Price: $70.0
+Brand: Lenovo
+Stock: 10
+------------------------------------------------
+ID: 105
+Name: Samsung USB-C to HDMI Adapter
+Rate: 2.5/5
+Price: $60.0
+Brand: Samsung
+Stock: 10
+------------------------------------------------
+(Showing 11-20 out of 25)
+Use `show next 10 products' to see more.
+Product List (Sorted by: Higher price to lower)
+------------------------------------------------
+ID: 112
+Name: Rolex Daytona Chronograph
+Rate: 2.5/5
+Price: $11000.0
+Brand: Rolex
+Stock: 3
+------------------------------------------------
+ID: 111
+Name: Rolex Submariner Watch
+Rate: 2.5/5
+Price: $8000.0
+Brand: Rolex
+Stock: 4
+------------------------------------------------
+ID: 122
+Name: Lenovo Legion Pro 7i Gaming Laptop
+Rate: 2.5/5
+Price: $2200.0
+Brand: Lenovo
+Stock: 5
+------------------------------------------------
+ID: 121
+Name: Lenovo ThinkPad X1 Carbon
+Rate: 2.5/5
+Price: $1600.0
+Brand: Lenovo
+Stock: 7
+------------------------------------------------
+ID: 106
+Name: Gucci Leather Shoulder Bag
+Rate: 2.5/5
+Price: $1300.0
+Brand: Gucci
+Stock: 6
+------------------------------------------------
+ID: 101
+Name: Samsung Galaxy S24 Ultra
+Rate: 2.5/5
+Price: $1200.0
+Brand: Samsung
+Stock: 10
+------------------------------------------------
+ID: 102
+Name: Samsung 55-inch 4K QLED TV
+Rate: 2.5/5
+Price: $1000.0
+Brand: Samsung
+Stock: 8
+------------------------------------------------
+ID: 107
+Name: Gucci GG Canvas Sneakers
+Rate: 2.5/5
+Price: $800.0
+Brand: Gucci
+Stock: 8
+------------------------------------------------
+ID: 116
+Name: Sony PlayStation 5
+Rate: 2.5/5
+Price: $600.0
+Brand: Sony
+Stock: 12
+------------------------------------------------
+ID: 117
+Name: Sony WH-1000XM5 Headphones
+Rate: 2.5/5
+Price: $400.0
+Brand: Sony
+Stock: 10
+------------------------------------------------
+(Showing 1-10 out of 25)
+Use `show next 10 products' to see more.
+invalid command
+Product List (Sorted by: Lower price to higher)
+------------------------------------------------
+ID: 103
+Name: Samsung Galaxy SmartTag 2-Pack
+Rate: 2.5/5
+Price: $40.0
+Brand: Samsung
+Stock: 12
+------------------------------------------------
+ID: 120
+Name: Sony 64GB SD Card
+Rate: 2.5/5
+Price: $40.0
+Brand: Sony
+Stock: 15
+------------------------------------------------
+ID: 104
+Name: Samsung Fast Charger 45W
+Rate: 2.5/5
+Price: $50.0
+Brand: Samsung
+Stock: 15
+------------------------------------------------
+ID: 123
+Name: Lenovo Wireless Mouse
+Rate: 2.5/5
+Price: $50.0
+Brand: Lenovo
+Stock: 15
+------------------------------------------------
+ID: 105
+Name: Samsung USB-C to HDMI Adapter
+Rate: 2.5/5
+Price: $60.0
+Brand: Samsung
+Stock: 10
+------------------------------------------------
+ID: 118
+Name: Sony PlayStation 5 Controller Charger
+Rate: 2.5/5
+Price: $60.0
+Brand: Sony
+Stock: 14
+------------------------------------------------
+ID: 108
+Name: Gucci Branded Socks
+Rate: 2.5/5
+Price: $70.0
+Brand: Gucci
+Stock: 15
+------------------------------------------------
+ID: 124
+Name: Lenovo Laptop Stand
+Rate: 2.5/5
+Price: $70.0
+Brand: Lenovo
+Stock: 10
+------------------------------------------------
+ID: 113
+Name: Rolex Premium Cleaning Kit
+Rate: 2.5/5
+Price: $80.0
+Brand: Rolex
+Stock: 10
+------------------------------------------------
+ID: 125
+Name: Lenovo USB-C Hub
+Rate: 2.5/5
+Price: $80.0
+Brand: Lenovo
+Stock: 12
+------------------------------------------------
+(Showing 1-10 out of 25)
+Use `show next 10 products' to see more.
+Product List (Sorted by: Lower price to higher)
+------------------------------------------------
+ID: 109
+Name: Gucci Keychain
+Rate: 2.5/5
+Price: $90.0
+Brand: Gucci
+Stock: 12
+------------------------------------------------
+ID: 110
+Name: Gucci Card Holder
+Rate: 2.5/5
+Price: $100.0
+Brand: Gucci
+Stock: 10
+------------------------------------------------
+ID: 114
+Name: Rolex Watch Box
+Rate: 2.5/5
+Price: $100.0
+Brand: Rolex
+Stock: 12
+------------------------------------------------
+ID: 115
+Name: Rolex Cufflinks
+Rate: 2.5/5
+Price: $100.0
+Brand: Rolex
+Stock: 8
+------------------------------------------------
+ID: 119
+Name: Sony Noise-Canceling Earbuds
+Rate: 2.5/5
+Price: $100.0
+Brand: Sony
+Stock: 10
+------------------------------------------------
+ID: 117
+Name: Sony WH-1000XM5 Headphones
+Rate: 2.5/5
+Price: $400.0
+Brand: Sony
+Stock: 10
+------------------------------------------------
+ID: 116
+Name: Sony PlayStation 5
+Rate: 2.5/5
+Price: $600.0
+Brand: Sony
+Stock: 12
+------------------------------------------------
+ID: 107
+Name: Gucci GG Canvas Sneakers
+Rate: 2.5/5
+Price: $800.0
+Brand: Gucci
+Stock: 8
+------------------------------------------------
+ID: 102
+Name: Samsung 55-inch 4K QLED TV
+Rate: 2.5/5
+Price: $1000.0
+Brand: Samsung
+Stock: 8
+------------------------------------------------
+ID: 101
+Name: Samsung Galaxy S24 Ultra
+Rate: 2.5/5
+Price: $1200.0
+Brand: Samsung
+Stock: 10
+------------------------------------------------
+(Showing 11-20 out of 25)
+Use `show next 10 products' to see more.
+Product List (Sorted by: Lower price to higher)
+------------------------------------------------
+ID: 106
+Name: Gucci Leather Shoulder Bag
+Rate: 2.5/5
+Price: $1300.0
+Brand: Gucci
+Stock: 6
+------------------------------------------------
+ID: 121
+Name: Lenovo ThinkPad X1 Carbon
+Rate: 2.5/5
+Price: $1600.0
+Brand: Lenovo
+Stock: 7
+------------------------------------------------
+ID: 122
+Name: Lenovo Legion Pro 7i Gaming Laptop
+Rate: 2.5/5
+Price: $2200.0
+Brand: Lenovo
+Stock: 5
+------------------------------------------------
+ID: 111
+Name: Rolex Submariner Watch
+Rate: 2.5/5
+Price: $8000.0
+Brand: Rolex
+Stock: 4
+------------------------------------------------
+ID: 112
+Name: Rolex Daytona Chronograph
+Rate: 2.5/5
+Price: $11000.0
+Brand: Rolex
+Stock: 3
+------------------------------------------------
+(Showing 21-30 out of 25)
+Product List (Sorted by: Number of sold)
+------------------------------------------------
+ID: 101
+Name: Samsung Galaxy S24 Ultra
+Rate: 2.5/5
+Price: $1200.0
+Brand: Samsung
+Stock: 10
+------------------------------------------------
+ID: 102
+Name: Samsung 55-inch 4K QLED TV
+Rate: 2.5/5
+Price: $1000.0
+Brand: Samsung
+Stock: 8
+------------------------------------------------
+ID: 103
+Name: Samsung Galaxy SmartTag 2-Pack
+Rate: 2.5/5
+Price: $40.0
+Brand: Samsung
+Stock: 12
+------------------------------------------------
+ID: 104
+Name: Samsung Fast Charger 45W
+Rate: 2.5/5
+Price: $50.0
+Brand: Samsung
+Stock: 15
+------------------------------------------------
+ID: 105
+Name: Samsung USB-C to HDMI Adapter
+Rate: 2.5/5
+Price: $60.0
+Brand: Samsung
+Stock: 10
+------------------------------------------------
+ID: 106
+Name: Gucci Leather Shoulder Bag
+Rate: 2.5/5
+Price: $1300.0
+Brand: Gucci
+Stock: 6
+------------------------------------------------
+ID: 107
+Name: Gucci GG Canvas Sneakers
+Rate: 2.5/5
+Price: $800.0
+Brand: Gucci
+Stock: 8
+------------------------------------------------
+ID: 108
+Name: Gucci Branded Socks
+Rate: 2.5/5
+Price: $70.0
+Brand: Gucci
+Stock: 15
+------------------------------------------------
+ID: 109
+Name: Gucci Keychain
+Rate: 2.5/5
+Price: $90.0
+Brand: Gucci
+Stock: 12
+------------------------------------------------
+ID: 110
+Name: Gucci Card Holder
+Rate: 2.5/5
+Price: $100.0
+Brand: Gucci
+Stock: 10
+------------------------------------------------
+(Showing 1-10 out of 25)
+Use `show next 10 products' to see more.
+Product List (Sorted by: Number of sold)
+------------------------------------------------
+ID: 111
+Name: Rolex Submariner Watch
+Rate: 2.5/5
+Price: $8000.0
+Brand: Rolex
+Stock: 4
+------------------------------------------------
+ID: 112
+Name: Rolex Daytona Chronograph
+Rate: 2.5/5
+Price: $11000.0
+Brand: Rolex
+Stock: 3
+------------------------------------------------
+ID: 113
+Name: Rolex Premium Cleaning Kit
+Rate: 2.5/5
+Price: $80.0
+Brand: Rolex
+Stock: 10
+------------------------------------------------
+ID: 114
+Name: Rolex Watch Box
+Rate: 2.5/5
+Price: $100.0
+Brand: Rolex
+Stock: 12
+------------------------------------------------
+ID: 115
+Name: Rolex Cufflinks
+Rate: 2.5/5
+Price: $100.0
+Brand: Rolex
+Stock: 8
+------------------------------------------------
+ID: 116
+Name: Sony PlayStation 5
+Rate: 2.5/5
+Price: $600.0
+Brand: Sony
+Stock: 12
+------------------------------------------------
+ID: 117
+Name: Sony WH-1000XM5 Headphones
+Rate: 2.5/5
+Price: $400.0
+Brand: Sony
+Stock: 10
+------------------------------------------------
+ID: 118
+Name: Sony PlayStation 5 Controller Charger
+Rate: 2.5/5
+Price: $60.0
+Brand: Sony
+Stock: 14
+------------------------------------------------
+ID: 119
+Name: Sony Noise-Canceling Earbuds
+Rate: 2.5/5
+Price: $100.0
+Brand: Sony
+Stock: 10
+------------------------------------------------
+ID: 120
+Name: Sony 64GB SD Card
+Rate: 2.5/5
+Price: $40.0
+Brand: Sony
+Stock: 15
+------------------------------------------------
+(Showing 11-20 out of 25)
+Use `show next 10 products' to see more.
+Product List (Sorted by: Number of sold)
+------------------------------------------------
+ID: 121
+Name: Lenovo ThinkPad X1 Carbon
+Rate: 2.5/5
+Price: $1600.0
+Brand: Lenovo
+Stock: 7
+------------------------------------------------
+ID: 122
+Name: Lenovo Legion Pro 7i Gaming Laptop
+Rate: 2.5/5
+Price: $2200.0
+Brand: Lenovo
+Stock: 5
+------------------------------------------------
+ID: 123
+Name: Lenovo Wireless Mouse
+Rate: 2.5/5
+Price: $50.0
+Brand: Lenovo
+Stock: 15
+------------------------------------------------
+ID: 124
+Name: Lenovo Laptop Stand
+Rate: 2.5/5
+Price: $70.0
+Brand: Lenovo
+Stock: 10
+------------------------------------------------
+ID: 125
+Name: Lenovo USB-C Hub
+Rate: 2.5/5
+Price: $80.0
+Brand: Lenovo
+Stock: 12
+------------------------------------------------
+(Showing 21-30 out of 25)
+Product Details
+------------------------------------------------
+Name: Samsung Galaxy S24 Ultra
+ID: 101
+Rating: 2.5/5
+Price: $1200.0
+Brand: Samsung
+Number of Products Remaining: 10
+About this item:
+Samsung's flagship smartphone with a powerful processor, high-resolution camera, and long battery life.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Samsung 55-inch 4K QLED TV
+ID: 102
+Rating: 2.5/5
+Price: $1000.0
+Brand: Samsung
+Number of Products Remaining: 8
+About this item:
+A stunning 4K QLED TV with vibrant colors, deep blacks, and a smart OS for seamless streaming.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Samsung Galaxy SmartTag 2-Pack
+ID: 103
+Rating: 2.5/5
+Price: $40.0
+Brand: Samsung
+Number of Products Remaining: 12
+About this item:
+Bluetooth-powered tracking tags to help locate lost items using your phone.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Samsung Fast Charger 45W
+ID: 104
+Rating: 2.5/5
+Price: $50.0
+Brand: Samsung
+Number of Products Remaining: 15
+About this item:
+A high-speed charger for Samsung devices, ensuring quick and safe charging.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Samsung USB-C to HDMI Adapter
+ID: 105
+Rating: 2.5/5
+Price: $60.0
+Brand: Samsung
+Number of Products Remaining: 10
+About this item:
+An adapter that allows you to connect your Samsung devices to external displays.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Gucci Leather Shoulder Bag
+ID: 106
+Rating: 2.5/5
+Price: $1300.0
+Brand: Gucci
+Number of Products Remaining: 6
+About this item:
+A luxurious shoulder bag made from premium leather, showcasing Gucci’s signature design.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Gucci GG Canvas Sneakers
+ID: 107
+Rating: 2.5/5
+Price: $800.0
+Brand: Gucci
+Number of Products Remaining: 8
+About this item:
+A stylish and comfortable sneaker featuring the iconic GG canvas design.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Gucci Branded Socks
+ID: 108
+Rating: 2.5/5
+Price: $70.0
+Brand: Gucci
+Number of Products Remaining: 15
+About this item:
+Designer socks featuring Gucci’s signature pattern, adding style to any outfit.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Gucci Keychain
+ID: 109
+Rating: 2.5/5
+Price: $90.0
+Brand: Gucci
+Number of Products Remaining: 12
+About this item:
+A high-quality leather keychain with an elegant Gucci logo charm.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Gucci Card Holder
+ID: 110
+Rating: 2.5/5
+Price: $100.0
+Brand: Gucci
+Number of Products Remaining: 10
+About this item:
+A compact and stylish cardholder made from premium materials.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Rolex Submariner Watch
+ID: 111
+Rating: 2.5/5
+Price: $8000.0
+Brand: Rolex
+Number of Products Remaining: 4
+About this item:
+A high-end luxury diving watch with impeccable craftsmanship and water resistance.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Rolex Daytona Chronograph
+ID: 112
+Rating: 2.5/5
+Price: $11000.0
+Brand: Rolex
+Number of Products Remaining: 3
+About this item:
+A premium chronograph watch designed for speed enthusiasts and collectors.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Rolex Premium Cleaning Kit
+ID: 113
+Rating: 2.5/5
+Price: $80.0
+Brand: Rolex
+Number of Products Remaining: 10
+About this item:
+A special cleaning kit designed for Rolex watches to maintain their shine and precision.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Rolex Watch Box
+ID: 114
+Rating: 2.5/5
+Price: $100.0
+Brand: Rolex
+Number of Products Remaining: 12
+About this item:
+A leather watch box with soft interior lining for safely storing Rolex watches.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Rolex Cufflinks
+ID: 115
+Rating: 2.5/5
+Price: $100.0
+Brand: Rolex
+Number of Products Remaining: 8
+About this item:
+Elegant and sophisticated cufflinks featuring the Rolex logo.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Sony PlayStation 5
+ID: 116
+Rating: 2.5/5
+Price: $600.0
+Brand: Sony
+Number of Products Remaining: 12
+About this item:
+The latest PlayStation console with powerful performance and immersive gaming experience.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Sony WH-1000XM5 Headphones
+ID: 117
+Rating: 2.5/5
+Price: $400.0
+Brand: Sony
+Number of Products Remaining: 10
+About this item:
+Industry-leading noise-canceling headphones with crystal-clear audio and long battery life.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Sony PlayStation 5 Controller Charger
+ID: 118
+Rating: 2.5/5
+Price: $60.0
+Brand: Sony
+Number of Products Remaining: 14
+About this item:
+A dual charging station for PlayStation 5 controllers, ensuring they are always ready to use.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Sony Noise-Canceling Earbuds
+ID: 119
+Rating: 2.5/5
+Price: $100.0
+Brand: Sony
+Number of Products Remaining: 10
+About this item:
+Compact noise-canceling earbuds with great audio quality and a comfortable fit.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Sony 64GB SD Card
+ID: 120
+Rating: 2.5/5
+Price: $40.0
+Brand: Sony
+Number of Products Remaining: 15
+About this item:
+A high-speed SD card designed for cameras, ensuring fast read and write speeds.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Lenovo ThinkPad X1 Carbon
+ID: 121
+Rating: 2.5/5
+Price: $1600.0
+Brand: Lenovo
+Number of Products Remaining: 7
+About this item:
+A premium business laptop with lightweight design, powerful hardware, and long battery life.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Lenovo Legion Pro 7i Gaming Laptop
+ID: 122
+Rating: 2.5/5
+Price: $2200.0
+Brand: Lenovo
+Number of Products Remaining: 5
+About this item:
+A high-end gaming laptop with top-tier graphics and cooling system for ultimate performance.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Lenovo Wireless Mouse
+ID: 123
+Rating: 2.5/5
+Price: $50.0
+Brand: Lenovo
+Number of Products Remaining: 15
+About this item:
+A sleek and ergonomic wireless mouse designed for productivity and comfort.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Lenovo Laptop Stand
+ID: 124
+Rating: 2.5/5
+Price: $70.0
+Brand: Lenovo
+Number of Products Remaining: 10
+About this item:
+An adjustable stand for Lenovo laptops to improve airflow and ergonomics.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Lenovo USB-C Hub
+ID: 125
+Rating: 2.5/5
+Price: $80.0
+Brand: Lenovo
+Number of Products Remaining: 12
+About this item:
+A multi-port hub with HDMI, USB, and SD card slots for enhanced connectivity.
+
+Customer Reviews:
+------------------------------------------------
+No product found.
+No product found.
+You must be logged in to rate a product.
+You must be logged in to rate a product.
+You must be logged in to add items to your cart.
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+invalid command
+Store logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the StoreMenu ...
+A 11% discount has been applied to 1 units of product ID 105.
+A 15% discount has been applied to 2 units of product ID 102.
+Price of "Samsung Galaxy S24 Ultra" has been updated to $1149.0.
+Price of "Samsung Galaxy SmartTag 2-Pack" has been updated to $35.0.
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Store logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the StoreMenu ...
+A 12% discount has been applied to 2 units of product ID 106.
+A 18% discount has been applied to 3 units of product ID 107.
+Price of "Gucci Leather Shoulder Bag" has been updated to $1250.0.
+Price of "Gucci Branded Socks" has been updated to $66.0.
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Store logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the StoreMenu ...
+A 8% discount has been applied to 2 units of product ID 111.
+A 14% discount has been applied to 3 units of product ID 112.
+Price of "Rolex Submariner Watch" has been updated to $7800.0.
+Price of "Rolex Premium Cleaning Kit" has been updated to $75.0.
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Store logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the StoreMenu ...
+A 10% discount has been applied to 2 units of product ID 116.
+A 16% discount has been applied to 3 units of product ID 117.
+Price of "Sony PlayStation 5" has been updated to $570.0.
+Price of "Sony PlayStation 5 Controller Charger" has been updated to $55.0.
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Store logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the StoreMenu ...
+A 9% discount has been applied to 2 units of product ID 121.
+A 20% discount has been applied to 3 units of product ID 122.
+Price of "Lenovo ThinkPad X1 Carbon" has been updated to $1550.0.
+Price of "Lenovo Wireless Mouse" has been updated to $45.0.
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+invalid command
+Redirecting to the LoginMenu ...
+User logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the UserMenu ...
+Address successfully added with id 1.
+Address successfully added with id 2.
+Saved Addresses
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Address 1:
+Postal Code: 1234567890
+Country: Middle Earth
+City: Hobbiton
+Street: Bag End, Shire
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Address 2:
+Postal Code: 9876543210
+Country: Wakanda
+City: Birnin Zana
+Street: Vibranium Alley
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+Credit card with Id 1 has been added successfully.
+Credit card with Id 2 has been added successfully.
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+User logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the UserMenu ...
+Address successfully added with id 1.
+Address successfully added with id 2.
+Saved Addresses
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Address 1:
+Postal Code: 2468101214
+Country: Neverland
+City: Peter Pan’s Hideout
+Street: Second Star to the Right
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Address 2:
+Postal Code: 1357911131
+Country: Wonderland
+City: Queen’s Castle
+Street: Mad Hatter Lane
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+Credit card with Id 1 has been added successfully.
+Credit card with Id 2 has been added successfully.
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+No user account found with the provided email.
+invalid command
+invalid command
+invalid command
+invalid command
+invalid command
+invalid command
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+You should login first.
+invalid command
+User logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the ProductMenu ...
+Product List (Sorted by: Higher price to lower)
+------------------------------------------------
+ID: 112  **(On Sale! 3 units discounted)**
+Name: Rolex Daytona Chronograph
+Rate: 2.5/5
+Price: ~$11000.0~ → $9460.0 (-14%)
+Brand: Rolex
+Stock: 3
+------------------------------------------------
+ID: 111  **(On Sale! 2 units discounted)**
+Name: Rolex Submariner Watch
+Rate: 2.5/5
+Price: ~$7800.0~ → $7176.0 (-8%)
+Brand: Rolex
+Stock: 4
+------------------------------------------------
+ID: 122  **(On Sale! 3 units discounted)**
+Name: Lenovo Legion Pro 7i Gaming Laptop
+Rate: 2.5/5
+Price: ~$2200.0~ → $1760.0 (-20%)
+Brand: Lenovo
+Stock: 5
+------------------------------------------------
+ID: 121  **(On Sale! 2 units discounted)**
+Name: Lenovo ThinkPad X1 Carbon
+Rate: 2.5/5
+Price: ~$1550.0~ → $1410.5 (-9%)
+Brand: Lenovo
+Stock: 7
+------------------------------------------------
+ID: 101
+Name: Samsung Galaxy S24 Ultra
+Rate: 2.5/5
+Price: $1149.0
+Brand: Samsung
+Stock: 10
+------------------------------------------------
+ID: 106  **(On Sale! 2 units discounted)**
+Name: Gucci Leather Shoulder Bag
+Rate: 2.5/5
+Price: ~$1250.0~ → $1100.0 (-12%)
+Brand: Gucci
+Stock: 6
+------------------------------------------------
+ID: 102  **(On Sale! 2 units discounted)**
+Name: Samsung 55-inch 4K QLED TV
+Rate: 2.5/5
+Price: ~$1000.0~ → $850.0 (-15%)
+Brand: Samsung
+Stock: 8
+------------------------------------------------
+ID: 107  **(On Sale! 3 units discounted)**
+Name: Gucci GG Canvas Sneakers
+Rate: 2.5/5
+Price: ~$800.0~ → $656.0 (-18%)
+Brand: Gucci
+Stock: 8
+------------------------------------------------
+ID: 116  **(On Sale! 2 units discounted)**
+Name: Sony PlayStation 5
+Rate: 2.5/5
+Price: ~$570.0~ → $513.0 (-10%)
+Brand: Sony
+Stock: 12
+------------------------------------------------
+ID: 117  **(On Sale! 3 units discounted)**
+Name: Sony WH-1000XM5 Headphones
+Rate: 2.5/5
+Price: ~$400.0~ → $336.0 (-16%)
+Brand: Sony
+Stock: 10
+------------------------------------------------
+(Showing 1-10 out of 25)
+Use `show next 10 products' to see more.
+Product List (Sorted by: Higher price to lower)
+------------------------------------------------
+ID: 110
+Name: Gucci Card Holder
+Rate: 2.5/5
+Price: $100.0
+Brand: Gucci
+Stock: 10
+------------------------------------------------
+ID: 114
+Name: Rolex Watch Box
+Rate: 2.5/5
+Price: $100.0
+Brand: Rolex
+Stock: 12
+------------------------------------------------
+ID: 115
+Name: Rolex Cufflinks
+Rate: 2.5/5
+Price: $100.0
+Brand: Rolex
+Stock: 8
+------------------------------------------------
+ID: 119
+Name: Sony Noise-Canceling Earbuds
+Rate: 2.5/5
+Price: $100.0
+Brand: Sony
+Stock: 10
+------------------------------------------------
+ID: 109
+Name: Gucci Keychain
+Rate: 2.5/5
+Price: $90.0
+Brand: Gucci
+Stock: 12
+------------------------------------------------
+ID: 125
+Name: Lenovo USB-C Hub
+Rate: 2.5/5
+Price: $80.0
+Brand: Lenovo
+Stock: 12
+------------------------------------------------
+ID: 113
+Name: Rolex Premium Cleaning Kit
+Rate: 2.5/5
+Price: $75.0
+Brand: Rolex
+Stock: 10
+------------------------------------------------
+ID: 124
+Name: Lenovo Laptop Stand
+Rate: 2.5/5
+Price: $70.0
+Brand: Lenovo
+Stock: 10
+------------------------------------------------
+ID: 108
+Name: Gucci Branded Socks
+Rate: 2.5/5
+Price: $66.0
+Brand: Gucci
+Stock: 15
+------------------------------------------------
+ID: 118
+Name: Sony PlayStation 5 Controller Charger
+Rate: 2.5/5
+Price: $55.0
+Brand: Sony
+Stock: 14
+------------------------------------------------
+(Showing 11-20 out of 25)
+Use `show next 10 products' to see more.
+Product List (Sorted by: Higher price to lower)
+------------------------------------------------
+ID: 105  **(On Sale! 1 units discounted)**
+Name: Samsung USB-C to HDMI Adapter
+Rate: 2.5/5
+Price: ~$60.0~ → $53.4 (-11%)
+Brand: Samsung
+Stock: 10
+------------------------------------------------
+ID: 104
+Name: Samsung Fast Charger 45W
+Rate: 2.5/5
+Price: $50.0
+Brand: Samsung
+Stock: 15
+------------------------------------------------
+ID: 123
+Name: Lenovo Wireless Mouse
+Rate: 2.5/5
+Price: $45.0
+Brand: Lenovo
+Stock: 15
+------------------------------------------------
+ID: 120
+Name: Sony 64GB SD Card
+Rate: 2.5/5
+Price: $40.0
+Brand: Sony
+Stock: 15
+------------------------------------------------
+ID: 103
+Name: Samsung Galaxy SmartTag 2-Pack
+Rate: 2.5/5
+Price: $35.0
+Brand: Samsung
+Stock: 12
+------------------------------------------------
+(Showing 21-30 out of 25)
+No more products available.
+Product List (Sorted by: Lower price to higher)
+------------------------------------------------
+ID: 103
+Name: Samsung Galaxy SmartTag 2-Pack
+Rate: 2.5/5
+Price: $35.0
+Brand: Samsung
+Stock: 12
+------------------------------------------------
+ID: 120
+Name: Sony 64GB SD Card
+Rate: 2.5/5
+Price: $40.0
+Brand: Sony
+Stock: 15
+------------------------------------------------
+ID: 123
+Name: Lenovo Wireless Mouse
+Rate: 2.5/5
+Price: $45.0
+Brand: Lenovo
+Stock: 15
+------------------------------------------------
+ID: 104
+Name: Samsung Fast Charger 45W
+Rate: 2.5/5
+Price: $50.0
+Brand: Samsung
+Stock: 15
+------------------------------------------------
+ID: 105  **(On Sale! 1 units discounted)**
+Name: Samsung USB-C to HDMI Adapter
+Rate: 2.5/5
+Price: ~$60.0~ → $53.4 (-11%)
+Brand: Samsung
+Stock: 10
+------------------------------------------------
+ID: 118
+Name: Sony PlayStation 5 Controller Charger
+Rate: 2.5/5
+Price: $55.0
+Brand: Sony
+Stock: 14
+------------------------------------------------
+ID: 108
+Name: Gucci Branded Socks
+Rate: 2.5/5
+Price: $66.0
+Brand: Gucci
+Stock: 15
+------------------------------------------------
+ID: 124
+Name: Lenovo Laptop Stand
+Rate: 2.5/5
+Price: $70.0
+Brand: Lenovo
+Stock: 10
+------------------------------------------------
+ID: 113
+Name: Rolex Premium Cleaning Kit
+Rate: 2.5/5
+Price: $75.0
+Brand: Rolex
+Stock: 10
+------------------------------------------------
+ID: 125
+Name: Lenovo USB-C Hub
+Rate: 2.5/5
+Price: $80.0
+Brand: Lenovo
+Stock: 12
+------------------------------------------------
+(Showing 1-10 out of 25)
+Use `show next 10 products' to see more.
+Product List (Sorted by: Lower price to higher)
+------------------------------------------------
+ID: 109
+Name: Gucci Keychain
+Rate: 2.5/5
+Price: $90.0
+Brand: Gucci
+Stock: 12
+------------------------------------------------
+ID: 110
+Name: Gucci Card Holder
+Rate: 2.5/5
+Price: $100.0
+Brand: Gucci
+Stock: 10
+------------------------------------------------
+ID: 114
+Name: Rolex Watch Box
+Rate: 2.5/5
+Price: $100.0
+Brand: Rolex
+Stock: 12
+------------------------------------------------
+ID: 115
+Name: Rolex Cufflinks
+Rate: 2.5/5
+Price: $100.0
+Brand: Rolex
+Stock: 8
+------------------------------------------------
+ID: 119
+Name: Sony Noise-Canceling Earbuds
+Rate: 2.5/5
+Price: $100.0
+Brand: Sony
+Stock: 10
+------------------------------------------------
+ID: 117  **(On Sale! 3 units discounted)**
+Name: Sony WH-1000XM5 Headphones
+Rate: 2.5/5
+Price: ~$400.0~ → $336.0 (-16%)
+Brand: Sony
+Stock: 10
+------------------------------------------------
+ID: 116  **(On Sale! 2 units discounted)**
+Name: Sony PlayStation 5
+Rate: 2.5/5
+Price: ~$570.0~ → $513.0 (-10%)
+Brand: Sony
+Stock: 12
+------------------------------------------------
+ID: 107  **(On Sale! 3 units discounted)**
+Name: Gucci GG Canvas Sneakers
+Rate: 2.5/5
+Price: ~$800.0~ → $656.0 (-18%)
+Brand: Gucci
+Stock: 8
+------------------------------------------------
+ID: 102  **(On Sale! 2 units discounted)**
+Name: Samsung 55-inch 4K QLED TV
+Rate: 2.5/5
+Price: ~$1000.0~ → $850.0 (-15%)
+Brand: Samsung
+Stock: 8
+------------------------------------------------
+ID: 106  **(On Sale! 2 units discounted)**
+Name: Gucci Leather Shoulder Bag
+Rate: 2.5/5
+Price: ~$1250.0~ → $1100.0 (-12%)
+Brand: Gucci
+Stock: 6
+------------------------------------------------
+(Showing 11-20 out of 25)
+Use `show next 10 products' to see more.
+Product List (Sorted by: Lower price to higher)
+------------------------------------------------
+ID: 101
+Name: Samsung Galaxy S24 Ultra
+Rate: 2.5/5
+Price: $1149.0
+Brand: Samsung
+Stock: 10
+------------------------------------------------
+ID: 121  **(On Sale! 2 units discounted)**
+Name: Lenovo ThinkPad X1 Carbon
+Rate: 2.5/5
+Price: ~$1550.0~ → $1410.5 (-9%)
+Brand: Lenovo
+Stock: 7
+------------------------------------------------
+ID: 122  **(On Sale! 3 units discounted)**
+Name: Lenovo Legion Pro 7i Gaming Laptop
+Rate: 2.5/5
+Price: ~$2200.0~ → $1760.0 (-20%)
+Brand: Lenovo
+Stock: 5
+------------------------------------------------
+ID: 111  **(On Sale! 2 units discounted)**
+Name: Rolex Submariner Watch
+Rate: 2.5/5
+Price: ~$7800.0~ → $7176.0 (-8%)
+Brand: Rolex
+Stock: 4
+------------------------------------------------
+ID: 112  **(On Sale! 3 units discounted)**
+Name: Rolex Daytona Chronograph
+Rate: 2.5/5
+Price: ~$11000.0~ → $9460.0 (-14%)
+Brand: Rolex
+Stock: 3
+------------------------------------------------
+(Showing 21-30 out of 25)
+No more products available.
+Product List (Sorted by: Number of sold)
+------------------------------------------------
+ID: 101
+Name: Samsung Galaxy S24 Ultra
+Rate: 2.5/5
+Price: $1149.0
+Brand: Samsung
+Stock: 10
+------------------------------------------------
+ID: 102  **(On Sale! 2 units discounted)**
+Name: Samsung 55-inch 4K QLED TV
+Rate: 2.5/5
+Price: ~$1000.0~ → $850.0 (-15%)
+Brand: Samsung
+Stock: 8
+------------------------------------------------
+ID: 103
+Name: Samsung Galaxy SmartTag 2-Pack
+Rate: 2.5/5
+Price: $35.0
+Brand: Samsung
+Stock: 12
+------------------------------------------------
+ID: 104
+Name: Samsung Fast Charger 45W
+Rate: 2.5/5
+Price: $50.0
+Brand: Samsung
+Stock: 15
+------------------------------------------------
+ID: 105  **(On Sale! 1 units discounted)**
+Name: Samsung USB-C to HDMI Adapter
+Rate: 2.5/5
+Price: ~$60.0~ → $53.4 (-11%)
+Brand: Samsung
+Stock: 10
+------------------------------------------------
+ID: 106  **(On Sale! 2 units discounted)**
+Name: Gucci Leather Shoulder Bag
+Rate: 2.5/5
+Price: ~$1250.0~ → $1100.0 (-12%)
+Brand: Gucci
+Stock: 6
+------------------------------------------------
+ID: 107  **(On Sale! 3 units discounted)**
+Name: Gucci GG Canvas Sneakers
+Rate: 2.5/5
+Price: ~$800.0~ → $656.0 (-18%)
+Brand: Gucci
+Stock: 8
+------------------------------------------------
+ID: 108
+Name: Gucci Branded Socks
+Rate: 2.5/5
+Price: $66.0
+Brand: Gucci
+Stock: 15
+------------------------------------------------
+ID: 109
+Name: Gucci Keychain
+Rate: 2.5/5
+Price: $90.0
+Brand: Gucci
+Stock: 12
+------------------------------------------------
+ID: 110
+Name: Gucci Card Holder
+Rate: 2.5/5
+Price: $100.0
+Brand: Gucci
+Stock: 10
+------------------------------------------------
+(Showing 1-10 out of 25)
+Use `show next 10 products' to see more.
+Product List (Sorted by: Number of sold)
+------------------------------------------------
+ID: 111  **(On Sale! 2 units discounted)**
+Name: Rolex Submariner Watch
+Rate: 2.5/5
+Price: ~$7800.0~ → $7176.0 (-8%)
+Brand: Rolex
+Stock: 4
+------------------------------------------------
+ID: 112  **(On Sale! 3 units discounted)**
+Name: Rolex Daytona Chronograph
+Rate: 2.5/5
+Price: ~$11000.0~ → $9460.0 (-14%)
+Brand: Rolex
+Stock: 3
+------------------------------------------------
+ID: 113
+Name: Rolex Premium Cleaning Kit
+Rate: 2.5/5
+Price: $75.0
+Brand: Rolex
+Stock: 10
+------------------------------------------------
+ID: 114
+Name: Rolex Watch Box
+Rate: 2.5/5
+Price: $100.0
+Brand: Rolex
+Stock: 12
+------------------------------------------------
+ID: 115
+Name: Rolex Cufflinks
+Rate: 2.5/5
+Price: $100.0
+Brand: Rolex
+Stock: 8
+------------------------------------------------
+ID: 116  **(On Sale! 2 units discounted)**
+Name: Sony PlayStation 5
+Rate: 2.5/5
+Price: ~$570.0~ → $513.0 (-10%)
+Brand: Sony
+Stock: 12
+------------------------------------------------
+ID: 117  **(On Sale! 3 units discounted)**
+Name: Sony WH-1000XM5 Headphones
+Rate: 2.5/5
+Price: ~$400.0~ → $336.0 (-16%)
+Brand: Sony
+Stock: 10
+------------------------------------------------
+ID: 118
+Name: Sony PlayStation 5 Controller Charger
+Rate: 2.5/5
+Price: $55.0
+Brand: Sony
+Stock: 14
+------------------------------------------------
+ID: 119
+Name: Sony Noise-Canceling Earbuds
+Rate: 2.5/5
+Price: $100.0
+Brand: Sony
+Stock: 10
+------------------------------------------------
+ID: 120
+Name: Sony 64GB SD Card
+Rate: 2.5/5
+Price: $40.0
+Brand: Sony
+Stock: 15
+------------------------------------------------
+(Showing 11-20 out of 25)
+Use `show next 10 products' to see more.
+Product List (Sorted by: Number of sold)
+------------------------------------------------
+ID: 121  **(On Sale! 2 units discounted)**
+Name: Lenovo ThinkPad X1 Carbon
+Rate: 2.5/5
+Price: ~$1550.0~ → $1410.5 (-9%)
+Brand: Lenovo
+Stock: 7
+------------------------------------------------
+ID: 122  **(On Sale! 3 units discounted)**
+Name: Lenovo Legion Pro 7i Gaming Laptop
+Rate: 2.5/5
+Price: ~$2200.0~ → $1760.0 (-20%)
+Brand: Lenovo
+Stock: 5
+------------------------------------------------
+ID: 123
+Name: Lenovo Wireless Mouse
+Rate: 2.5/5
+Price: $45.0
+Brand: Lenovo
+Stock: 15
+------------------------------------------------
+ID: 124
+Name: Lenovo Laptop Stand
+Rate: 2.5/5
+Price: $70.0
+Brand: Lenovo
+Stock: 10
+------------------------------------------------
+ID: 125
+Name: Lenovo USB-C Hub
+Rate: 2.5/5
+Price: $80.0
+Brand: Lenovo
+Stock: 12
+------------------------------------------------
+(Showing 21-30 out of 25)
+No more products available.
+Product Details
+------------------------------------------------
+Name: Samsung Galaxy S24 Ultra
+ID: 101
+Rating: 2.5/5
+Price: $1149.0
+Brand: Samsung
+Number of Products Remaining: 10
+About this item:
+Samsung's flagship smartphone with a powerful processor, high-resolution camera, and long battery life.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Samsung 55-inch 4K QLED TV  **(On Sale! 2 units discounted)**
+ID: 102
+Rating: 2.5/5
+Price: ~$1000.0~ → $850.0 (-15%)
+Brand: Samsung
+Number of Products Remaining: 8
+About this item:
+A stunning 4K QLED TV with vibrant colors, deep blacks, and a smart OS for seamless streaming.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Samsung Galaxy SmartTag 2-Pack
+ID: 103
+Rating: 2.5/5
+Price: $35.0
+Brand: Samsung
+Number of Products Remaining: 12
+About this item:
+Bluetooth-powered tracking tags to help locate lost items using your phone.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Samsung Fast Charger 45W
+ID: 104
+Rating: 2.5/5
+Price: $50.0
+Brand: Samsung
+Number of Products Remaining: 15
+About this item:
+A high-speed charger for Samsung devices, ensuring quick and safe charging.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Samsung USB-C to HDMI Adapter  **(On Sale! 1 units discounted)**
+ID: 105
+Rating: 2.5/5
+Price: ~$60.0~ → $53.4 (-11%)
+Brand: Samsung
+Number of Products Remaining: 10
+About this item:
+An adapter that allows you to connect your Samsung devices to external displays.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Gucci Leather Shoulder Bag  **(On Sale! 2 units discounted)**
+ID: 106
+Rating: 2.5/5
+Price: ~$1250.0~ → $1100.0 (-12%)
+Brand: Gucci
+Number of Products Remaining: 6
+About this item:
+A luxurious shoulder bag made from premium leather, showcasing Gucci’s signature design.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Gucci GG Canvas Sneakers  **(On Sale! 3 units discounted)**
+ID: 107
+Rating: 2.5/5
+Price: ~$800.0~ → $656.0 (-18%)
+Brand: Gucci
+Number of Products Remaining: 8
+About this item:
+A stylish and comfortable sneaker featuring the iconic GG canvas design.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Gucci Branded Socks
+ID: 108
+Rating: 2.5/5
+Price: $66.0
+Brand: Gucci
+Number of Products Remaining: 15
+About this item:
+Designer socks featuring Gucci’s signature pattern, adding style to any outfit.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Gucci Keychain
+ID: 109
+Rating: 2.5/5
+Price: $90.0
+Brand: Gucci
+Number of Products Remaining: 12
+About this item:
+A high-quality leather keychain with an elegant Gucci logo charm.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Gucci Card Holder
+ID: 110
+Rating: 2.5/5
+Price: $100.0
+Brand: Gucci
+Number of Products Remaining: 10
+About this item:
+A compact and stylish cardholder made from premium materials.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Rolex Submariner Watch  **(On Sale! 2 units discounted)**
+ID: 111
+Rating: 2.5/5
+Price: ~$7800.0~ → $7176.0 (-8%)
+Brand: Rolex
+Number of Products Remaining: 4
+About this item:
+A high-end luxury diving watch with impeccable craftsmanship and water resistance.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Rolex Daytona Chronograph  **(On Sale! 3 units discounted)**
+ID: 112
+Rating: 2.5/5
+Price: ~$11000.0~ → $9460.0 (-14%)
+Brand: Rolex
+Number of Products Remaining: 3
+About this item:
+A premium chronograph watch designed for speed enthusiasts and collectors.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Rolex Premium Cleaning Kit
+ID: 113
+Rating: 2.5/5
+Price: $75.0
+Brand: Rolex
+Number of Products Remaining: 10
+About this item:
+A special cleaning kit designed for Rolex watches to maintain their shine and precision.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Rolex Watch Box
+ID: 114
+Rating: 2.5/5
+Price: $100.0
+Brand: Rolex
+Number of Products Remaining: 12
+About this item:
+A leather watch box with soft interior lining for safely storing Rolex watches.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Rolex Cufflinks
+ID: 115
+Rating: 2.5/5
+Price: $100.0
+Brand: Rolex
+Number of Products Remaining: 8
+About this item:
+Elegant and sophisticated cufflinks featuring the Rolex logo.
+
+Customer Reviews:
+------------------------------------------------
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+No product found.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Rating must be between 1 and 5.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+No product found.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+No product found.
+Thank you! Your rating and review have been submitted successfully.
+No product found.
+Thank you! Your rating and review have been submitted successfully.
+Product List (Sorted by: Rate)
+------------------------------------------------
+ID: 107  **(On Sale! 3 units discounted)**
+Name: Gucci GG Canvas Sneakers
+Rate: 5.0/5
+Price: ~$800.0~ → $656.0 (-18%)
+Brand: Gucci
+Stock: 8
+------------------------------------------------
+ID: 118
+Name: Sony PlayStation 5 Controller Charger
+Rate: 5.0/5
+Price: $55.0
+Brand: Sony
+Stock: 14
+------------------------------------------------
+ID: 106  **(On Sale! 2 units discounted)**
+Name: Gucci Leather Shoulder Bag
+Rate: 4.5/5
+Price: ~$1250.0~ → $1100.0 (-12%)
+Brand: Gucci
+Stock: 6
+------------------------------------------------
+ID: 120
+Name: Sony 64GB SD Card
+Rate: 4.3/5
+Price: $40.0
+Brand: Sony
+Stock: 15
+------------------------------------------------
+ID: 104
+Name: Samsung Fast Charger 45W
+Rate: 4.0/5
+Price: $50.0
+Brand: Samsung
+Stock: 15
+------------------------------------------------
+ID: 105  **(On Sale! 1 units discounted)**
+Name: Samsung USB-C to HDMI Adapter
+Rate: 4.0/5
+Price: ~$60.0~ → $53.4 (-11%)
+Brand: Samsung
+Stock: 10
+------------------------------------------------
+ID: 102  **(On Sale! 2 units discounted)**
+Name: Samsung 55-inch 4K QLED TV
+Rate: 3.8/5
+Price: ~$1000.0~ → $850.0 (-15%)
+Brand: Samsung
+Stock: 8
+------------------------------------------------
+ID: 115
+Name: Rolex Cufflinks
+Rate: 3.5/5
+Price: $100.0
+Brand: Rolex
+Stock: 8
+------------------------------------------------
+ID: 101
+Name: Samsung Galaxy S24 Ultra
+Rate: 3.3/5
+Price: $1149.0
+Brand: Samsung
+Stock: 10
+------------------------------------------------
+ID: 119
+Name: Sony Noise-Canceling Earbuds
+Rate: 3.0/5
+Price: $100.0
+Brand: Sony
+Stock: 10
+------------------------------------------------
+(Showing 1-10 out of 25)
+Use `show next 10 products' to see more.
+Product List (Sorted by: Rate)
+------------------------------------------------
+ID: 121  **(On Sale! 2 units discounted)**
+Name: Lenovo ThinkPad X1 Carbon
+Rate: 3.0/5
+Price: ~$1550.0~ → $1410.5 (-9%)
+Brand: Lenovo
+Stock: 7
+------------------------------------------------
+ID: 103
+Name: Samsung Galaxy SmartTag 2-Pack
+Rate: 2.8/5
+Price: $35.0
+Brand: Samsung
+Stock: 12
+------------------------------------------------
+ID: 108
+Name: Gucci Branded Socks
+Rate: 2.5/5
+Price: $66.0
+Brand: Gucci
+Stock: 15
+------------------------------------------------
+ID: 109
+Name: Gucci Keychain
+Rate: 2.5/5
+Price: $90.0
+Brand: Gucci
+Stock: 12
+------------------------------------------------
+ID: 110
+Name: Gucci Card Holder
+Rate: 2.5/5
+Price: $100.0
+Brand: Gucci
+Stock: 10
+------------------------------------------------
+ID: 111  **(On Sale! 2 units discounted)**
+Name: Rolex Submariner Watch
+Rate: 2.5/5
+Price: ~$7800.0~ → $7176.0 (-8%)
+Brand: Rolex
+Stock: 4
+------------------------------------------------
+ID: 112  **(On Sale! 3 units discounted)**
+Name: Rolex Daytona Chronograph
+Rate: 2.5/5
+Price: ~$11000.0~ → $9460.0 (-14%)
+Brand: Rolex
+Stock: 3
+------------------------------------------------
+ID: 113
+Name: Rolex Premium Cleaning Kit
+Rate: 2.5/5
+Price: $75.0
+Brand: Rolex
+Stock: 10
+------------------------------------------------
+ID: 114
+Name: Rolex Watch Box
+Rate: 2.5/5
+Price: $100.0
+Brand: Rolex
+Stock: 12
+------------------------------------------------
+ID: 116  **(On Sale! 2 units discounted)**
+Name: Sony PlayStation 5
+Rate: 2.5/5
+Price: ~$570.0~ → $513.0 (-10%)
+Brand: Sony
+Stock: 12
+------------------------------------------------
+(Showing 11-20 out of 25)
+Use `show next 10 products' to see more.
+Product List (Sorted by: Rate)
+------------------------------------------------
+ID: 117  **(On Sale! 3 units discounted)**
+Name: Sony WH-1000XM5 Headphones
+Rate: 2.5/5
+Price: ~$400.0~ → $336.0 (-16%)
+Brand: Sony
+Stock: 10
+------------------------------------------------
+ID: 122  **(On Sale! 3 units discounted)**
+Name: Lenovo Legion Pro 7i Gaming Laptop
+Rate: 2.5/5
+Price: ~$2200.0~ → $1760.0 (-20%)
+Brand: Lenovo
+Stock: 5
+------------------------------------------------
+ID: 123
+Name: Lenovo Wireless Mouse
+Rate: 2.5/5
+Price: $45.0
+Brand: Lenovo
+Stock: 15
+------------------------------------------------
+ID: 124
+Name: Lenovo Laptop Stand
+Rate: 2.5/5
+Price: $70.0
+Brand: Lenovo
+Stock: 10
+------------------------------------------------
+ID: 125
+Name: Lenovo USB-C Hub
+Rate: 2.5/5
+Price: $80.0
+Brand: Lenovo
+Stock: 12
+------------------------------------------------
+(Showing 21-30 out of 25)
+No more products available.
+No more products available.
+No product found.
+Quantity must be a positive number.
+Quantity must be a positive number.
+"Samsung Galaxy S24 Ultra" (x7) has been added to your cart.
+Only 3 units of "Samsung Galaxy S24 Ultra" are available.
+"Samsung Galaxy S24 Ultra" (x2) has been added to your cart.
+"Samsung 55-inch 4K QLED TV" (x2) has been added to your cart.
+No product found.
+No product found.
+Product List (Sorted by: Rate)
+------------------------------------------------
+ID: 107  **(On Sale! 3 units discounted)**
+Name: Gucci GG Canvas Sneakers
+Rate: 5.0/5
+Price: ~$800.0~ → $656.0 (-18%)
+Brand: Gucci
+Stock: 8
+------------------------------------------------
+ID: 118
+Name: Sony PlayStation 5 Controller Charger
+Rate: 5.0/5
+Price: $55.0
+Brand: Sony
+Stock: 14
+------------------------------------------------
+ID: 106  **(On Sale! 2 units discounted)**
+Name: Gucci Leather Shoulder Bag
+Rate: 4.5/5
+Price: ~$1250.0~ → $1100.0 (-12%)
+Brand: Gucci
+Stock: 6
+------------------------------------------------
+ID: 120
+Name: Sony 64GB SD Card
+Rate: 4.3/5
+Price: $40.0
+Brand: Sony
+Stock: 15
+------------------------------------------------
+ID: 104
+Name: Samsung Fast Charger 45W
+Rate: 4.0/5
+Price: $50.0
+Brand: Samsung
+Stock: 15
+------------------------------------------------
+ID: 105  **(On Sale! 1 units discounted)**
+Name: Samsung USB-C to HDMI Adapter
+Rate: 4.0/5
+Price: ~$60.0~ → $53.4 (-11%)
+Brand: Samsung
+Stock: 10
+------------------------------------------------
+ID: 102
+Name: Samsung 55-inch 4K QLED TV
+Rate: 3.8/5
+Price: $1000.0
+Brand: Samsung
+Stock: 6
+------------------------------------------------
+ID: 115
+Name: Rolex Cufflinks
+Rate: 3.5/5
+Price: $100.0
+Brand: Rolex
+Stock: 8
+------------------------------------------------
+ID: 101
+Name: Samsung Galaxy S24 Ultra
+Rate: 3.3/5
+Price: $1149.0
+Brand: Samsung
+Stock: 1
+------------------------------------------------
+ID: 119
+Name: Sony Noise-Canceling Earbuds
+Rate: 3.0/5
+Price: $100.0
+Brand: Sony
+Stock: 10
+------------------------------------------------
+(Showing 1-10 out of 25)
+Use `show next 10 products' to see more.
+Product List (Sorted by: Rate)
+------------------------------------------------
+ID: 121  **(On Sale! 2 units discounted)**
+Name: Lenovo ThinkPad X1 Carbon
+Rate: 3.0/5
+Price: ~$1550.0~ → $1410.5 (-9%)
+Brand: Lenovo
+Stock: 7
+------------------------------------------------
+ID: 103
+Name: Samsung Galaxy SmartTag 2-Pack
+Rate: 2.8/5
+Price: $35.0
+Brand: Samsung
+Stock: 12
+------------------------------------------------
+ID: 108
+Name: Gucci Branded Socks
+Rate: 2.5/5
+Price: $66.0
+Brand: Gucci
+Stock: 15
+------------------------------------------------
+ID: 109
+Name: Gucci Keychain
+Rate: 2.5/5
+Price: $90.0
+Brand: Gucci
+Stock: 12
+------------------------------------------------
+ID: 110
+Name: Gucci Card Holder
+Rate: 2.5/5
+Price: $100.0
+Brand: Gucci
+Stock: 10
+------------------------------------------------
+ID: 111  **(On Sale! 2 units discounted)**
+Name: Rolex Submariner Watch
+Rate: 2.5/5
+Price: ~$7800.0~ → $7176.0 (-8%)
+Brand: Rolex
+Stock: 4
+------------------------------------------------
+ID: 112  **(On Sale! 3 units discounted)**
+Name: Rolex Daytona Chronograph
+Rate: 2.5/5
+Price: ~$11000.0~ → $9460.0 (-14%)
+Brand: Rolex
+Stock: 3
+------------------------------------------------
+ID: 113
+Name: Rolex Premium Cleaning Kit
+Rate: 2.5/5
+Price: $75.0
+Brand: Rolex
+Stock: 10
+------------------------------------------------
+ID: 114
+Name: Rolex Watch Box
+Rate: 2.5/5
+Price: $100.0
+Brand: Rolex
+Stock: 12
+------------------------------------------------
+ID: 116  **(On Sale! 2 units discounted)**
+Name: Sony PlayStation 5
+Rate: 2.5/5
+Price: ~$570.0~ → $513.0 (-10%)
+Brand: Sony
+Stock: 12
+------------------------------------------------
+(Showing 11-20 out of 25)
+Use `show next 10 products' to see more.
+Product List (Sorted by: Rate)
+------------------------------------------------
+ID: 117  **(On Sale! 3 units discounted)**
+Name: Sony WH-1000XM5 Headphones
+Rate: 2.5/5
+Price: ~$400.0~ → $336.0 (-16%)
+Brand: Sony
+Stock: 10
+------------------------------------------------
+ID: 122  **(On Sale! 3 units discounted)**
+Name: Lenovo Legion Pro 7i Gaming Laptop
+Rate: 2.5/5
+Price: ~$2200.0~ → $1760.0 (-20%)
+Brand: Lenovo
+Stock: 5
+------------------------------------------------
+ID: 123
+Name: Lenovo Wireless Mouse
+Rate: 2.5/5
+Price: $45.0
+Brand: Lenovo
+Stock: 15
+------------------------------------------------
+ID: 124
+Name: Lenovo Laptop Stand
+Rate: 2.5/5
+Price: $70.0
+Brand: Lenovo
+Stock: 10
+------------------------------------------------
+ID: 125
+Name: Lenovo USB-C Hub
+Rate: 2.5/5
+Price: $80.0
+Brand: Lenovo
+Stock: 12
+------------------------------------------------
+(Showing 21-30 out of 25)
+No more products available.
+Redirecting to the MainMenu ...
+Redirecting to the UserMenu ...
+Your Shopping Cart:
+------------------------------------
+Product ID  : 102
+Name        : Samsung 55-inch 4K QLED TV
+Quantity    : 2
+Price       : $850.0 (each)
+Total Price : $1700.0
+Brand       : Samsung
+Rating      : 3.8/5
+------------------------------------
+Product ID  : 101
+Name        : Samsung Galaxy S24 Ultra
+Quantity    : 9
+Price       : $1149.0 (each)
+Total Price : $10341.0
+Brand       : Samsung
+Rating      : 3.3/5
+------------------------------------
+Successfully removed 8 of "Samsung Galaxy S24 Ultra" from your cart.
+Your Shopping Cart:
+------------------------------------
+Product ID  : 102
+Name        : Samsung 55-inch 4K QLED TV
+Quantity    : 2
+Price       : $850.0 (each)
+Total Price : $1700.0
+Brand       : Samsung
+Rating      : 3.8/5
+------------------------------------
+Product ID  : 101
+Name        : Samsung Galaxy S24 Ultra
+Quantity    : 1
+Price       : $1149.0 (each)
+Total Price : $1149.0
+Brand       : Samsung
+Rating      : 3.3/5
+------------------------------------
+The provided address ID is invalid.
+Insufficient balance in the selected card.
+$3000.0 has been added to the credit card 2. New balance: $3250.0.
+Order has been placed successfully!
+Order ID: 101
+Total Paid: $2849.0
+Shipping to: Vibranium Alley, Birnin Zana, Wakanda
+Current balance : $500.0
+Current balance : $401.0
+invalid command
+Redirecting to the MainMenu ...
+Redirecting to the ProductMenu ...
+Product List (Sorted by: Rate)
+------------------------------------------------
+ID: 107  **(On Sale! 3 units discounted)**
+Name: Gucci GG Canvas Sneakers
+Rate: 5.0/5
+Price: ~$800.0~ → $656.0 (-18%)
+Brand: Gucci
+Stock: 8
+------------------------------------------------
+ID: 118
+Name: Sony PlayStation 5 Controller Charger
+Rate: 5.0/5
+Price: $55.0
+Brand: Sony
+Stock: 14
+------------------------------------------------
+ID: 106  **(On Sale! 2 units discounted)**
+Name: Gucci Leather Shoulder Bag
+Rate: 4.5/5
+Price: ~$1250.0~ → $1100.0 (-12%)
+Brand: Gucci
+Stock: 6
+------------------------------------------------
+ID: 120
+Name: Sony 64GB SD Card
+Rate: 4.3/5
+Price: $40.0
+Brand: Sony
+Stock: 15
+------------------------------------------------
+ID: 104
+Name: Samsung Fast Charger 45W
+Rate: 4.0/5
+Price: $50.0
+Brand: Samsung
+Stock: 15
+------------------------------------------------
+ID: 105  **(On Sale! 1 units discounted)**
+Name: Samsung USB-C to HDMI Adapter
+Rate: 4.0/5
+Price: ~$60.0~ → $53.4 (-11%)
+Brand: Samsung
+Stock: 10
+------------------------------------------------
+ID: 102
+Name: Samsung 55-inch 4K QLED TV
+Rate: 3.8/5
+Price: $1000.0
+Brand: Samsung
+Stock: 6
+------------------------------------------------
+ID: 115
+Name: Rolex Cufflinks
+Rate: 3.5/5
+Price: $100.0
+Brand: Rolex
+Stock: 8
+------------------------------------------------
+ID: 101
+Name: Samsung Galaxy S24 Ultra
+Rate: 3.3/5
+Price: $1149.0
+Brand: Samsung
+Stock: 9
+------------------------------------------------
+ID: 119
+Name: Sony Noise-Canceling Earbuds
+Rate: 3.0/5
+Price: $100.0
+Brand: Sony
+Stock: 10
+------------------------------------------------
+(Showing 1-10 out of 25)
+Use `show next 10 products' to see more.
+Product List (Sorted by: Rate)
+------------------------------------------------
+ID: 121  **(On Sale! 2 units discounted)**
+Name: Lenovo ThinkPad X1 Carbon
+Rate: 3.0/5
+Price: ~$1550.0~ → $1410.5 (-9%)
+Brand: Lenovo
+Stock: 7
+------------------------------------------------
+ID: 103
+Name: Samsung Galaxy SmartTag 2-Pack
+Rate: 2.8/5
+Price: $35.0
+Brand: Samsung
+Stock: 12
+------------------------------------------------
+ID: 108
+Name: Gucci Branded Socks
+Rate: 2.5/5
+Price: $66.0
+Brand: Gucci
+Stock: 15
+------------------------------------------------
+ID: 109
+Name: Gucci Keychain
+Rate: 2.5/5
+Price: $90.0
+Brand: Gucci
+Stock: 12
+------------------------------------------------
+ID: 110
+Name: Gucci Card Holder
+Rate: 2.5/5
+Price: $100.0
+Brand: Gucci
+Stock: 10
+------------------------------------------------
+ID: 111  **(On Sale! 2 units discounted)**
+Name: Rolex Submariner Watch
+Rate: 2.5/5
+Price: ~$7800.0~ → $7176.0 (-8%)
+Brand: Rolex
+Stock: 4
+------------------------------------------------
+ID: 112  **(On Sale! 3 units discounted)**
+Name: Rolex Daytona Chronograph
+Rate: 2.5/5
+Price: ~$11000.0~ → $9460.0 (-14%)
+Brand: Rolex
+Stock: 3
+------------------------------------------------
+ID: 113
+Name: Rolex Premium Cleaning Kit
+Rate: 2.5/5
+Price: $75.0
+Brand: Rolex
+Stock: 10
+------------------------------------------------
+ID: 114
+Name: Rolex Watch Box
+Rate: 2.5/5
+Price: $100.0
+Brand: Rolex
+Stock: 12
+------------------------------------------------
+ID: 116  **(On Sale! 2 units discounted)**
+Name: Sony PlayStation 5
+Rate: 2.5/5
+Price: ~$570.0~ → $513.0 (-10%)
+Brand: Sony
+Stock: 12
+------------------------------------------------
+(Showing 11-20 out of 25)
+Use `show next 10 products' to see more.
+Product List (Sorted by: Rate)
+------------------------------------------------
+ID: 117  **(On Sale! 3 units discounted)**
+Name: Sony WH-1000XM5 Headphones
+Rate: 2.5/5
+Price: ~$400.0~ → $336.0 (-16%)
+Brand: Sony
+Stock: 10
+------------------------------------------------
+ID: 122  **(On Sale! 3 units discounted)**
+Name: Lenovo Legion Pro 7i Gaming Laptop
+Rate: 2.5/5
+Price: ~$2200.0~ → $1760.0 (-20%)
+Brand: Lenovo
+Stock: 5
+------------------------------------------------
+ID: 123
+Name: Lenovo Wireless Mouse
+Rate: 2.5/5
+Price: $45.0
+Brand: Lenovo
+Stock: 15
+------------------------------------------------
+ID: 124
+Name: Lenovo Laptop Stand
+Rate: 2.5/5
+Price: $70.0
+Brand: Lenovo
+Stock: 10
+------------------------------------------------
+ID: 125
+Name: Lenovo USB-C Hub
+Rate: 2.5/5
+Price: $80.0
+Brand: Lenovo
+Stock: 12
+------------------------------------------------
+(Showing 21-30 out of 25)
+No more products available.
+"Lenovo ThinkPad X1 Carbon" (x2) has been added to your cart.
+"Samsung Galaxy SmartTag 2-Pack" (x12) has been added to your cart.
+Redirecting to the MainMenu ...
+Redirecting to the UserMenu ...
+Insufficient balance in the selected card.
+Current balance : $500.0
+Current balance : $401.0
+$5000.0 has been added to the credit card 1. New balance: $5500.0.
+Order has been placed successfully!
+Order ID: 102
+Total Paid: $3241.0
+Shipping to: Bag End, Shire, Hobbiton, Middle Earth
+Current balance : $2259.0
+Current balance : $401.0
+order History
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Order ID: 101
+Shipping Address: Vibranium Alley, Birnin Zana, Wakanda
+Total Items Ordered: 3
+
+Products (Sorted by Name):
+  1- Samsung 55-inch 4K QLED TV
+  2- Samsung Galaxy S24 Ultra
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Order ID: 102
+Shipping Address: Bag End, Shire, Hobbiton, Middle Earth
+Total Items Ordered: 14
+
+Products (Sorted by Name):
+  1- Lenovo ThinkPad X1 Carbon
+  2- Samsung Galaxy SmartTag 2-Pack
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+User logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the ProductMenu ...
+Product List (Sorted by: Number of sold)
+------------------------------------------------
+ID: 103  **(Sold out!)**
+Name: Samsung Galaxy SmartTag 2-Pack
+Rate: 2.8/5
+Price: $35.0
+Brand: Samsung
+Stock: 0
+------------------------------------------------
+ID: 102
+Name: Samsung 55-inch 4K QLED TV
+Rate: 3.8/5
+Price: $1000.0
+Brand: Samsung
+Stock: 6
+------------------------------------------------
+ID: 121
+Name: Lenovo ThinkPad X1 Carbon
+Rate: 3.0/5
+Price: $1550.0
+Brand: Lenovo
+Stock: 5
+------------------------------------------------
+ID: 101
+Name: Samsung Galaxy S24 Ultra
+Rate: 3.3/5
+Price: $1149.0
+Brand: Samsung
+Stock: 9
+------------------------------------------------
+ID: 104
+Name: Samsung Fast Charger 45W
+Rate: 4.0/5
+Price: $50.0
+Brand: Samsung
+Stock: 15
+------------------------------------------------
+ID: 105  **(On Sale! 1 units discounted)**
+Name: Samsung USB-C to HDMI Adapter
+Rate: 4.0/5
+Price: ~$60.0~ → $53.4 (-11%)
+Brand: Samsung
+Stock: 10
+------------------------------------------------
+ID: 106  **(On Sale! 2 units discounted)**
+Name: Gucci Leather Shoulder Bag
+Rate: 4.5/5
+Price: ~$1250.0~ → $1100.0 (-12%)
+Brand: Gucci
+Stock: 6
+------------------------------------------------
+ID: 107  **(On Sale! 3 units discounted)**
+Name: Gucci GG Canvas Sneakers
+Rate: 5.0/5
+Price: ~$800.0~ → $656.0 (-18%)
+Brand: Gucci
+Stock: 8
+------------------------------------------------
+ID: 108
+Name: Gucci Branded Socks
+Rate: 2.5/5
+Price: $66.0
+Brand: Gucci
+Stock: 15
+------------------------------------------------
+ID: 109
+Name: Gucci Keychain
+Rate: 2.5/5
+Price: $90.0
+Brand: Gucci
+Stock: 12
+------------------------------------------------
+(Showing 1-10 out of 25)
+Use `show next 10 products' to see more.
+Product List (Sorted by: Number of sold)
+------------------------------------------------
+ID: 110
+Name: Gucci Card Holder
+Rate: 2.5/5
+Price: $100.0
+Brand: Gucci
+Stock: 10
+------------------------------------------------
+ID: 111  **(On Sale! 2 units discounted)**
+Name: Rolex Submariner Watch
+Rate: 2.5/5
+Price: ~$7800.0~ → $7176.0 (-8%)
+Brand: Rolex
+Stock: 4
+------------------------------------------------
+ID: 112  **(On Sale! 3 units discounted)**
+Name: Rolex Daytona Chronograph
+Rate: 2.5/5
+Price: ~$11000.0~ → $9460.0 (-14%)
+Brand: Rolex
+Stock: 3
+------------------------------------------------
+ID: 113
+Name: Rolex Premium Cleaning Kit
+Rate: 2.5/5
+Price: $75.0
+Brand: Rolex
+Stock: 10
+------------------------------------------------
+ID: 114
+Name: Rolex Watch Box
+Rate: 2.5/5
+Price: $100.0
+Brand: Rolex
+Stock: 12
+------------------------------------------------
+ID: 115
+Name: Rolex Cufflinks
+Rate: 3.5/5
+Price: $100.0
+Brand: Rolex
+Stock: 8
+------------------------------------------------
+ID: 116  **(On Sale! 2 units discounted)**
+Name: Sony PlayStation 5
+Rate: 2.5/5
+Price: ~$570.0~ → $513.0 (-10%)
+Brand: Sony
+Stock: 12
+------------------------------------------------
+ID: 117  **(On Sale! 3 units discounted)**
+Name: Sony WH-1000XM5 Headphones
+Rate: 2.5/5
+Price: ~$400.0~ → $336.0 (-16%)
+Brand: Sony
+Stock: 10
+------------------------------------------------
+ID: 118
+Name: Sony PlayStation 5 Controller Charger
+Rate: 5.0/5
+Price: $55.0
+Brand: Sony
+Stock: 14
+------------------------------------------------
+ID: 119
+Name: Sony Noise-Canceling Earbuds
+Rate: 3.0/5
+Price: $100.0
+Brand: Sony
+Stock: 10
+------------------------------------------------
+(Showing 11-20 out of 25)
+Use `show next 10 products' to see more.
+Product List (Sorted by: Number of sold)
+------------------------------------------------
+ID: 120
+Name: Sony 64GB SD Card
+Rate: 4.3/5
+Price: $40.0
+Brand: Sony
+Stock: 15
+------------------------------------------------
+ID: 122  **(On Sale! 3 units discounted)**
+Name: Lenovo Legion Pro 7i Gaming Laptop
+Rate: 2.5/5
+Price: ~$2200.0~ → $1760.0 (-20%)
+Brand: Lenovo
+Stock: 5
+------------------------------------------------
+ID: 123
+Name: Lenovo Wireless Mouse
+Rate: 2.5/5
+Price: $45.0
+Brand: Lenovo
+Stock: 15
+------------------------------------------------
+ID: 124
+Name: Lenovo Laptop Stand
+Rate: 2.5/5
+Price: $70.0
+Brand: Lenovo
+Stock: 10
+------------------------------------------------
+ID: 125
+Name: Lenovo USB-C Hub
+Rate: 2.5/5
+Price: $80.0
+Brand: Lenovo
+Stock: 12
+------------------------------------------------
+(Showing 21-30 out of 25)
+No more products available.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+No product found.
+Thank you! Your rating and review have been submitted successfully.
+No product found.
+Thank you! Your rating and review have been submitted successfully.
+No product found.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+No product found.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+No product found.
+No product found.
+Thank you! Your rating and review have been submitted successfully.
+Thank you! Your rating and review have been submitted successfully.
+No product found.
+Redirecting to the MainMenu ...
+Redirecting to the UserMenu ...
+No orders found.
+Your shopping cart is empty.
+Redirecting to the MainMenu ...
+Redirecting to the ProductMenu ...
+Product List (Sorted by: Rate)
+------------------------------------------------
+ID: 107  **(On Sale! 3 units discounted)**
+Name: Gucci GG Canvas Sneakers
+Rate: 5.0/5
+Price: ~$800.0~ → $656.0 (-18%)
+Brand: Gucci
+Stock: 8
+------------------------------------------------
+ID: 118
+Name: Sony PlayStation 5 Controller Charger
+Rate: 5.0/5
+Price: $55.0
+Brand: Sony
+Stock: 14
+------------------------------------------------
+ID: 104
+Name: Samsung Fast Charger 45W
+Rate: 4.5/5
+Price: $50.0
+Brand: Samsung
+Stock: 15
+------------------------------------------------
+ID: 105  **(On Sale! 1 units discounted)**
+Name: Samsung USB-C to HDMI Adapter
+Rate: 4.0/5
+Price: ~$60.0~ → $53.4 (-11%)
+Brand: Samsung
+Stock: 10
+------------------------------------------------
+ID: 106  **(On Sale! 2 units discounted)**
+Name: Gucci Leather Shoulder Bag
+Rate: 4.0/5
+Price: ~$1250.0~ → $1100.0 (-12%)
+Brand: Gucci
+Stock: 6
+------------------------------------------------
+ID: 120
+Name: Sony 64GB SD Card
+Rate: 4.0/5
+Price: $40.0
+Brand: Sony
+Stock: 15
+------------------------------------------------
+ID: 102
+Name: Samsung 55-inch 4K QLED TV
+Rate: 3.9/5
+Price: $1000.0
+Brand: Samsung
+Stock: 6
+------------------------------------------------
+ID: 121
+Name: Lenovo ThinkPad X1 Carbon
+Rate: 3.5/5
+Price: $1550.0
+Brand: Lenovo
+Stock: 5
+------------------------------------------------
+ID: 115
+Name: Rolex Cufflinks
+Rate: 3.3/5
+Price: $100.0
+Brand: Rolex
+Stock: 8
+------------------------------------------------
+ID: 101
+Name: Samsung Galaxy S24 Ultra
+Rate: 3.1/5
+Price: $1149.0
+Brand: Samsung
+Stock: 9
+------------------------------------------------
+(Showing 1-10 out of 25)
+Use `show next 10 products' to see more.
+Product List (Sorted by: Rate)
+------------------------------------------------
+ID: 103  **(Sold out!)**
+Name: Samsung Galaxy SmartTag 2-Pack
+Rate: 3.0/5
+Price: $35.0
+Brand: Samsung
+Stock: 0
+------------------------------------------------
+ID: 108
+Name: Gucci Branded Socks
+Rate: 3.0/5
+Price: $66.0
+Brand: Gucci
+Stock: 15
+------------------------------------------------
+ID: 109
+Name: Gucci Keychain
+Rate: 2.5/5
+Price: $90.0
+Brand: Gucci
+Stock: 12
+------------------------------------------------
+ID: 111  **(On Sale! 2 units discounted)**
+Name: Rolex Submariner Watch
+Rate: 2.5/5
+Price: ~$7800.0~ → $7176.0 (-8%)
+Brand: Rolex
+Stock: 4
+------------------------------------------------
+ID: 112  **(On Sale! 3 units discounted)**
+Name: Rolex Daytona Chronograph
+Rate: 2.5/5
+Price: ~$11000.0~ → $9460.0 (-14%)
+Brand: Rolex
+Stock: 3
+------------------------------------------------
+ID: 114
+Name: Rolex Watch Box
+Rate: 2.5/5
+Price: $100.0
+Brand: Rolex
+Stock: 12
+------------------------------------------------
+ID: 116  **(On Sale! 2 units discounted)**
+Name: Sony PlayStation 5
+Rate: 2.5/5
+Price: ~$570.0~ → $513.0 (-10%)
+Brand: Sony
+Stock: 12
+------------------------------------------------
+ID: 117  **(On Sale! 3 units discounted)**
+Name: Sony WH-1000XM5 Headphones
+Rate: 2.5/5
+Price: ~$400.0~ → $336.0 (-16%)
+Brand: Sony
+Stock: 10
+------------------------------------------------
+ID: 119
+Name: Sony Noise-Canceling Earbuds
+Rate: 2.5/5
+Price: $100.0
+Brand: Sony
+Stock: 10
+------------------------------------------------
+ID: 122  **(On Sale! 3 units discounted)**
+Name: Lenovo Legion Pro 7i Gaming Laptop
+Rate: 2.5/5
+Price: ~$2200.0~ → $1760.0 (-20%)
+Brand: Lenovo
+Stock: 5
+------------------------------------------------
+(Showing 11-20 out of 25)
+Use `show next 10 products' to see more.
+Product List (Sorted by: Rate)
+------------------------------------------------
+ID: 123
+Name: Lenovo Wireless Mouse
+Rate: 2.5/5
+Price: $45.0
+Brand: Lenovo
+Stock: 15
+------------------------------------------------
+ID: 124
+Name: Lenovo Laptop Stand
+Rate: 2.5/5
+Price: $70.0
+Brand: Lenovo
+Stock: 10
+------------------------------------------------
+ID: 110
+Name: Gucci Card Holder
+Rate: 1.0/5
+Price: $100.0
+Brand: Gucci
+Stock: 10
+------------------------------------------------
+ID: 113
+Name: Rolex Premium Cleaning Kit
+Rate: 1.0/5
+Price: $75.0
+Brand: Rolex
+Stock: 10
+------------------------------------------------
+ID: 125
+Name: Lenovo USB-C Hub
+Rate: 1.0/5
+Price: $80.0
+Brand: Lenovo
+Stock: 12
+------------------------------------------------
+(Showing 21-30 out of 25)
+No more products available.
+Product Details
+------------------------------------------------
+Name: Samsung Galaxy S24 Ultra
+ID: 101
+Rating: 3.1/5
+Price: $1149.0
+Brand: Samsung
+Number of Products Remaining: 9
+About this item:
+Samsung's flagship smartphone with a powerful processor, high-resolution camera, and long battery life.
+
+Customer Reviews:
+------------------------------------------------
+Foad Khab (5/5)
+"mashine khobbie, hatman downloadesh konin"
+------------------------------------------------
+Foad Khab (4/5)
+"mashine khobbie, hatman downloadesh konin2"
+------------------------------------------------
+Foad Khab (5/5)
+"mashine khobbie, hatman downloadesh konin2"
+------------------------------------------------
+Foad Khab (1/5)
+"mashine khobbie, hatman downloadesh konin2"
+------------------------------------------------
+Foad Khab (4/5)
+"mashine khobbie, hatman downloadesh konin3"
+------------------------------------------------
+Foad Khab (2/5)
+"mashine badie, aslan downloadesh nakonin1"
+------------------------------------------------
+Foad Khab (3/5)
+"mashine badie, aslan downloadesh nakonin2"
+------------------------------------------------
+Foad Khab (2/5)
+"mashine badie, aslan downloadesh nakonin1"
+------------------------------------------------
+Fatemeh Tamehri (2/5)
+"Not what was advertised."
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Samsung 55-inch 4K QLED TV
+ID: 102
+Rating: 3.9/5
+Price: $1000.0
+Brand: Samsung
+Number of Products Remaining: 6
+About this item:
+A stunning 4K QLED TV with vibrant colors, deep blacks, and a smart OS for seamless streaming.
+
+Customer Reviews:
+------------------------------------------------
+Foad Khab (3/5)
+------------------------------------------------
+Foad Khab (4/5)
+------------------------------------------------
+Foad Khab (3/5)
+------------------------------------------------
+Foad Khab (3/5)
+------------------------------------------------
+Foad Khab (4/5)
+------------------------------------------------
+Foad Khab (5/5)
+------------------------------------------------
+Foad Khab (4/5)
+------------------------------------------------
+Foad Khab (4/5)
+------------------------------------------------
+Fatemeh Tamehri (5/5)
+"Absolutely love it!"
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Samsung Galaxy SmartTag 2-Pack  **(Sold out!)**
+ID: 103
+Rating: 3.0/5
+Price: $35.0
+Brand: Samsung
+Number of Products Remaining: 0
+About this item:
+Bluetooth-powered tracking tags to help locate lost items using your phone.
+
+Customer Reviews:
+------------------------------------------------
+Foad Khab (2/5)
+------------------------------------------------
+Foad Khab (3/5)
+------------------------------------------------
+Foad Khab (2/5)
+------------------------------------------------
+Foad Khab (3/5)
+------------------------------------------------
+Foad Khab (4/5)
+------------------------------------------------
+Fatemeh Tamehri (4/5)
+"Great quality, but a bit expensive."
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Samsung Fast Charger 45W
+ID: 104
+Rating: 4.5/5
+Price: $50.0
+Brand: Samsung
+Number of Products Remaining: 15
+About this item:
+A high-speed charger for Samsung devices, ensuring quick and safe charging.
+
+Customer Reviews:
+------------------------------------------------
+Foad Khab (4/5)
+------------------------------------------------
+Fatemeh Tamehri (5/5)
+"Best purchase ever!"
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Samsung USB-C to HDMI Adapter  **(On Sale! 1 units discounted)**
+ID: 105
+Rating: 4.0/5
+Price: ~$60.0~ → $53.4 (-11%)
+Brand: Samsung
+Number of Products Remaining: 10
+About this item:
+An adapter that allows you to connect your Samsung devices to external displays.
+
+Customer Reviews:
+------------------------------------------------
+Foad Khab (4/5)
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Gucci Leather Shoulder Bag  **(On Sale! 2 units discounted)**
+ID: 106
+Rating: 4.0/5
+Price: ~$1250.0~ → $1100.0 (-12%)
+Brand: Gucci
+Number of Products Remaining: 6
+About this item:
+A luxurious shoulder bag made from premium leather, showcasing Gucci’s signature design.
+
+Customer Reviews:
+------------------------------------------------
+Foad Khab (4/5)
+------------------------------------------------
+Foad Khab (5/5)
+------------------------------------------------
+Fatemeh Tamehri (3/5)
+"Just fine, no complaints but no wow factor either."
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Gucci GG Canvas Sneakers  **(On Sale! 3 units discounted)**
+ID: 107
+Rating: 5.0/5
+Price: ~$800.0~ → $656.0 (-18%)
+Brand: Gucci
+Number of Products Remaining: 8
+About this item:
+A stylish and comfortable sneaker featuring the iconic GG canvas design.
+
+Customer Reviews:
+------------------------------------------------
+Foad Khab (5/5)
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Gucci Branded Socks
+ID: 108
+Rating: 3.0/5
+Price: $66.0
+Brand: Gucci
+Number of Products Remaining: 15
+About this item:
+Designer socks featuring Gucci’s signature pattern, adding style to any outfit.
+
+Customer Reviews:
+------------------------------------------------
+Fatemeh Tamehri (3/5)
+"Decent product, but not great."
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Gucci Keychain
+ID: 109
+Rating: 2.5/5
+Price: $90.0
+Brand: Gucci
+Number of Products Remaining: 12
+About this item:
+A high-quality leather keychain with an elegant Gucci logo charm.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Gucci Card Holder
+ID: 110
+Rating: 1.0/5
+Price: $100.0
+Brand: Gucci
+Number of Products Remaining: 10
+About this item:
+A compact and stylish cardholder made from premium materials.
+
+Customer Reviews:
+------------------------------------------------
+Fatemeh Tamehri (1/5)
+"Very disappointing, would not recommend."
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Rolex Submariner Watch  **(On Sale! 2 units discounted)**
+ID: 111
+Rating: 2.5/5
+Price: ~$7800.0~ → $7176.0 (-8%)
+Brand: Rolex
+Number of Products Remaining: 4
+About this item:
+A high-end luxury diving watch with impeccable craftsmanship and water resistance.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Rolex Daytona Chronograph  **(On Sale! 3 units discounted)**
+ID: 112
+Rating: 2.5/5
+Price: ~$11000.0~ → $9460.0 (-14%)
+Brand: Rolex
+Number of Products Remaining: 3
+About this item:
+A premium chronograph watch designed for speed enthusiasts and collectors.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Rolex Premium Cleaning Kit
+ID: 113
+Rating: 1.0/5
+Price: $75.0
+Brand: Rolex
+Number of Products Remaining: 10
+About this item:
+A special cleaning kit designed for Rolex watches to maintain their shine and precision.
+
+Customer Reviews:
+------------------------------------------------
+Fatemeh Tamehri (1/5)
+"Waste of money, don't buy it."
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Rolex Watch Box
+ID: 114
+Rating: 2.5/5
+Price: $100.0
+Brand: Rolex
+Number of Products Remaining: 12
+About this item:
+A leather watch box with soft interior lining for safely storing Rolex watches.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Rolex Cufflinks
+ID: 115
+Rating: 3.3/5
+Price: $100.0
+Brand: Rolex
+Number of Products Remaining: 8
+About this item:
+Elegant and sophisticated cufflinks featuring the Rolex logo.
+
+Customer Reviews:
+------------------------------------------------
+Foad Khab (4/5)
+------------------------------------------------
+Foad Khab (3/5)
+------------------------------------------------
+Fatemeh Tamehri (3/5)
+"It's okay, nothing special."
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Sony PlayStation 5  **(On Sale! 2 units discounted)**
+ID: 116
+Rating: 2.5/5
+Price: ~$570.0~ → $513.0 (-10%)
+Brand: Sony
+Number of Products Remaining: 12
+About this item:
+The latest PlayStation console with powerful performance and immersive gaming experience.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Sony WH-1000XM5 Headphones  **(On Sale! 3 units discounted)**
+ID: 117
+Rating: 2.5/5
+Price: ~$400.0~ → $336.0 (-16%)
+Brand: Sony
+Number of Products Remaining: 10
+About this item:
+Industry-leading noise-canceling headphones with crystal-clear audio and long battery life.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Sony PlayStation 5 Controller Charger
+ID: 118
+Rating: 5.0/5
+Price: $55.0
+Brand: Sony
+Number of Products Remaining: 14
+About this item:
+A dual charging station for PlayStation 5 controllers, ensuring they are always ready to use.
+
+Customer Reviews:
+------------------------------------------------
+Foad Khab (5/5)
+------------------------------------------------
+Foad Khab (5/5)
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Sony Noise-Canceling Earbuds
+ID: 119
+Rating: 2.5/5
+Price: $100.0
+Brand: Sony
+Number of Products Remaining: 10
+About this item:
+Compact noise-canceling earbuds with great audio quality and a comfortable fit.
+
+Customer Reviews:
+------------------------------------------------
+Foad Khab (3/5)
+------------------------------------------------
+Fatemeh Tamehri (2/5)
+"Could be improved in many ways."
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Sony 64GB SD Card
+ID: 120
+Rating: 4.0/5
+Price: $40.0
+Brand: Sony
+Number of Products Remaining: 15
+About this item:
+A high-speed SD card designed for cameras, ensuring fast read and write speeds.
+
+Customer Reviews:
+------------------------------------------------
+Foad Khab (4/5)
+------------------------------------------------
+Foad Khab (5/5)
+------------------------------------------------
+Foad Khab (5/5)
+------------------------------------------------
+Foad Khab (5/5)
+------------------------------------------------
+Foad Khab (3/5)
+------------------------------------------------
+Foad Khab (4/5)
+------------------------------------------------
+Fatemeh Tamehri (2/5)
+"Not the quality I expected."
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Lenovo ThinkPad X1 Carbon
+ID: 121
+Rating: 3.5/5
+Price: $1550.0
+Brand: Lenovo
+Number of Products Remaining: 5
+About this item:
+A premium business laptop with lightweight design, powerful hardware, and long battery life.
+
+Customer Reviews:
+------------------------------------------------
+Foad Khab (3/5)
+------------------------------------------------
+Fatemeh Tamehri (4/5)
+"Pretty good, but could be better."
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Lenovo Legion Pro 7i Gaming Laptop  **(On Sale! 3 units discounted)**
+ID: 122
+Rating: 2.5/5
+Price: ~$2200.0~ → $1760.0 (-20%)
+Brand: Lenovo
+Number of Products Remaining: 5
+About this item:
+A high-end gaming laptop with top-tier graphics and cooling system for ultimate performance.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Lenovo Wireless Mouse
+ID: 123
+Rating: 2.5/5
+Price: $45.0
+Brand: Lenovo
+Number of Products Remaining: 15
+About this item:
+A sleek and ergonomic wireless mouse designed for productivity and comfort.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Lenovo Laptop Stand
+ID: 124
+Rating: 2.5/5
+Price: $70.0
+Brand: Lenovo
+Number of Products Remaining: 10
+About this item:
+An adjustable stand for Lenovo laptops to improve airflow and ergonomics.
+
+Customer Reviews:
+------------------------------------------------
+Product Details
+------------------------------------------------
+Name: Lenovo USB-C Hub
+ID: 125
+Rating: 1.0/5
+Price: $80.0
+Brand: Lenovo
+Number of Products Remaining: 12
+About this item:
+A multi-port hub with HDMI, USB, and SD card slots for enhanced connectivity.
+
+Customer Reviews:
+------------------------------------------------
+Fatemeh Tamehri (1/5)
+"Terrible experience, not worth the money."
+------------------------------------------------
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Store logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the StoreMenu ...
+Total Profit: $-12668.5
+(Revenue: $3269.0 - Costs: $15937.5)
+Store Products (Sorted by date added)
+------------------------------------------------
+ID: 101
+Name: Samsung Galaxy S24 Ultra
+Price: $1149.0
+Stock: 9
+Sold: 1
+------------------------------------------------
+ID: 102
+Name: Samsung 55-inch 4K QLED TV
+Price: $1000.0
+Stock: 6
+Sold: 2
+------------------------------------------------
+ID: 103  (**Sold out!**)
+Name: Samsung Galaxy SmartTag 2-Pack
+Price: $35.0
+Stock: 0
+Sold: 12
+------------------------------------------------
+ID: 104
+Name: Samsung Fast Charger 45W
+Price: $50.0
+Stock: 15
+Sold: 0
+------------------------------------------------
+ID: 105  **(On Sale! 1 units discounted)**
+Name: Samsung USB-C to HDMI Adapter
+Price: ~$60.0~ → $53.4 (-11%)
+Stock: 10
+Sold: 0
+------------------------------------------------
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Store logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the StoreMenu ...
+Total Profit: $-9674.5
+(Revenue: $0.0 - Costs: $9674.5)
+Store Products (Sorted by date added)
+------------------------------------------------
+ID: 106  **(On Sale! 2 units discounted)**
+Name: Gucci Leather Shoulder Bag
+Price: ~$1250.0~ → $1100.0 (-12%)
+Stock: 6
+Sold: 0
+------------------------------------------------
+ID: 107  **(On Sale! 3 units discounted)**
+Name: Gucci GG Canvas Sneakers
+Price: ~$800.0~ → $656.0 (-18%)
+Stock: 8
+Sold: 0
+------------------------------------------------
+ID: 108
+Name: Gucci Branded Socks
+Price: $66.0
+Stock: 15
+Sold: 0
+------------------------------------------------
+ID: 109
+Name: Gucci Keychain
+Price: $90.0
+Stock: 12
+Sold: 0
+------------------------------------------------
+ID: 110
+Name: Gucci Card Holder
+Price: $100.0
+Stock: 10
+Sold: 0
+------------------------------------------------
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Store logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the StoreMenu ...
+Total Profit: $-51278.7
+(Revenue: $0.0 - Costs: $51278.7)
+Store Products (Sorted by date added)
+------------------------------------------------
+ID: 111  **(On Sale! 2 units discounted)**
+Name: Rolex Submariner Watch
+Price: ~$7800.0~ → $7176.0 (-8%)
+Stock: 4
+Sold: 0
+------------------------------------------------
+ID: 112  **(On Sale! 3 units discounted)**
+Name: Rolex Daytona Chronograph
+Price: ~$11000.0~ → $9460.0 (-14%)
+Stock: 3
+Sold: 0
+------------------------------------------------
+ID: 113
+Name: Rolex Premium Cleaning Kit
+Price: $75.0
+Stock: 10
+Sold: 0
+------------------------------------------------
+ID: 114
+Name: Rolex Watch Box
+Price: $100.0
+Stock: 12
+Sold: 0
+------------------------------------------------
+ID: 115
+Name: Rolex Cufflinks
+Price: $100.0
+Stock: 8
+Sold: 0
+------------------------------------------------
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Store logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the StoreMenu ...
+Total Profit: $-8859.2
+(Revenue: $0.0 - Costs: $8859.2)
+Store Products (Sorted by date added)
+------------------------------------------------
+ID: 116  **(On Sale! 2 units discounted)**
+Name: Sony PlayStation 5
+Price: ~$570.0~ → $513.0 (-10%)
+Stock: 12
+Sold: 0
+------------------------------------------------
+ID: 117  **(On Sale! 3 units discounted)**
+Name: Sony WH-1000XM5 Headphones
+Price: ~$400.0~ → $336.0 (-16%)
+Stock: 10
+Sold: 0
+------------------------------------------------
+ID: 118
+Name: Sony PlayStation 5 Controller Charger
+Price: $55.0
+Stock: 14
+Sold: 0
+------------------------------------------------
+ID: 119
+Name: Sony Noise-Canceling Earbuds
+Price: $100.0
+Stock: 10
+Sold: 0
+------------------------------------------------
+ID: 120
+Name: Sony 64GB SD Card
+Price: $40.0
+Stock: 15
+Sold: 0
+------------------------------------------------
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Store logged in successfully. Redirecting to the MainMenu ...
+Redirecting to the StoreMenu ...
+Total Profit: $-15262.6
+(Revenue: $2821.0 - Costs: $18083.6)
+Store Products (Sorted by date added)
+------------------------------------------------
+ID: 121
+Name: Lenovo ThinkPad X1 Carbon
+Price: $1550.0
+Stock: 5
+Sold: 2
+------------------------------------------------
+ID: 122  **(On Sale! 3 units discounted)**
+Name: Lenovo Legion Pro 7i Gaming Laptop
+Price: ~$2200.0~ → $1760.0 (-20%)
+Stock: 5
+Sold: 0
+------------------------------------------------
+ID: 123
+Name: Lenovo Wireless Mouse
+Price: $45.0
+Stock: 15
+Sold: 0
+------------------------------------------------
+ID: 124
+Name: Lenovo Laptop Stand
+Price: $70.0
+Stock: 10
+Sold: 0
+------------------------------------------------
+ID: 125
+Name: Lenovo USB-C Hub
+Price: $80.0
+Stock: 12
+Sold: 0
+------------------------------------------------
+Redirecting to the MainMenu ...
+Redirecting to the LoginMenu ...
+Logged out successfully. Redirecting to the MainMenu ...

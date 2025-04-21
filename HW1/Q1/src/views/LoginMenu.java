@@ -11,6 +11,7 @@ import controllers.LoginMenuController;
 import models.enums.LoginMenuCommands;
 
 import java.util.Scanner;
+import java.util.regex.Matcher;
 
 public class LoginMenu implements AppMenu {
     private final LoginMenuController loginMenuController = new LoginMenuController();
@@ -18,14 +19,20 @@ public class LoginMenu implements AppMenu {
     @Override
     public void check(Scanner scanner) {
         String input = scanner.nextLine().trim();
-
-        if (LoginMenuCommands.LOGIN_USER.getMatcher(input) != null) {
-            System.out.println(loginMenuController.loginUser(input));
-        } else if (LoginMenuCommands.FORGET_PASSWORD.getMatcher(input) != null) {
-            System.out.println(loginMenuController.forgetPassword(input));
-        } else if (LoginMenuCommands.GOTO_SIGNUP_MENU.getMatcher(input) != null) {
+        Matcher matcher;
+        if ((matcher = LoginMenuCommands.LOGIN_USER.getMatcher(input)) != null) {
+            System.out.println(loginMenuController.loginUser(
+                    matcher.group("username"),
+                    matcher.group("password")
+            ));
+        } else if ((matcher = LoginMenuCommands.FORGET_PASSWORD.getMatcher(input)) != null) {
+            System.out.println(loginMenuController.forgetPassword(
+                    matcher.group("username"),
+                    matcher.group("email")
+            ));
+        } else if ((matcher = LoginMenuCommands.GOTO_SIGNUP_MENU.getMatcher(input)) != null) {
             System.out.println(loginMenuController.goToSignupMenu());
-        } else if (LoginMenuCommands.EXIT.getMatcher(input) != null) {
+        } else if ((matcher = LoginMenuCommands.EXIT.getMatcher(input)) != null) {
             loginMenuController.exit();
         } else {
             System.out.println("invalid command!");

@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public enum SignupMenuCommands implements Commands{
     SHOW_CURRENT_MENU("show\\s+current\\s+menu"),
     EXIT("exit"),
-    REGISTER("^register\\s+-username\\s+(?<username>\\S+?)\\s+-password\\s+(?<password>.+?)\\s+-email\\s+(?<email>\\S+?)$"),
+    REGISTER("^register\\s+-username\\s+(?<username>\\S*)\\s+-password\\s+(?<password>.*?)\\s+-email\\s+(?<email>\\S*)$"),
     USERNAME("^[a-zA-Z\\d][a-zA-Z\\d_]*$"),
     PASSWORD_LENGTH(".{8,20}"),
     PASSWORD_WHITESPACE("\\S{8,20}"),

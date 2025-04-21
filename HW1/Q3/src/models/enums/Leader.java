@@ -1,5 +1,7 @@
 package models.enums;
 
+import java.util.ArrayList;
+
 public enum Leader {
     ADENAUER(Ideology.DEMOCRACY, CountryType.GERMAN_REICH),
     PIECK(Ideology.COMMUNISM, CountryType.GERMAN_REICH),
@@ -33,6 +35,15 @@ public enum Leader {
     }
 
     public CountryType getCountry() {
-        return country;
+        return this.country;
+    }
+
+
+    public static Leader stringToLeader(String name) {
+        for (Leader leader : Leader.values()) {
+            if(leader.name().toLowerCase().equals(name))
+                return leader;
+        }
+        return null;
     }
 }

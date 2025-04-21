@@ -22,26 +22,28 @@ public enum FactoryType {
 
     public static FactoryType stringToFactoryType(String name) {
         for (FactoryType value : FactoryType.values()) {
-            if(name.equalsIgnoreCase(value.getName()))
+//            System.out.println(value.getName());
+            if(name.equals(value.getName().toLowerCase()))
                 return value;
         }
+//        System.out.println(name);
         return null;
     }
 
     public String getName() {
-        return this.name().toLowerCase().replace("ـ", " ");
+        return this.name().toLowerCase().replace("_", " ");
     }
 
     public int getManPowerCost(Tile tile) {
         int cost = manPowerCost  * tile.getTerrain().getFactoryCost() / 100;
-        if(App.getActiveUser().getPlayingCountry().getLeader().getIdeology().equals(Ideology.COMMUNISM))
+        if(App.getActiveGame().getPlayingUser().getPlayingCountry().getLeader().getIdeology().equals(Ideology.COMMUNISM))
             cost = manPowerCost  * tile.getTerrain().getFactoryCost() / 200;
         return cost;
     }
 
     public int getSteelCost(Tile tile) {
         int cost = steelCost * tile.getTerrain().getFactoryCost() / 100;
-        if(App.getActiveUser().getPlayingCountry().getLeader().getIdeology().equals(Ideology.COMMUNISM))
+        if(App.getActiveGame().getPlayingUser().getPlayingCountry().getLeader().getIdeology().equals(Ideology.COMMUNISM))
             cost = steelCost  * tile.getTerrain().getFactoryCost() / 200;
         return cost;
     }

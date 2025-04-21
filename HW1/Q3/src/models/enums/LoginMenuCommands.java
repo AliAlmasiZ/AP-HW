@@ -7,8 +7,8 @@ public enum LoginMenuCommands implements Commands {
     SHOW_CURRENT_MENU("show\\s+current\\s+menu"),
     BACK("back"),
     EXIT("exit"),
-    LOGIN("^login\\s+-username\\s+(?<username>\\S+?)\\s+-password\\s+(?<password>.+?)$"),
-    FORGET_PASSWORD("^forget-password\\s+-username\\s+(?<username>\\S+?)\\s+-email\\s+(?<email>\\S+?)$"),
+    LOGIN("^login\\s+-username\\s+(?<username>\\S*)\\s+-password\\s+(?<password>\\S*)$"),
+    FORGET_PASSWORD("^forget-password\\s+-username\\s+(?<username>\\S*)\\s+-email\\s+(?<email>\\S*)$"),
     ;
 
 

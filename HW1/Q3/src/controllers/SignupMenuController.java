@@ -10,6 +10,7 @@ public class SignupMenuController {
 
 
     public Result register(String username, String password, String email) {
+        password = password.trim();
         if (SignupMenuCommands.USERNAME.getMatcher(username) == null) {
             return new Result(false, "invalid username");
         }

@@ -16,6 +16,10 @@ public class LeaderboardMenu implements AppMenu {
         Matcher matcher;
         if((matcher = LeaderboardMenuCommands.SHOW_CURRENT_MENU.getMatcher(input)) != null) {
             System.out.println(App.getActiveMenu());
+        } else if((matcher = LeaderboardMenuCommands.SHOW_HISTORY.getMatcher(input)) != null) {
+            System.out.println(controller.showHistory());
+        } else if((matcher = LeaderboardMenuCommands.SHOW_RANKING.getMatcher(input)) != null) {
+            System.out.println(controller.showRanking());
         } else if((matcher = LeaderboardMenuCommands.BACK.getMatcher(input)) != null) {
             controller.back();
         } else if((matcher = LeaderboardMenuCommands.EXIT.getMatcher(input)) != null) {

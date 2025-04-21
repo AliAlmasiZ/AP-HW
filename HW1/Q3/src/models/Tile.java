@@ -69,6 +69,7 @@ public class Tile {
     }
 
     public void setTerrain(Terrain terrain) {
+        isTerrainChanged = true;
         this.terrain = terrain;
     }
 

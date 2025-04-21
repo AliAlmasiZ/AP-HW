@@ -5,6 +5,7 @@ import models.enums.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Set;
 
 public class GameMenuController {
@@ -54,8 +55,8 @@ public class GameMenuController {
         if(tile == null)
             return new Result(false, "tile doesn't exist");
         Weather weather = tile.getWeather();
-        String formated = weather.name().charAt(0) + weather.name().substring(1).toLowerCase();
-        return new Result(true, formated); // check
+//        String formated = weather.name().charAt(0) + weather.name().substring(1).toLowerCase();
+        return new Result(true, weather.name().toLowerCase()); // check
     }
 
     public Result showTerrain(String index) {
@@ -64,8 +65,8 @@ public class GameMenuController {
         if(tile == null)
             return new Result(false, "tile doesn't exist");
         Terrain terrain = tile.getTerrain();
-        String formated = terrain.name().charAt(0) + terrain.name().substring(1).toLowerCase();
-        return new Result(true, formated);
+//        String formated = terrain.name().charAt(0) + terrain.name().substring(1).toLowerCase();
+        return new Result(true, terrain.name().toLowerCase());
     }
 
     public Result showBattalion(String index) {
@@ -74,7 +75,7 @@ public class GameMenuController {
         if(tile == null)
             return new Result(false, "tile doesn't exist");
         Country country = App.getActiveGame().getPlayingUser().getPlayingCountry();
-        if(!country.canAccessTile(tile))
+        if(country == null || !country.canAccessTile(tile))
             return new Result(false, "can't show battalions");
         return new Result(true, printBattalions(tile));
     }
@@ -95,8 +96,7 @@ public class GameMenuController {
         int idx = Integer.parseInt(index);
         Tile tile = App.getTile(idx);
         Terrain terrain = Terrain.stringToTerrain(terrainName);
-        assert tile != null;
-        if (!App.getActiveGame().getPlayingUser().getPlayingCountry().equals(tile.getCountryType()))
+        if (tile == null || !App.getActiveGame().getPlayingUser().getPlayingCountry().getCountryType().equals(tile.getCountryType()))
             return new Result(false, "you don't own this tile");
         if (terrain == null)
             return new Result(false, "terrain doesn't exist");
@@ -110,8 +110,10 @@ public class GameMenuController {
         int idx = Integer.parseInt(index);
         Tile tile = App.getTile(idx);
         Weather weather = Weather.stringToWeather(weatherName);
-        assert tile != null;
-        if (!App.getActiveGame().getPlayingUser().getPlayingCountry().equals(tile.getCountryType()))
+
+        if(tile == null)
+            return new Result(false, "tile doesn't exist");
+        if (!App.getActiveGame().getPlayingUser().getPlayingCountry().getCountryType().equals(tile.getCountryType()))
             return new Result(false, "you don't own this tile");
         if (weather == null)
             return new Result(false, "weather doesn't exist");
@@ -147,7 +149,7 @@ public class GameMenuController {
         if (tile.battalionTypeCount(type) >= 3)
             return new Result(false, "you can't add this type of battalion anymore");
         country.handleCosts(type.getSteelCost(), type.getManPowerCost(), type.getSulfurCost(), type.getFuelCost());
-        tile.addBattalion(new Battalion(tile, type, name, country.getCountryType()));
+        tile.addBattalion(new Battalion(tile, type, name, tile.getCountryType()));
         return new Result(true, "battalion set successfully");
     }
     public Result moveBattalion(String tileIndex, String battalionName, String destinationIndex) {
@@ -179,12 +181,12 @@ public class GameMenuController {
             return new Result(false, "no battalion with the given name");
         if(battalion.getLevel() == 3)
             return new Result(false, "battalion is on highest level");
-        int steel = (int) Math.floor(battalion.getType().getSteelCost() * battalion.getUpgradeCostWeight());
-        int manpower = (int) Math.floor(battalion.getType().getManPowerCost() * battalion.getUpgradeCostWeight());
-        int sulfur = (int) Math.floor(battalion.getType().getSulfurCost() * battalion.getUpgradeCostWeight());
-        int fuel = (int) Math.floor(battalion.getType().getFuelCost() * battalion.getUpgradeCostWeight());
+        int steel = (int) (battalion.getType().getSteelCost() * battalion.getUpgradeCostWeight());
+        int manpower = (int) (battalion.getType().getManPowerCost() * battalion.getUpgradeCostWeight());
+        int sulfur = (int) (battalion.getType().getSulfurCost() * battalion.getUpgradeCostWeight());
+        int fuel = (int) (battalion.getType().getFuelCost() * battalion.getUpgradeCostWeight());
         if(steel > country.getSteel() || manpower > country.getManPower() ||
-                sulfur > country.getSulfur() || fuel < country.getFuel())
+                sulfur > country.getSulfur() || fuel > country.getFuel())
             return new Result(false, "aww you can't upgrade your battalion");
         country.handleCosts(steel, manpower, sulfur, fuel);
         battalion.upgrade();
@@ -192,10 +194,10 @@ public class GameMenuController {
     }
     public Result createFaction(String name) {
         Game game = App.getActiveGame();
-        if(game.getFaction(name) != null) {
+        if(game.getFaction(name.toLowerCase()) != null) {
             return new Result(false, "faction name already taken");
         }
-        Faction faction = new Faction(name);
+        Faction faction = new Faction(name.toLowerCase());
         game.addFaction(faction);
         game.getPlayingUser().getPlayingCountry().addFaction(faction);
         faction.addCountry(game.getPlayingUser().getPlayingCountry());
@@ -205,7 +207,7 @@ public class GameMenuController {
     public Result joinFaction(String name) {
         Game game = App.getActiveGame();
         Country country = game.getPlayingUser().getPlayingCountry();
-        Faction faction = game.getFaction(name);
+        Faction faction = game.getFaction(name.toLowerCase());
         if(faction == null)
             return new Result(false, "faction doesn't exist");
         country.addFaction(faction);
@@ -215,9 +217,11 @@ public class GameMenuController {
 
     public Result leaveFaction(String name) {
         Country country = App.getActiveGame().getPlayingUser().getPlayingCountry();
-        if(!country.getFactionsNames().contains(name))
+        if(App.getActiveGame().getFaction(name) == null)
+            return new Result(false, "faction doesn't exist");
+        if(!country.getFactionsNames().contains(name.toLowerCase()))
             return new Result(false, "your country isn't in this faction");
-        country.removeFaction(name);
+        country.removeFaction(name.toLowerCase());
         return new Result(true, country + " left " + name);
     }
 
@@ -236,7 +240,6 @@ public class GameMenuController {
             return new Result(false, "not enough money to build factory");
         if(tile.factoryTypeCount(type) == 3)
             return new Result(false, "factory limit exceeded");
-
         country.handleCosts(type.getSteelCost(tile), type.getManPowerCost(tile), 0, 0);
         tile.addFactory(new Factory(tile, name, type));
         return new Result(true, "factory built successfully");
@@ -258,6 +261,11 @@ public class GameMenuController {
         int sulfur = 0;
         String type;
         int production = factory.run(manPower);
+        if(factory.productionLeft() == 0) {
+            manPower = production / factory.getFactoryType().getProductionPerManPower();
+            if(factory.getFactoryType().equals(FactoryType.FUEL_REFINERY))
+                manPower = manPower * 100 / factory.getPosition().getTerrain().getFuelProduction();
+        }
         switch (factory.getFactoryType()) {
             case FUEL_REFINERY -> {
                 fuel = production;
@@ -290,10 +298,10 @@ public class GameMenuController {
     }
 
     public Result attack(String ourTileIndex, String enemyTileIndex, String battalionType) {
-        Country playerCountry = App.getActiveGame().getPlayingUser().getPlayingCountry();
         Tile ourTile = App.getTile(Integer.parseInt(ourTileIndex));
         Tile enemyTile = App.getTile(Integer.parseInt(enemyTileIndex));
         BattalionType type = BattalionType.stringToBattalionType(battalionType);
+        Country playerCountry = App.getActiveGame().getPlayingUser().getPlayingCountry();
         if(ourTile == null || !playerCountry.canAttackWithTile(ourTile))
             return new Result(false, "attacker tile unavailable");
         if(type == null || ourTile.getBattalionsByType(type).isEmpty())
@@ -303,7 +311,7 @@ public class GameMenuController {
 
         if(!canAttack(type, ourTile, enemyTile))
             return new Result(false, "enemy tile unavailable for attacking");
-        if(playerCountry.getLeader().getIdeology().equals(Ideology.FASCISM) &&
+        if((App.getActiveGame().getCountryByType(ourTile.getCountryType())).getLeader().getIdeology().equals(Ideology.FASCISM) &&
                 App.getActiveGame().getCountryByType(enemyTile.getCountryType()).getLeader().getIdeology().equals(Ideology.FASCISM))
             return new Result(false, "we are rivals , not enemies");
         return handleAttack(ourTile, enemyTile, type);
@@ -347,14 +355,14 @@ public class GameMenuController {
         }
         if(power1 > power2) {
             tile2.getBattalionsByType(type).clear();
-            return new Result(true, "civil war ended. " + 1 + " won.");
+            return new Result(true, "civil war ended. " + tile1Index + " won.");
         } else if(power1 == power2) {
             tile2.getBattalionsByType(type).clear();
             tile1.getBattalionsByType(type).clear();
             return new Result(false, "man dige harfi nadaram.");
         } else {
             tile1.getBattalionsByType(type).clear();
-            return new Result(true, "civil war ended. " + 2 + " won.");
+            return new Result(true, "civil war ended. " + tile2Index + " won.");
         }
     }
 
@@ -382,11 +390,44 @@ public class GameMenuController {
     }
 
     public Result election() {
-        return new Result(false, "");
-        //TODO
+        StringBuilder leaders = new StringBuilder("Available leaders:\n");
+        CountryType type = App.getActiveGame().getPlayingUser().getPlayingCountry().getCountryType();
+        for (Leader countryLeader : type.getCountryLeaders()) {
+            leaders.append(countryLeader.name().toLowerCase().replace("_", "-")).append("\n");
+        }
+        leaders.deleteCharAt(leaders.length() - 1);
+        return new Result(true, leaders.toString());
+
+    }
+
+    public Result changeLeader(String name) {
+        Leader leader = Leader.stringToLeader(name);
+        if(leader == null || !leader.getCountry().equals(App.getActiveGame().getPlayingUser().getPlayingCountry().getCountryType()))
+            return new Result(false, "leader doesn't exist");
+        App.getActiveGame().getPlayingUser().getPlayingCountry().multiplyStability(10000);
+        App.getActiveGame().getPlayingUser().getPlayingCountry().setLeader(leader);
+        return new Result(true, "");
+    }
+
+    public Result switchPlayer(String username) {
+        User user = App.getActiveGame().getUserByUsername(username);
+        if(user == null)
+            return new Result(false, "player doesn't exist");
+        if(user.equals(App.getActiveGame().getPlayingUser()))
+            return new Result(false, "you can't switch to yourself");
+        App.getActiveGame().setPlayingUser(user);
+        return new Result(true, "switched to " + username);
     }
 
     public void sadaghalah() {
+        Game game = App.getActiveGame();
+        User[] users = game.getAllPlayers();
+        for (User user : users) {
+            if(user.getPlayingCountry().getLeader().getIdeology().equals(Ideology.FASCISM))
+                user.getPlayingCountry().addPoint(user.getPlayingCountry().getPoint());
+            user.addPoint(user.getPlayingCountry().getPoint());
+        }
+        App.addGame(game);
         App.setActiveMenu(Menu.MAIN_MENU);
     }
 
@@ -397,6 +438,7 @@ public class GameMenuController {
         if (list.isEmpty())
             return "";
         StringBuilder sb = new StringBuilder();
+//        sb.append(" ");
         for (T o : list) {
             sb.append(o.toString()).append(",");
         }
@@ -412,6 +454,8 @@ public class GameMenuController {
         for (int i : list) {
             sb.append(i).append(" , ");
         }
+        sb.deleteCharAt(sb.length() - 1);
+        sb.deleteCharAt(sb.length() - 1);
         sb.deleteCharAt(sb.length() - 1);
         return sb.toString();
     }
@@ -432,7 +476,7 @@ public class GameMenuController {
             stringBuilder
                     .append(battalion.getName()).append(" ")
                     .append(battalion.getLevel()).append(" ")
-                    .append(battalion.getPower()).append(" ")
+                    .append(battalion.getRawPower()).append(" ")
                     .append(battalion.getCaptureRatio()).append("\n");
         }
         stringBuilder.append("\npanzer:\n");
@@ -440,7 +484,7 @@ public class GameMenuController {
             stringBuilder
                     .append(battalion.getName()).append(" ")
                     .append(battalion.getLevel()).append(" ")
-                    .append(battalion.getPower()).append(" ")
+                    .append(battalion.getRawPower()).append(" ")
                     .append(battalion.getCaptureRatio()).append("\n");
         }
         stringBuilder.append("\nairforce:\n");
@@ -448,7 +492,7 @@ public class GameMenuController {
             stringBuilder
                     .append(battalion.getName()).append(" ")
                     .append(battalion.getLevel()).append(" ")
-                    .append(battalion.getPower()).append(" ")
+                    .append(battalion.getRawPower()).append(" ")
                     .append(battalion.getCaptureRatio()).append("\n");
         }
         stringBuilder.append("\nnavy:\n");
@@ -456,7 +500,7 @@ public class GameMenuController {
             stringBuilder
                     .append(battalion.getName()).append(" ")
                     .append(battalion.getLevel()).append(" ")
-                    .append(battalion.getPower()).append(" ")
+                    .append(battalion.getRawPower()).append(" ")
                     .append(battalion.getCaptureRatio()).append("\n");
         }
         stringBuilder.deleteCharAt(stringBuilder.length() - 1);
@@ -501,6 +545,8 @@ public class GameMenuController {
             defenderPower += battalion.getPower();
         }
         int powerDiff = attackerPower - defenderPower;
+        powerDiff = (powerDiff > 0) ? powerDiff + 1 : powerDiff - 1;
+        int rawPoint = powerDiff * type.getPointWeight();
         if(powerDiff > 0) {
             int capturePower = 0;
             for (Battalion battalion : defenderBattalions) {
@@ -514,8 +560,11 @@ public class GameMenuController {
             defender.removeTile(defenderTile);
             attacker.addTile(defenderTile);
             attacker.multiplyStability(1.5);
+            attacker.addPoint(rawPoint * 10);
+            defender.addPoint(-rawPoint * 5);
             defender.multiplyStability(0.5);
-            return new Result(true, "war is over \n" +
+
+            return new Result(true, "war is over\n" +
                     "winner : " + attacker.getCountryType().getName() + "\n" +
                     "loser : " + defender.getCountryType().getName());
         }
@@ -535,9 +584,11 @@ public class GameMenuController {
         //
         defender.multiplyStability(1.5);
         attacker.multiplyStability(0.5);
+        defender.addPoint(-rawPoint * 10);
+        attacker.addPoint(rawPoint * 5);
         powerDiff *= -1;
         defender.handleCosts(powerDiff * 100, 0, powerDiff * 100, powerDiff * 100);
-        return new Result(true, "war is over \n" +
+        return new Result(true, "war is over\n" +
                 "winner : " + defender.getCountryType().getName() + "\n" +
                 "loser : " + attacker.getCountryType().getName());
 

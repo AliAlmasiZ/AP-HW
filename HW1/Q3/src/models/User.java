@@ -2,10 +2,13 @@ package models;
 
 import models.enums.CountryType;
 
+import java.util.ArrayList;
+
 public class User {
     private String username;
     private String password;
     private String email;
+    private int point;
 
     private Country playingCountry;
 
@@ -13,6 +16,7 @@ public class User {
         this.username = username;
         this.password = password;
         this.email = email;
+        this.point = 0;
     }
 
     public static User getUserByUsername(String username) {
@@ -37,5 +41,13 @@ public class User {
 
     public void setPlayingCountry(Country playingCountry) {
         this.playingCountry = playingCountry;
+    }
+
+    public void addPoint(int point) {
+        this.point += point;
+    }
+
+    public int getPoint() {
+        return point;
     }
 }

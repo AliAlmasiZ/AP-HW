@@ -26,22 +26,16 @@ public class ProfileMenuController {
         System.out.println("name : " + activeUser.getName());
     }
 
-    public Result changeCurrency(String input) {
-        Matcher matcher = ProfileMenuCommands.CHANGE_CURRENCY.getMatcher(input);
-        if (matcher != null) {
-            Currency temp = Currency.stringToCurrency(matcher.group("newCurrency"));
+    public Result changeCurrency(String newCurrency) {
+            Currency temp = Currency.stringToCurrency(newCurrency);
             if (temp == null) {
                 return new Result(false, "currency format is invalid!");
             }
             App.getActiveUser().setCurrency(temp);
             return new Result(true, "your currency changed to " + temp + " successfully!");
-        } else return new Result(false, "invalid command!");
     }
 
-    public Result changeUsername(String input) {
-        Matcher matcher = ProfileMenuCommands.CHANGE_USERNAME.getMatcher(input);
-        if (matcher != null) {
-            String newUsername = matcher.group("newUsername");
+    public Result changeUsername(String newUsername) {
             if (newUsername.equals(App.getActiveUser().getUsername())) {
                 return new Result(false, "please enter a new username!");
             }
@@ -53,15 +47,9 @@ public class ProfileMenuController {
             }
             App.getActiveUser().setUsername(newUsername);
             return new Result(true, "your username changed to " + newUsername + " successfully!");
-        } else return new Result(false, "invalid command!");
     }
 
-    public Result changePassword(String input) {
-        Matcher matcher = ProfileMenuCommands.CHANGE_PASSWORD.getMatcher(input);
-        if(matcher != null) {
-            String oldPassword = matcher.group("oldPassword");
-            String newPassword = matcher.group("newPassword");
-
+    public Result changePassword(String oldPassword, String newPassword) {
             if(!oldPassword.equals(App.getActiveUser().getPassword())) {
                 return new Result(false, "password incorrect!");
             }
@@ -73,7 +61,6 @@ public class ProfileMenuController {
             }
             App.getActiveUser().setPassword(newPassword);
             return new Result(true, "your password changed successfully!");
-        } else return new Result(false, "invalid command!");
     }
 
     public Result back() {

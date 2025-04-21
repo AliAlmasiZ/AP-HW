@@ -9,13 +9,7 @@ import models.enums.SignUpMenuCommands;
 import java.util.regex.Matcher;
 
 public class SignUpMenuController {
-    public Result registerUser(String input) {
-        Matcher matcher = SignUpMenuCommands.REGISTER.getMatcher(input);
-        if(matcher != null){
-            String username = matcher.group("username");
-            String password = matcher.group("password");
-            String email = matcher.group("email");
-            String name = matcher.group("name");
+    public Result registerUser(String username, String password, String email, String name ) {
 
             if (SignUpMenuCommands.USERNAME.getMatcher(username) == null) {
                 return new Result(false, "username format is invalid!");
@@ -33,7 +27,6 @@ public class SignUpMenuController {
                 App.setActiveMenu(Menu.LOGIN_MENU);
                 return new Result(true, "user registered successfully.you are now in login menu!");
             }
-        } else return new Result(false, "invalid command!");
     }
     public Result goToLoginMenu() {
         App.setActiveMenu(Menu.LOGIN_MENU);

@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public enum MainMenuCommands implements Commands{
 
-    SHOW_CURRENT_MENU("show current menu"),
+    SHOW_CURRENT_MENU("show\\s+current\\s+menu"),
     LOGOUT("logout"),
     EXIT("exit"),
     LEADERBOARD("leaderboard"),

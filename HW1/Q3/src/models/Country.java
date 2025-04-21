@@ -15,6 +15,7 @@ public class Country {
     private int fuel;
     private int steel;
     private int sulfur;
+    private int point;
     private ArrayList<Tile> tiles;
     private ArrayList<Country> puppets;
     private LinkedHashMap<String, Faction> factions;
@@ -27,6 +28,7 @@ public class Country {
         this.fuel = countryType.getInitialFuel();
         this.steel = countryType.getInitialSteel();
         this.sulfur = countryType.getInitialSulfur();
+        this.point = 0;
         this.puppets = new ArrayList<>();
         this.factions = new LinkedHashMap<>();
         this.tiles = countryType.getTiles();
@@ -38,6 +40,8 @@ public class Country {
     }
 
     public void removeFaction(String name) {
+        Faction faction = factions.get(name);
+        faction.removeCountry(this);
         factions.remove(name);
     }
 
@@ -47,6 +51,10 @@ public class Country {
 
     public Leader getLeader() {
         return leader;
+    }
+
+    public void setLeader(Leader leader) {
+        this.leader = leader;
     }
 
     public int getStability() {
@@ -71,7 +79,7 @@ public class Country {
 
     public boolean canMakePuppet(CountryType countryType) {
         Country puppet = App.getActiveGame().getCountryByType(countryType);
-        Country country = App.getActiveUser().getPlayingCountry();
+        Country country = App.getActiveGame().getPlayingUser().getPlayingCountry();
         for (TileData tileData : TileData.values()) {
             if(CountryType.stringToCountry(tileData.getCountry()).equals(country.countryType))
                 if(puppet.containsTileID(tileData.getId()))
@@ -110,7 +118,7 @@ public class Country {
 
     public boolean canAccessTile(Tile tile) {
         Country country = App.getActiveGame().getCountryByType(tile.getCountryType());
-        return isInFaction(country) || puppets.contains(country);
+        return isInFaction(country) || puppets.contains(country) || country.equals(this);
     }
 
     public boolean canAttackWithTile(Tile tile) {
@@ -163,5 +171,24 @@ public class Country {
         if(this.stability > 100)
             this.stability = 100;
     }
+
+    @Override
+    public String toString() {
+        return countryType.getName();
+    }
+
+    public void addPoint(int point) {
+        this.point += point;
+    }
+
+    public int getPoint() {
+        return this.point;
+    }
+
+    public boolean isLocked() {
+        return stability < leader.getIdeology().getLockPercent();
+    }
+
+
 
 }

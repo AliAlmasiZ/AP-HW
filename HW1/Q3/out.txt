@@ -3,115 +3,200 @@ user registered successfully
 user registered successfully
 user logged in successfully
 main menu
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-main menu
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-invalid command
-main menu
-invalid command
-invalid command
-invalid command
+select between available users
+users must be distinct
+users must be distinct
+you can't choose urself
+select between available users
+aghaaz faAliat
+choosing country for Kiarash:
+wrong country name
+wrong country name
+choosing country for Amirhossein:
+country already taken
+choosing country for Sana:
+choosing country for guest1:
+wrong country name
+choosing country for guest2:
+German Reich
+tile doesn't exist
+37 , 42 , 55
+51 , 52
+21 , 26 , 28 , 33
+country doesn't exist
+Japan
+leader : hirohito
+stability : 100
+man power : 70000000
+fuel : 50000
+sulfur : 50000
+steel : 50000
+faction : 
+puppet : 
+no sea neighbors
+34 , 47 , 48 , 49
+can't show battalions
+infantry:
+
+panzer:
+
+airforce:
+
+navy:
+plain
+you don't own this tile
+terrain set successfully
+you can't change terrain twice
+weather doesn't exist
+you don't own this tile
+weather set successfully
+selected tile doesn't have this type of battalion
+selected tile doesn't have this type of battalion
+faction created successfully
+faction name already taken
+player doesn't exist
+you can't switch to yourself
+switched to Sana
+faction doesn't exist
+Soviet Union joined axis
+faction doesn't exist
+Soviet Union left axis
+Soviet Union joined axis
+terrain set successfully
+weather set successfully
+tile is unavailable
+you can't use imaginary battalions
+battalion set successfully
+battalion name already taken
+battalion set successfully
+battalion set successfully
+Soviet Union
+leader : stalin
+stability : 100
+man power : 159985000
+fuel : 270000
+sulfur : 20000
+steel : 40000
+faction : axis
+puppet : 
+you can't add this type of battalion anymore
+tile is unavailable
+no battalion with the given name
+battalion moved successfully
+no battalion with the given name
+can't upgrade battalions on this tile
+MASSIVEPanzers upgraded to level 1
+MASSIVEPanzers upgraded to level 2
+aww you can't upgrade your battalion
+daddy USA plz help us
+infantry:
+
+panzer:
+girlsUndPanzers 0 15 60
+T34 0 15 60
+
+airforce:
+
+navy:
+can't show battalions
+infantry:
+
+panzer:
+MASSIVEPanzers 2 27 60
+
+airforce:
+
+navy:
+country doesn't exist
+invalid tile
+invalid factory type
+factory built successfully
+factory built successfully
+factory built successfully
+factory limit exceeded
+factory built successfully
+not enough money to build factory
+Soviet Union
+leader : stalin
+stability : 100
+man power : 159877500
+fuel : 255000
+sulfur : 5000
+steel : 0
+faction : axis
+puppet : 
+terrain set successfully
+invalid tile
+this tile doesn't contain this factory
+you are poor!
+factory extracted 10000 of fuel
+fuel refinery:
+fazliRefinery 100000
+masjedSoleymaan 90000
+meow 100000
+
+steel factory:
+
+sulfur factory:
+can't show factories
+faction doesn't exist
+Soviet Union left axis
+attacker tile unavailable
+switched to Kiarash
+terrain set successfully
+weather set successfully
+switched to Sana
+war is over
+winner : Soviet Union
+loser : German Reich
+Soviet Union
+leader : stalin
+stability : 100
+man power : 159876500
+fuel : 265000
+sulfur : 5000
+steel : 0
+faction : 
+puppet : 
+infantry:
+
+panzer:
+girlsUndPanzers 0 23 60
+T34 0 23 60
+
+airforce:
+
+navy:
+infantry:
+
+panzer:
+
+airforce:
+
+navy:
+switched to Amirhossein
+no civil war for you
+switched to Kiarash
+invalid battalion type
+battalion set successfully
+civil war ended. 41 won.
+game is locked
+Available leaders:
+adenauer
+pieck
+hitler
+leader doesn't exist
+leader doesn't exist
+Soviet Union
 main menu
 leaderboard menu
-invalid command
-invalid command
+History:
+Kiarash German Reich -245
+Amirhossein United States 0
+Sana Soviet Union 490
+guest1 United Kingdom 0
+guest2 Japan 0
+Leaderboard:
+Sana 490
+Amirhossein 0
+Kiarash -245

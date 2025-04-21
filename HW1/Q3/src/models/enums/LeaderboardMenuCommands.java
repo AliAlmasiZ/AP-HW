@@ -7,6 +7,8 @@ public enum LeaderboardMenuCommands implements Commands{
     SHOW_CURRENT_MENU("show\\s+current\\s+menu"),
     BACK("back"),
     EXIT("exit"),
+    SHOW_RANKING("show\\s+ranking"),
+    SHOW_HISTORY("show\\s+history")
     ;
 
 

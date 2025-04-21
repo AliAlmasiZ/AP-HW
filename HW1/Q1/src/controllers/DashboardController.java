@@ -17,22 +17,19 @@ Explanation:
 public class DashboardController {
 
 
-    public Result createGroup(String input) {
-        Matcher matcher = DashboardCommands.CREATE_GROUP.getMatcher(input);
-        if (matcher != null) {
-            if (DashboardCommands.NAME.getMatcher(matcher.group("name")) == null) {
-                return new Result(false, "group name format is invalid!");
-            }
-            if (DashboardCommands.TYPE.getMatcher(matcher.group("type")) == null) {
-                return new Result(false, "group type is invalid!");
-            }
-            Group newGroup = new Group(matcher.group("type"), matcher.group("name"), App.getActiveUser());
-            App.addGroup(newGroup);
-            App.getActiveUser().addGroup(newGroup);
-            newGroup.addMember(App.getActiveUser());
+    public Result createGroup(String name, String type) {
+        if (DashboardCommands.NAME.getMatcher(name) == null) {
+            return new Result(false, "group name format is invalid!");
+        }
+        if (DashboardCommands.TYPE.getMatcher(type) == null) {
+            return new Result(false, "group type is invalid!");
+        }
+        Group newGroup = new Group(type, name, App.getActiveUser());
+        App.addGroup(newGroup);
+        App.getActiveUser().addGroup(newGroup);
+        newGroup.addMember(App.getActiveUser());
 
-            return new Result(true, "group created successfully!");
-        } else return new Result(false, "invalid command!");
+        return new Result(true, "group created successfully!");
     }
 
     public void showMyGroups() {
@@ -51,58 +48,50 @@ public class DashboardController {
             System.out.println();
     }
 
-    public Result addUserToGroup(String input) {
-        Matcher matcher = DashboardCommands.ADD_USER_TO_GROUP.getMatcher(input);
-        if (matcher != null) {
-            String username = matcher.group("username");
-            String email = matcher.group("email");
-            Integer groupID = Integer.parseInt(matcher.group("groupId"));
-            Group group = App.getGroupByID(groupID);
-            User user = App.getUserByUsername(username);
+    public Result addUserToGroup(String username, String email, String groupID) {
+        Integer id = Integer.parseInt(groupID);
+        Group group = App.getGroupByID(id);
+        User user = App.getUserByUsername(username);
 
-            if (user == null)
-                return new Result(false, "user not found!");
-            if (group == null)
-                return new Result(false, "group not found!");
-            if (group.getMembers().contains(user))
-                return new Result(false, "user already in the group!");
-            if (!user.getEmail().equals(email))
-                return new Result(false, "the email provided does not match the username!");
-            if (!group.getCreator().equals(App.getActiveUser()))
-                return new Result(false, "only the group creator can add users!");
-            group.addMember(user);
-            user.addGroup(group);
-            return new Result(true, "user added to the group successfully!");
+        if (user == null)
+            return new Result(false, "user not found!");
+        if (group == null)
+            return new Result(false, "group not found!");
+        if (group.getMembers().contains(user))
+            return new Result(false, "user already in the group!");
+        if (!user.getEmail().equals(email))
+            return new Result(false, "the email provided does not match the username!");
+        if (!group.getCreator().equals(App.getActiveUser()))
+            return new Result(false, "only the group creator can add users!");
+        group.addMember(user);
+        user.addGroup(group);
+        return new Result(true, "user added to the group successfully!");
 
-        } else return new Result(false, "invalid command!");
     }
 
-    public Result addExpense(String input, ArrayList<String> lines) {
-        Matcher matcher = DashboardCommands.ADD_EXPENSE.getMatcher(input);
-        if (matcher != null) {
-            Integer groupID = Integer.parseInt(matcher.group("groupId"));
-            Group group = App.getGroupByID(groupID);
-            if (group == null) {
-                return new Result(false, "group not found!");
-            }
-            Result result = checkAllUsers(lines, group);
-            if (!result.isSuccessful()) {
-                return result;
-            }
-            if (DashboardCommands.EXPENSE.getMatcher(matcher.group("totalExpense")) == null) {
-                return new Result(false, "expense format is invalid!");
-            }
-
-            int totalExpense = Integer.parseInt(matcher.group("totalExpense"));
-            if (matcher.group("equality").equals("equally")) {
-                return addExpenseEqually(totalExpense, lines, group);
-            }
-            result = checkExpenseUnequally(lines, totalExpense);
-            if (result.isSuccessful())
-                return addExpenseUnequally(lines, group);
+    public Result addExpense(String groupID, String totalExpenseStr, String equality, ArrayList<String> lines) {
+        Integer id = Integer.parseInt(groupID);
+        Group group = App.getGroupByID(id);
+        if (group == null) {
+            return new Result(false, "group not found!");
+        }
+        Result result = checkAllUsers(lines, group);
+        if (!result.isSuccessful()) {
             return result;
+        }
+        if (DashboardCommands.EXPENSE.getMatcher(totalExpenseStr) == null) {
+            return new Result(false, "expense format is invalid!");
+        }
 
-        } else return new Result(false, "invalid command!");
+        int totalExpense = Integer.parseInt(totalExpenseStr);
+        if (equality.equals("equally")) {
+            return addExpenseEqually(totalExpense, lines, group);
+        }
+        result = checkExpenseUnequally(lines, totalExpense);
+        if (result.isSuccessful())
+            return addExpenseUnequally(lines, group);
+        return result;
+
     }
 
     private Result addExpenseEqually(Integer totalExpense, ArrayList<String> lines, Group group) {
@@ -128,83 +117,77 @@ public class DashboardController {
         return new Result(true, "expense added successfully!");
     }
 
-    public Result showBalance(String input) {
-        Matcher matcher = DashboardCommands.SHOW_BALANCE.getMatcher(input);
-        if (matcher != null) {
-            User user = App.getUserByUsername(matcher.group("username"));
-            if (user == null)
-                return new Result(false, "user not found!");
+    public Result showBalance(String username) {
+        User user = App.getUserByUsername(username);
+        if (user == null)
+            return new Result(false, "user not found!");
 
-            long oweAmount = getAllOwe(App.getActiveUser(), user); // bedehkari
+        long oweAmount = getAllOwe(App.getActiveUser(), user); // bedehkari
 
-            String output;
-            if (oweAmount > 0) {
-                output = String.format(
+        String output;
+        if (oweAmount > 0) {
+            output = String.format(
 //                        "you owe %s %d %s in %s",
-                        "%s owes you %d %s in %s",
-                        user.getUsername(),
-                        oweAmount / App.getActiveUser().getCurrency().getValue(), // makes value to Currency value!
-                        App.getActiveUser().getCurrency().toString(),
-                        commonGroups(user, App.getActiveUser())
-                );
-                return new Result(true, output);
-            } else if (oweAmount < 0) {
-                output = String.format(
+                    "%s owes you %d %s in %s",
+                    user.getUsername(),
+                    oweAmount / App.getActiveUser().getCurrency().getValue(), // makes value to Currency value!
+                    App.getActiveUser().getCurrency().toString(),
+                    commonGroups(user, App.getActiveUser())
+            );
+            return new Result(true, output);
+        } else if (oweAmount < 0) {
+            output = String.format(
 //                        "%s owes you %d %s in %s",
-                        "you owe %s %d %s in %s",
-                        user.getUsername(),
-                        -oweAmount / App.getActiveUser().getCurrency().getValue(),
-                        App.getActiveUser().getCurrency().toString(),
-                        commonGroups(user, App.getActiveUser())
-                );
-                return new Result(true, output);
-            } else {
-                return new Result(true, "you are settled with " + user.getUsername());
-            }
+                    "you owe %s %d %s in %s",
+                    user.getUsername(),
+                    -oweAmount / App.getActiveUser().getCurrency().getValue(),
+                    App.getActiveUser().getCurrency().toString(),
+                    commonGroups(user, App.getActiveUser())
+            );
+            return new Result(true, output);
+        } else {
+            return new Result(true, "you are settled with " + user.getUsername());
+        }
 
 
-        } else return new Result(false, "invalid command!");
     }
 
-    public Result settleUp(String input) {
-        Matcher matcher = DashboardCommands.SETTLE_UP.getMatcher(input);
-        if (matcher != null) {
-            User user = App.getUserByUsername(matcher.group("username"));
-            if (user == null)
-                return new Result(false, "user not found!");
-            if (DashboardCommands.EXPENSE.getMatcher(matcher.group("inputMoney")) == null)
-                return new Result(false, "input money format is invalid!");
-            settleUp(Long.parseLong(matcher.group("inputMoney")), user);
-            long oweAmount = getAllOwe(App.getActiveUser(), user) / App.getActiveUser().getCurrency().getValue();
-            if (oweAmount > 0)
+    public Result settleUp(String username, String inputMoney) {
+        User user = App.getUserByUsername(username);
+        if (user == null)
+            return new Result(false, "user not found!");
+        if (DashboardCommands.EXPENSE.getMatcher(inputMoney) == null)
+            return new Result(false, "input money format is invalid!");
+        settleUp(Long.parseLong(inputMoney), user);
+        long oweAmount = getAllOwe(App.getActiveUser(), user) / App.getActiveUser().getCurrency().getValue();
+        if (oweAmount > 0)
 //                return new Result(
 //                        true,
 //                        "you owe " + user.getUsername() + " " +
 //                                oweAmount + " " +
 //                                App.getActiveUser().getCurrency() +  " now!"
 //                );
-                return new Result(
-                        true,
-                        user.getUsername() + " owes you " +
-                                oweAmount + " " +
-                                App.getActiveUser().getCurrency() + " now!"
-                );
-            if (oweAmount < 0)
+            return new Result(
+                    true,
+                    user.getUsername() + " owes you " +
+                            oweAmount + " " +
+                            App.getActiveUser().getCurrency() + " now!"
+            );
+        if (oweAmount < 0)
 //                return new Result(
 //                        true,
 //                        user.getUsername() + " owes you " +
 //                                -oweAmount + " " +
 //                                App.getActiveUser().getCurrency() +  " now!"
 //                );
-                return new Result(
-                        true,
-                        "you owe " + user.getUsername() + " " +
-                                -oweAmount + " " +
-                                App.getActiveUser().getCurrency() + " now!"
-                );
-            else
-                return new Result(true, "you are settled with " + user.getUsername() + " now!");
-        } else return new Result(false, "invalid command!");
+            return new Result(
+                    true,
+                    "you owe " + user.getUsername() + " " +
+                            -oweAmount + " " +
+                            App.getActiveUser().getCurrency() + " now!"
+            );
+        else
+            return new Result(true, "you are settled with " + user.getUsername() + " now!");
     }
 
     public Result goToProfileMenu() {
@@ -243,7 +226,7 @@ public class DashboardController {
         for (String line : lines) {
             String username = line.trim().split("\\s+")[0];
             if (App.getUserByUsername(username) == null || !App.getUserByUsername(username).getUserGroups().contains(group)) {
-                if(flag) sb.append("\n");
+                if (flag) sb.append("\n");
                 else flag = true;
 
                 sb.append(username).append(" not in group!");

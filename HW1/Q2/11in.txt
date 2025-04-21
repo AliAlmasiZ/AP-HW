@@ -1,0 +1,435 @@
+A sample test like testcase number 9 (zero based)
+go to -m LoginMenu
+aval yek seri client va store misazim
+create a user account -fn Foad -ln Khab -p SecurePass123 -rp SecurePass123 -e foad@gmail.com  
+create a user account -fn Fatemeh -ln Tamehri -p SecurePass123 -rp SecurePass123 -e fatemeh@gmail.com  
+create a user account -fn Mahdyar -ln Mostash -p SecurePass123 -rp SecurePass123 -e mahdyar@gmail.com  
+create a store account -b "Samsung" -p Samsung123 -rp Samsung123 -e samsung@gmail.com  
+create a store account -b "Gucci" -p Gucci123 -rp Gucci123 -e gucci@gmail.com  
+create a store account -b "Rolex" -p Rolex123 -rp Rolex123 -e rolex@gmail.com  
+create a store account -b "Sony" -p Sony123 -rp Sony123 -e sony@gmail.com  
+create a store account -b "Lenovo" -p Lenovo123 -rp Lenovo123 -e lenovo@gmail.com  
+baraye har store miaim yek tedadi kala ezafe mikonim
+login as store -e samsung@gmail.com -p Samsung123  
+go to -m StoreMenu  
+add product -n "Samsung Galaxy S24 Ultra" -pc 900.50 -p 1199.99 -about "Samsung's flagship smartphone with a powerful processor, high-resolution camera, and long battery life." -np 10  
+add product -n "Samsung 55-inch 4K QLED TV" -pc 750.75 -p 999.99 -about "A stunning 4K QLED TV with vibrant colors, deep blacks, and a smart OS for seamless streaming." -np 8  
+add product -n "Samsung Galaxy SmartTag 2-Pack" -pc 20.50 -p 39.99 -about "Bluetooth-powered tracking tags to help locate lost items using your phone." -np 12  
+add product -n "Samsung Fast Charger 45W" -pc 25.30 -p 49.99 -about "A high-speed charger for Samsung devices, ensuring quick and safe charging." -np 15  
+add product -n "Samsung USB-C to HDMI Adapter" -pc 30.10 -p 59.99 -about "An adapter that allows you to connect your Samsung devices to external displays." -np 10  
+go back  
+go to -m LoginMenu  
+logout
+go to -m LoginMenu  
+login as store -e gucci@gmail.com -p Gucci123  
+go to -m StoreMenu  
+add product -n "Gucci Leather Shoulder Bag" -pc 700.90 -p 1299.99 -about "A luxurious shoulder bag made from premium leather, showcasing Gucci’s signature design." -np 6  
+add product -n "Gucci GG Canvas Sneakers" -pc 450.75 -p 799.99 -about "A stylish and comfortable sneaker featuring the iconic GG canvas design." -np 8  
+add product -n "Gucci Branded Socks" -pc 30.50 -p 69.99 -about "Designer socks featuring Gucci’s signature pattern, adding style to any outfit." -np 15  
+add product -n "Gucci Keychain" -pc 50.30 -p 89.99 -about "A high-quality leather keychain with an elegant Gucci logo charm." -np 12  
+add product -n "Gucci Card Holder" -pc 80.20 -p 99.99 -about "A compact and stylish cardholder made from premium materials." -np 10  
+go back  
+go to -m LoginMenu  
+logout
+go to -m LoginMenu  
+login as store -e rolex@gmail.com -p Rolex123  
+go to -m StoreMenu  
+add product -n "Rolex Submariner Watch" -pc 6000.90 -p 7999.99 -about "A high-end luxury diving watch with impeccable craftsmanship and water resistance." -np 4  
+add product -n "Rolex Daytona Chronograph" -pc 8500.50 -p 10999.99 -about "A premium chronograph watch designed for speed enthusiasts and collectors." -np 3  
+add product -n "Rolex Premium Cleaning Kit" -pc 40.60 -p 79.99 -about "A special cleaning kit designed for Rolex watches to maintain their shine and precision." -np 10  
+add product -n "Rolex Watch Box" -pc 60.30 -p 99.99 -about "A leather watch box with soft interior lining for safely storing Rolex watches." -np 12  
+add product -n "Rolex Cufflinks" -pc 80.50 -p 99.99 -about "Elegant and sophisticated cufflinks featuring the Rolex logo." -np 8  
+go back  
+go to -m LoginMenu  
+logout  
+go to -m LoginMenu
+login as store -e sony@gmail.com -p Sony123  
+go to -m StoreMenu  
+add product -n "Sony PlayStation 5" -pc 400.90 -p 599.99 -about "The latest PlayStation console with powerful performance and immersive gaming experience." -np 12  
+add product -n "Sony WH-1000XM5 Headphones" -pc 250.50 -p 399.99 -about "Industry-leading noise-canceling headphones with crystal-clear audio and long battery life." -np 10  
+add product -n "Sony PlayStation 5 Controller Charger" -pc 30.60 -p 59.99 -about "A dual charging station for PlayStation 5 controllers, ensuring they are always ready to use." -np 14  
+add product -n "Sony Noise-Canceling Earbuds" -pc 80.75 -p 99.99 -about "Compact noise-canceling earbuds with great audio quality and a comfortable fit." -np 10  
+add product -n "Sony 64GB SD Card" -pc 20.50 -p 39.99 -about "A high-speed SD card designed for cameras, ensuring fast read and write speeds." -np 15  
+go back  
+go to -m LoginMenu  
+logout  
+go to -m LoginMenu
+login as store -e lenovo@gmail.com -p Lenovo123  
+go to -m StoreMenu  
+add product -n "Lenovo ThinkPad X1 Carbon" -pc 1200.90 -p 1599.99 -about "A premium business laptop with lightweight design, powerful hardware, and long battery life." -np 7  
+add product -n "Lenovo Legion Pro 7i Gaming Laptop" -pc 1700.75 -p 2199.99 -about "A high-end gaming laptop with top-tier graphics and cooling system for ultimate performance." -np 5  
+add product -n "Lenovo Wireless Mouse" -pc 25.30 -p 49.99 -about "A sleek and ergonomic wireless mouse designed for productivity and comfort." -np 15  
+add product -n "Lenovo Laptop Stand" -pc 30.50 -p 69.99 -about "An adjustable stand for Lenovo laptops to improve airflow and ergonomics." -np 10  
+add product -n "Lenovo USB-C Hub" -pc 40.75 -p 79.99 -about "A multi-port hub with HDMI, USB, and SD card slots for enhanced connectivity." -np 12  
+go back  
+go to -m LoginMenu  
+logout
+go to -m ProductMenu
+inja mantegh 'show products' va 'show next/past' check mishe
+show products -sortBy higher price to lower
+show next 10 products
+show next 10 products
+show next 10 products
+show next 10 products
+show past 10 products
+show next 10 products
+show next 10 products
+show past 10 products
+show past 10 products
+show past 10 products
+show past 10 products
+show next 10 products
+show past 10 products
+show products -sort by lower price to higher
+show products -sortBy lower price to higher
+show next 10 products
+show next 10 products
+show products -sortBy number of sold
+show next 10 products
+show next 10 products
+show information of -id 101
+show information of -id 102
+show information of -id 103
+show information of -id 104
+show information of -id 105
+show information of -id 106
+show information of -id 107
+show information of -id 108
+show information of -id 109
+show information of -id 110
+show information of -id 111
+show information of -id 112
+show information of -id 113
+show information of -id 114
+show information of -id 115
+show information of -id 116
+show information of -id 117
+show information of -id 118
+show information of -id 119
+show information of -id 120
+show information of -id 121
+show information of -id 122
+show information of -id 123
+show information of -id 124
+show information of -id 125
+show information of -id 126
+show information of -id 127
+Rate product -r 5 -id 101
+Rate product -r 5 -m "hmm" -id 102
+add to cart -product 101 -quantity 5
+go back
+go to -m LoginMenu
+"khob hala miaim yek tedadi az kala haro takhfif midim va yek tedadi ro change price mizanim"
+login as store -e samsung@gmail.com -p Samsung123  
+go to -m StoreMenu  
+apply discount -p 105 -d 11 -q 1  
+apply discount -p 102 -d 15 -q 2  
+update price -product 101 -price 1149.0  
+update price -product 103 -price 35.0  
+go back  
+go to -m LoginMenu  
+logout  
+go to -m LoginMenu
+login as store -e gucci@gmail.com -p Gucci123  
+go to -m StoreMenu  
+apply discount -p 106 -d 12 -q 2  
+apply discount -p 107 -d 18 -q 3  
+update price -product 106 -price 1249.99  
+update price -product 108 -price 65.99  
+go back  
+go to -m LoginMenu  
+logout  
+go to -m LoginMenu
+login as store -e rolex@gmail.com -p Rolex123  
+go to -m StoreMenu  
+apply discount -p 111 -d 8 -q 2  
+apply discount -p 112 -d 14 -q 3  
+update price -product 111 -price 7799.99  
+update price -product 113 -price 74.99  
+go back  
+go to -m LoginMenu  
+logout  
+go to -m LoginMenu
+login as store -e sony@gmail.com -p Sony123  
+go to -m StoreMenu  
+apply discount -p 116 -d 10 -q 2  
+apply discount -p 117 -d 16 -q 3  
+update price -product 116 -price 569.99  
+update price -product 118 -price 54.99  
+go back  
+go to -m LoginMenu  
+logout  
+go to -m LoginMenu
+login as store -e lenovo@gmail.com -p Lenovo123  
+go to -m StoreMenu  
+apply discount -p 121 -d 9 -q 2  
+apply discount -p 122 -d 20 -q 3  
+update price -product 121 -price 1549.99  
+update price -product 123 -price 44.99  
+go back  
+go to -m LoginMenu  
+logout  
+"khob, alan mirim baraye har user yek tedadi address va credit card sabt konim"
+go to -m LoginMenu  
+login as user -e foad@gmail.com -p SecurePass123  
+go to -m UserMenu  
+add address -country Middle Earth -city Hobbiton -street Bag End, Shire -postal 1234567890  
+add address -country Wakanda -city Birnin Zana -street Vibranium Alley -postal 9876543210  
+list my addresses  
+add a credit card -number 1111222233334444 -ed 05/25 -cvv 123 -initialValue 500  
+add a credit card -number 5555666677778888 -ed 07/26 -cvv 456 -initialValue 250  
+go back  
+go to -m LoginMenu  
+logout  
+go to -m LoginMenu  
+login as user -e fatemeh@gmail.com -p SecurePass123  
+go to -m UserMenu  
+add address -country Neverland -city Peter Pan’s Hideout -street Second Star to the Right -postal 2468101214  
+add address -country Wonderland -city Queen’s Castle -street Mad Hatter Lane -postal 1357911131  
+list my addresses  
+add a credit card -number 9999000011112222 -ed 08/27 -cvv 789 -initialValue 300  
+add a credit card -number 3333444455556666 -ed 12/28 -cvv 321 -initialValue 150  
+go back  
+go to -m LoginMenu  
+logout  
+go to -m LoginMenu  
+login as user -e user@gmail.com -p SecurePass123  
+go to -m UserMenu  
+add address -country Gotham -city Batcave -street Wayne Manor Drive -postal 1123581321  
+add address -country Asgard -city Odin’s Palace -street Bifrost Bridge -postal 3141592653  
+list my addresses  
+add a credit card -number 7777888899990000 -ed 06/29 -cvv 654 -initialValue 400  
+add a credit card -number 2222333344445555 -ed 09/30 -cvv 987 -initialValue 100
+go back
+go to -m LoginMenu
+logout
+go to -m LoginMenu
+login as user -e foad@gmail.com -p SecurePass123  
+go to -m ProductMenu
+show products -sortBy higher price to lower
+show next 10 products
+show next 10 products
+show next 10 products
+show products -sortBy lower price to higher
+show next 10 products
+show next 10 products
+show next 10 products
+show products -sortBy number of sold
+show next 10 products
+show next 10 products
+show next 10 products
+show information of -id 101
+show information of -id 102
+show information of -id 103
+show information of -id 104
+show information of -id 105
+show information of -id 106
+show information of -id 107
+show information of -id 108
+show information of -id 109
+show information of -id 110
+show information of -id 111
+show information of -id 112
+show information of -id 113
+show information of -id 114
+show information of -id 115
+Rate product -r 5 -m "mashine khobbie, hatman downloadesh konin" -id 101  
+Rate product -r 4 -m "mashine khobbie, hatman downloadesh konin2" -id 101  
+Rate product -r 4 -m "mashine khobbie, hatman downloadesh konin2" -id 150  
+Rate product -r 5 -m "mashine khobbie, hatman downloadesh konin2" -id 101  
+Rate product -r 1 -m "mashine khobbie, hatman downloadesh konin2" -id 101  
+Rate product -r 0 -m "mashine khobbie, hatman downloadesh konin2" -id 101  
+Rate product -r 4 -m "mashine khobbie, hatman downloadesh konin3" -id 101  
+Rate product -r 2 -m "mashine badie, aslan downloadesh nakonin1" -id 101  
+Rate product -r 3 -m "mashine badie, aslan downloadesh nakonin2" -id 101  
+Rate product -r 2 -m "mashine badie, aslan downloadesh nakonin1" -id 101  
+Rate product -r 3 -id 102  
+Rate product -r 4 -id 102  
+Rate product -r 3 -id 102  
+Rate product -r 3 -id 102  
+Rate product -r 4 -id 102  
+Rate product -r 5 -id 102  
+Rate product -r 4 -id 102  
+Rate product -r 2 -id 103  
+Rate product -r 3 -id 103  
+Rate product -r 2 -id 103  
+Rate product -r 3 -id 103  
+Rate product -r 4 -id 120  
+Rate product -r 5 -id 120  
+Rate product -r 5 -id 120  
+Rate product -r 5 -id 120  
+Rate product -r 4 -id 115  
+Rate product -r 5 -id 107  
+Rate product -r 3 -id 119  
+Rate product -r 4 -id 102  
+Rate product -r 4 -id 104  
+Rate product -r 3 -id 120  
+Rate product -r 3 -id 115  
+Rate product -r 4 -id 103  
+Rate product -r 4 -id 105  
+Rate product -r 5 -id 118  
+Rate product -r 4 -id 106  
+Rate product -r 5 -id 129  
+Rate product -r 4 -id 120  
+Rate product -r 5 -id 118  
+Rate product -r 4 -id 130  
+Rate product -r 3 -id 121  
+Rate product -r 2 -id 134  
+Rate product -r 5 -id 106  
+show products -sortBy rate
+show next 10 products
+show next 10 products
+show next 10 products
+show next 10 products
+add to cart -product 140 -quantity 1
+add to cart -product 101 -quantity 0
+add to cart -product 101 -quantity -1
+add to cart -product 101 -quantity 7
+add to cart -product 101 -quantity 8
+add to cart -product 101 -quantity 2
+add to cart -product 102 -quantity 2
+add to cart -product 137 -quantity 2
+add to cart -product 126 -quantity 4
+show products -sortBy rate
+show next 10 products
+show next 10 products
+show next 10 products
+go back
+go to -m UserMenu
+show products in cart
+remove from cart -product 101 -quantity 8
+show products in cart
+checkout -card 3 -address 4
+checkout -card 2 -address 2
+Charge credit card -a 3000 -id 2
+checkout -card 2 -address 2
+Check credit card balance -id 1
+Check credit card balance -id 2
+yek sefareshe dige to rahe
+go back
+go to -m ProductMenu
+show products -sortBy rate
+show next 10 products
+show next 10 products
+show next 10 products
+add to cart -product 121 -quantity 2
+add to cart -product 103 -quantity 12
+go back
+go to -m UserMenu
+checkout -card 2 -address 1
+Check credit card balance -id 1
+Check credit card balance -id 2
+Charge credit card -a 5000 -id 1
+checkout -card 1 -address 1
+Check credit card balance -id 1
+Check credit card balance -id 2
+list my orders
+go back
+go to -m LoginMenu
+logout
+go to -m LoginMenu
+login as user -e fatemeh@gmail.com -p SecurePass123
+go to -m ProductMenu
+show products -sortBy number of sold
+show next 10 products
+show next 10 products
+show next 10 products
+Rate product -r 5 -m "Absolutely love it!" -id 102
+Rate product -r 4 -m "Pretty good, but could be better." -id 121
+Rate product -r 3 -m "It's okay, nothing special." -id 115
+Rate product -r 2 -m "Not what I expected." -id 137
+Rate product -r 1 -m "Very disappointing, would not recommend." -id 110
+Rate product -r 5 -m "Exceeded my expectations!" -id 134
+Rate product -r 4 -m "Great quality, but a bit expensive." -id 103
+Rate product -r 3 -m "Average, nothing too great or bad." -id 128
+Rate product -r 2 -m "Could be improved in many ways." -id 119
+Rate product -r 1 -m "Terrible experience, not worth the money." -id 125
+Rate product -r 5 -m "Best purchase ever!" -id 104
+Rate product -r 4 -m "Really nice product, happy with it!" -id 132
+Rate product -r 3 -m "Just fine, no complaints but no wow factor either." -id 106
+Rate product -r 2 -m "Not the quality I expected." -id 120
+Rate product -r 1 -m "Waste of money, don't buy it." -id 113
+Rate product -r 5 -m "Superb! Highly recommend it." -id 130
+Rate product -r 4 -m "Good value for money!" -id 135
+Rate product -r 3 -m "Decent product, but not great." -id 108
+Rate product -r 2 -m "Not what was advertised." -id 101
+Rate product -r 1 -m "Broke after a few days of use." -id 127
+go back
+go to -m UserMenu
+list my orders
+checkout -card 1 -address 1
+go back
+go to -m ProductMenu
+show products -sortBy rate
+show next 10 products
+show next 10 products
+show next 10 products
+show information of -id 101
+show information of -id 102
+show information of -id 103
+show information of -id 104
+show information of -id 105
+show information of -id 106
+show information of -id 107
+show information of -id 108
+show information of -id 109
+show information of -id 110
+show information of -id 111
+show information of -id 112
+show information of -id 113
+show information of -id 114
+show information of -id 115
+show information of -id 116
+show information of -id 117
+show information of -id 118
+show information of -id 119
+show information of -id 120
+show information of -id 121
+show information of -id 122
+show information of -id 123
+show information of -id 124
+show information of -id 125
+go back
+go to -m LoginMenu
+logout
+go to -m LoginMenu
+login as store -e samsung@gmail.com -p Samsung123
+go to -m StoreMenu
+show profit
+show list of products
+go back
+go to -m LoginMenu
+logout
+go to -m LoginMenu
+login as store -e gucci@gmail.com -p Gucci123
+go to -m StoreMenu
+show profit
+show list of products
+go back
+go to -m LoginMenu
+logout
+go to -m LoginMenu
+login as store -e rolex@gmail.com -p Rolex123
+go to -m StoreMenu
+show profit
+show list of products
+go back
+go to -m LoginMenu
+logout
+go to -m LoginMenu
+login as store -e sony@gmail.com -p Sony123
+go to -m StoreMenu
+show profit
+show list of products
+go back
+go to -m LoginMenu
+logout
+go to -m LoginMenu
+login as store -e lenovo@gmail.com -p Lenovo123
+go to -m StoreMenu
+show profit
+show list of products
+go back
+go to -m LoginMenu
+logout
+exit
