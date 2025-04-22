@@ -346,6 +346,7 @@ public class GameMenuController {
         int power1 = 0, power2 = 0;
         for (Battalion battalion : tile1.getBattalionsByType(type)) {
             power1 += battalion.getPower();
+            power1 += battalion.getPower();
         }
         for (Battalion battalion : tile2.getBattalionsByType(type)) {
             power2 += battalion.getPower();
@@ -634,7 +635,7 @@ public class GameMenuController {
         if(!canAttack)
             return false;
         Country enemy = App.getActiveGame().getCountryByType(enemyTile.getCountryType());
-        canAttack =  !playerCountry.isPuppeteer(enemyTile.getCountryType()) && !playerCountry.isInFaction(enemy);
+        canAttack =  !playerCountry.isPuppeteer(enemyTile.getCountryType()) && !playerCountry.isInFaction(enemy) && !playerCountry.equals(enemy);
         return canAttack;
     }
 }
