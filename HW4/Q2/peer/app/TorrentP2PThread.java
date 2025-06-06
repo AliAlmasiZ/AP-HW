@@ -1,7 +1,10 @@
 package peer.app;
 
+import common.utils.MD5Hash;
+
 import java.io.BufferedOutputStream;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.Socket;
 
@@ -21,7 +24,23 @@ public class TorrentP2PThread extends Thread {
 
 	@Override
 	public void run() {
-		// TODO: Implement file transfer
+		try(FileInputStream fis= new FileInputStream(file);) {
+			byte[] buffer = new byte[4 * 1024];
+			int bytesRead;
+			while ((bytesRead = fis.read(buffer)) != -1) {
+				dataOutputStream.write(buffer, 0, bytesRead);
+			}
+
+			dataOutputStream.flush();
+
+			String fileHash = MD5Hash.HashFile(this.file.getAbsolutePath());
+			String fileNameAndHash = this.file.getName() + " " + fileHash;
+			PeerApp.addSentFile(receiver, fileNameAndHash);
+
+		}catch (Exception e) {
+			System.err.println(e.getMessage());
+		}
+		// Implement file transfer
 		// 1. Open file input stream
 		// 2. Read file in chunks and send to peer
 		// 3. Flush and close output stream
@@ -29,7 +48,7 @@ public class TorrentP2PThread extends Thread {
 
 		try {
 			socket.close();
-		} catch (Exception e) {}
+		} catch (Exception ignored) {}
 
 		PeerApp.removeTorrentP2PThread(this);
 	}
@@ -38,6 +57,6 @@ public class TorrentP2PThread extends Thread {
 		try {
 			dataOutputStream.close();
 			socket.close();
-		} catch (Exception e) {}
+		} catch (Exception ignored) {}
 	}
 }

@@ -1,23 +1,42 @@
 package common.utils;
 
-import java.util.Map;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.*;
+import java.util.stream.Stream;
+
 
 public class FileUtils {
 
 	public static Map<String, String> listFilesInFolder(String folderPath) {
-		// TODO: List files in folder
-		// 1. Create folder object
-		// 2. Get list of files
-		// 3. Calculate MD5 hash for each file
-		// 4. Return map of filename to hash
-		throw new UnsupportedOperationException("List files in folder not implemented yet");
+		Map<String, String> filesMap = new HashMap<>();
+		Path dir = Paths.get(folderPath);
+
+		if (!Files.isDirectory(dir)) {
+			System.err.println("Not a directory: " + dir);
+			return Collections.emptyMap();
+		}
+
+		try	(Stream<Path> stream = Files.list(dir)) {
+			List<Path> files = stream.toList();
+			for (Path file : files) {
+				filesMap.put(file.getFileName().toString(), MD5Hash.HashFile(file.toString()));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return filesMap;
 	}
 
 	public static String getSortedFileList(Map<String, String> files) {
-		// TODO: Get sorted file list
-		// 1. Check if files map is empty
-		// 2. Sort file names
-		// 3. Create formatted string with names and hashes
-		throw new UnsupportedOperationException("Get sorted file list not implemented yet");
+		if(files.isEmpty())
+			return "";
+		List<String> names =  files.keySet().stream().sorted().toList();
+		StringBuilder sb = new StringBuilder();
+		for (String name : names) {
+			sb.append(name).append(" ").append(files.get(name)).append("\n");
+		}
+		return sb.toString();
 	}
 }

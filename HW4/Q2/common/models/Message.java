@@ -1,17 +1,18 @@
 package common.models;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class Message {
 	private Type type;
-	private HashMap<String, Object> body;
+	private Map<String, Object> body;
 
 	/*
 	 * Empty constructor needed for JSON Serialization/Deserialization
 	 */
 	public Message() {}
 
-	public Message(HashMap<String, Object> body, Type type) {
+	public Message(Map<String, Object> body, Type type) {
 		this.body = body;
 		this.type = type;
 	}

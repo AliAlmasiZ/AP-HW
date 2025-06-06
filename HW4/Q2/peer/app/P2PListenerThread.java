@@ -14,6 +14,7 @@ public class P2PListenerThread extends Thread {
 	}
 
 	private void handleConnection(Socket socket) throws Exception {
+		socket.setSoTimeout(TIMEOUT_MILLIS);
 		// TODO: Implement peer connection handling
 		// 1. Set socket timeout
 		// 2. Read incoming message

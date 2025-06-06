@@ -21,6 +21,7 @@ public class PeerConnectionThread extends ConnectionThread {
 	@Override
 	public boolean initialHandshake() {
 		try {
+
 			// TODO: Implement initial handshake
 			// Refresh peer status (IP and port), Get peer's file list, Add connection to tracker's connection list
 			throw new UnsupportedOperationException("Initial handshake not implemented yet");
