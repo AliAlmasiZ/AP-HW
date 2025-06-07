@@ -4,11 +4,17 @@ import peer.app.PeerApp;
 
 public class PeerCLIController {
 	public static String processCommand(String command) {
+		if(PeerCommands.DOWNLOAD.matches(command)) {
+
+		} else if (PeerCommands.LIST.matches(command)) {
+
+		} else if (PeerCommands.END.matches(command)) {
+
+		}
 		// TODO: Process Peer CLI commands
 		// 1. Check command type (END_PROGRAM, DOWNLOAD, LIST)
 		// 2. Call appropriate handler
 		// 3. Return result or error message
-		throw new UnsupportedOperationException("processCommand not implemented yet");
 	}
 
 	private static String handleListFiles() {

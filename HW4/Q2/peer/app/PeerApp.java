@@ -2,8 +2,12 @@ package peer.app;
 
 import common.models.Message;
 import common.utils.FileUtils;
+import common.utils.JSONUtils;
+import common.utils.MD5Hash;
 
+import java.io.*;
 import java.net.Socket;
+import java.net.SocketTimeoutException;
 import java.util.*;
 
 public class PeerApp {
@@ -134,17 +138,51 @@ public class PeerApp {
 	}
 
 	public static void requestDownload(String ip, int port, String filename, String md5) throws Exception {
-		Map<String, String> filesAndHashes = FileUtils.listFilesInFolder(sharedFolderPath);
-		if(filesAndHashes.keySet().contains(filename)) {
+		File file = new File(getSharedFolderPath(), filename);
+		if(file.exists()) {
+			System.out.println("You already have the file!");
 			return;
 		}
-		Message message = new Message(Map.of(
+
+		Message downloadRequest = new Message(Map.of(
 			"name", filename,
 				"md5", md5,
 				"receiver_ip", PeerApp.ip,
 				"receiver_port", PeerApp.port
 		), Message.Type.download_request);
-		Socket socket = new Socket(ip, port);
+		try {
+			Socket socket = new Socket(ip, port);
+			socket.setSoTimeout(TIMEOUT_MILLIS);
+			DataOutputStream dos =  new DataOutputStream(socket.getOutputStream());
+			DataInputStream dis = new DataInputStream(socket.getInputStream());
+
+			dos.writeUTF(JSONUtils.toJson(downloadRequest));
+			dos.flush();
+
+
+			try (FileOutputStream fos = new FileOutputStream(file)) {
+				byte[] buffer = new byte[8 * 1024];
+				int bytesRead;
+				while((bytesRead = dis.read(buffer)) != -1) {
+					fos.write(buffer, 0, bytesRead);
+				}
+				fos.flush();
+				String newMD5 = MD5Hash.HashFile(file.getAbsolutePath());
+				if(newMD5 == null || !newMD5.equals(md5)) {
+					System.out.println("The file has been downloaded from peer but is corrupted!");
+					file.delete();
+					return;
+				}
+				String sender = ip + ":" + port;
+				String fileNameAndHash = filename + " " + md5;
+				addReceivedFile(sender, fileNameAndHash);
+				System.out.println("File downloaded successfully: " + filename);
+
+			}
+		} catch (SocketTimeoutException e) {
+			System.err.println("Request Timed out.");
+		} catch (Exception ignored){}
+
 
 
 
