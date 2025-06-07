@@ -177,7 +177,7 @@ public class PeerApp {
 				String fileNameAndHash = filename + " " + md5;
 				addReceivedFile(sender, fileNameAndHash);
 				System.out.println("File downloaded successfully: " + filename);
-
+				socket.setSoTimeout(0);
 			}
 		} catch (SocketTimeoutException e) {
 			System.err.println("Request Timed out.");

@@ -5,11 +5,27 @@ import peer.app.P2TConnectionThread;
 
 public class P2TConnectionController {
 	public static Message handleCommand(Message message) {
+		if(message.getType().equals(Message.Type.command)) {
+			String command = message.getFromBody("command");
+			switch (command) {
+				case "status" :
+
+					break;
+				case "get_files_list":
+
+					break;
+				case "get_sends":
+
+					break;
+				case "get_receives":
+
+					break;
+			}
+		}
 		// TODO: Handle incoming tracker-to-peer commands
 		// 1. Parse command from message
 		// 2. Call appropriate handler (status, get_files_list, get_sends, get_receives)
 		// 3. Return response message
-		throw new UnsupportedOperationException("handleCommand not implemented yet");
 	}
 
 	private static Message getReceives() {
