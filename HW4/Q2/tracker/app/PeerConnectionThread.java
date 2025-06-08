@@ -45,6 +45,8 @@ public class PeerConnectionThread extends ConnectionThread {
             this.setOtherSideIP(ip);
             this.setOtherSidePort(port);
         }
+		TrackerApp.removePeerConnection(this);
+		this.end();
 
         // Implement status refresh
 		// Send status command and update peer's IP and port and wait for response

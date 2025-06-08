@@ -1,5 +1,6 @@
 package peer.controllers;
 
+import common.models.CLICommands;
 import common.models.Message;
 import common.utils.FileUtils;
 import peer.app.P2TConnectionThread;
@@ -7,6 +8,7 @@ import peer.app.PeerApp;
 
 import java.nio.file.FileAlreadyExistsException;
 import java.nio.file.Files;
+import java.util.Map;
 
 public class PeerCLIController {
 
@@ -18,7 +20,7 @@ public class PeerCLIController {
 		} else if (PeerCommands.END.matches(command)) {
 			return endProgram();
 		}
-		return "";
+		return CLICommands.invalidCommand;
 		// Process Peer CLI commands
 		// 1. Check command type (END_PROGRAM, DOWNLOAD, LIST)
 		// 2. Call appropriate handler
@@ -26,7 +28,10 @@ public class PeerCLIController {
 	}
 
 	private static String handleListFiles() {
-		return FileUtils.getSortedFileList(FileUtils.listFilesInFolder(PeerApp.getSharedFolderPath()));
+		Map<String, String> files = FileUtils.listFilesInFolder(PeerApp.getSharedFolderPath());
+		if(files == null || files.isEmpty())
+			return "Repository is empty.";
+		return FileUtils.getSortedFileList(files);
 		// Handle list files command
 	}
 
