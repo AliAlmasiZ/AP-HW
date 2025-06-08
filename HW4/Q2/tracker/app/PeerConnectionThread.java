@@ -9,6 +9,7 @@ import java.net.Socket;
 import java.util.HashMap;
 import java.util.Map;
 
+import static common.models.Message.Type;
 import static tracker.app.TrackerApp.TIMEOUT_MILLIS;
 
 public class PeerConnectionThread extends ConnectionThread {
@@ -21,26 +22,46 @@ public class PeerConnectionThread extends ConnectionThread {
 	@Override
 	public boolean initialHandshake() {
 		try {
-
-			// TODO: Implement initial handshake
+			refreshStatus();
+			refreshFileList();
+			TrackerApp.addPeerConnection(this);
+			return true;
+			// Implement initial handshake
 			// Refresh peer status (IP and port), Get peer's file list, Add connection to tracker's connection list
-			throw new UnsupportedOperationException("Initial handshake not implemented yet");
 		} catch (Exception e) {
 			return false;
 		}
 	}
 
 	public void refreshStatus() {
-		// TODO: Implement status refresh
+
+
+        Message command = new Message(Map.of("command", "status"), Type.command);
+        Message response = sendAndWaitForResponse(command, TIMEOUT_MILLIS);
+        if (response != null) {
+            String ip = response.getFromBody("");
+            int port = response.getIntFromBody("");
+
+            this.setOtherSideIP(ip);
+            this.setOtherSidePort(port);
+        }
+
+        // Implement status refresh
 		// Send status command and update peer's IP and port and wait for response
 		// then update peer's IP and port
-		throw new UnsupportedOperationException("Status refresh not implemented yet");
 	}
 
 	public void refreshFileList() {
-		// TODO: Implement file list refresh
+		Map<String, Object> body = new HashMap<>();
+		body.put("command", "get_files_list");
+		Message command = new Message(body, Type.command);
+		Message response = sendAndWaitForResponse(command, TIMEOUT_MILLIS);
+		if(response != null) {
+			Map<String, String> files = response.getFromBody("files");
+			fileAndHashes = new HashMap<>(files);
+		}
+		// Implement file list refresh
 		// Request and update peer's file list
-		throw new UnsupportedOperationException("File list refresh not implemented yet");
 	}
 
 	@Override

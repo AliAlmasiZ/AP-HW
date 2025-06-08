@@ -19,7 +19,7 @@ public class FileUtils {
 		}
 
 		try	(Stream<Path> stream = Files.list(dir)) {
-			List<Path> files = stream.toList();
+			List<Path> files = stream.sorted().toList();
 			for (Path file : files) {
 				filesMap.put(file.getFileName().toString(), MD5Hash.HashFile(file.toString()));
 			}

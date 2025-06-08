@@ -8,6 +8,7 @@ import common.utils.MD5Hash;
 import java.io.*;
 import java.net.Socket;
 import java.net.SocketTimeoutException;
+import java.nio.file.FileAlreadyExistsException;
 import java.util.*;
 
 public class PeerApp {
@@ -140,8 +141,8 @@ public class PeerApp {
 	public static void requestDownload(String ip, int port, String filename, String md5) throws Exception {
 		File file = new File(getSharedFolderPath(), filename);
 		if(file.exists()) {
-			System.out.println("You already have the file!");
-			return;
+//			System.out.println("You already have the file!");
+			throw new FileAlreadyExistsException(filename);
 		}
 
 		Message downloadRequest = new Message(Map.of(
@@ -169,24 +170,24 @@ public class PeerApp {
 				fos.flush();
 				String newMD5 = MD5Hash.HashFile(file.getAbsolutePath());
 				if(newMD5 == null || !newMD5.equals(md5)) {
-					System.out.println("The file has been downloaded from peer but is corrupted!");
 					file.delete();
-					return;
+					throw new RuntimeException("The file has been downloaded from peer but is corrupted!");
+//					throw new RuntimeException("The file has been downloaded from peer but is corrupted!");
 				}
 				String sender = ip + ":" + port;
 				String fileNameAndHash = filename + " " + md5;
 				addReceivedFile(sender, fileNameAndHash);
-				System.out.println("File downloaded successfully: " + filename);
 				socket.setSoTimeout(0);
+//				throw new RuntimeException("File downloaded successfully: " + filename);
 			}
 		} catch (SocketTimeoutException e) {
 			System.err.println("Request Timed out.");
-		} catch (Exception ignored){}
+		}
 
 
 
 
-		// TODO: Implement file download from peer
+		// Implement file download from peer
 		// 1. Check if file already exists
 		// 2. Create download request message
 		// 3. Connect to peer
