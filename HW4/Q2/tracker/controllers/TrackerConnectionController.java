@@ -57,7 +57,8 @@ public class TrackerConnectionController {
 		Message command = new Message(Map.of("command", "get_sends"), Message.Type.command);
 		Message response = connection.sendAndWaitForResponse(command, TIMEOUT_MILLIS);
 
-		return response.getFromBody("sent_files");
+		Map<String, List<String>> res = response.getFromBody("sent_files");
+		return res == null ? new HashMap<>() : res;
 		// Get list of files sent by a peer
 		// 1. Build command message
 		// 2. Send message and wait for response
@@ -67,8 +68,8 @@ public class TrackerConnectionController {
 	public static Map<String, List<String>> getReceives(PeerConnectionThread connection) {
 		Message command = new Message(Map.of("command", "get_receives"), Message.Type.command);
 		Message response = connection.sendAndWaitForResponse(command, TIMEOUT_MILLIS);
-
-		return response.getFromBody("received_files");
+		Map<String, List<String>> res = response.getFromBody("received_files");
+		return res == null ? new HashMap<>() : res;
 		// Get list of files received by a peer
 		// 1. Build command message
 		// 2. Send message and wait for response

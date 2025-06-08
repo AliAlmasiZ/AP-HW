@@ -30,7 +30,7 @@ public class P2PListenerThread extends Thread {
 			TorrentP2PThread torrentP2PThread = new TorrentP2PThread(
 					socket,
 					new File(PeerApp.getSharedFolderPath() + "/" + response.getFromBody("name")),
-					response.getFromBody("receiver_ip") + ":" + response.getFromBody("receiver_port")
+					response.getFromBody("receiver_ip") + ":" + response.getIntFromBody("receiver_port")
 			);
 			PeerApp.addTorrentP2PThread(torrentP2PThread);
 			torrentP2PThread.start();

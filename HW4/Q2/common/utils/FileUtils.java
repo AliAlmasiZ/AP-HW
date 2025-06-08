@@ -37,6 +37,6 @@ public class FileUtils {
 		for (String name : names) {
 			sb.append(name).append(" ").append(files.get(name)).append("\n");
 		}
-		return sb.toString();
+		return sb.deleteCharAt(sb.length() - 1).toString();
 	}
 }

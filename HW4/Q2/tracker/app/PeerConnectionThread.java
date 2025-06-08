@@ -29,6 +29,8 @@ public class PeerConnectionThread extends ConnectionThread {
 			// Implement initial handshake
 			// Refresh peer status (IP and port), Get peer's file list, Add connection to tracker's connection list
 		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println(e.getMessage());
 			return false;
 		}
 	}
@@ -39,11 +41,12 @@ public class PeerConnectionThread extends ConnectionThread {
         Message command = new Message(Map.of("command", "status"), Type.command);
         Message response = sendAndWaitForResponse(command, TIMEOUT_MILLIS);
         if (response != null) {
-            String ip = response.getFromBody("");
-            int port = response.getIntFromBody("");
+            String ip = response.getFromBody("peer");
+            int port = response.getIntFromBody("listen_port");
 
             this.setOtherSideIP(ip);
             this.setOtherSidePort(port);
+			return;
         }
 		TrackerApp.removePeerConnection(this);
 		this.end();

@@ -18,13 +18,13 @@ public class PeerApp {
 
 	//files
 	private static String sharedFolderPath;
-	private static Map<String, List<String> > sentFiles = new HashMap<>();
-	private static Map<String, List<String>> receivedFiles = new HashMap<>();
+	private static final Map<String, List<String> > sentFiles = new HashMap<>();
+	private static final Map<String, List<String>> receivedFiles = new HashMap<>();
 
 	//threads
 	private static P2TConnectionThread p2TConnectionThread;
 	private static P2PListenerThread listenerThread;
-	private static List<TorrentP2PThread> torrentP2PThreads;
+	private static final List<TorrentP2PThread> torrentP2PThreads = new ArrayList<>();
 
 	//  static fields for peer's ip, port, shared folder path, sent files, received files, tracker connection thread, p2p listener thread, torrent p2p threads
 
@@ -104,12 +104,15 @@ public class PeerApp {
 	}
 
 	public static void addSentFile(String receiver, String fileNameAndHash) {
-		sentFiles.getOrDefault(receiver, new ArrayList<>()).add(fileNameAndHash);
+		sentFiles.putIfAbsent(receiver, new ArrayList<>());
+		sentFiles.get(receiver).add(fileNameAndHash);
+
 		//  Add file to sent files list
 	}
 
 	public static void addReceivedFile(String sender, String fileNameAndHash) {
-		receivedFiles.getOrDefault(sender, new ArrayList<>()).add(fileNameAndHash);
+		receivedFiles.putIfAbsent(sender, new ArrayList<>());
+		receivedFiles.get(sender).add(fileNameAndHash);
 		//  Add file to received files list
 	}
 

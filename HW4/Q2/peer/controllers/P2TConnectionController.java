@@ -76,9 +76,7 @@ public class P2TConnectionController {
 		Message request = new Message(Map.of("name", fileName), Type.file_request);
 		Message response = tracker.sendAndWaitForResponse(request, TIMEOUT_MILLIS);
 
-		if(response == null) {
-			throw new RuntimeException();
-		}
+
 
 		return response;
 //		if(response != null) {
